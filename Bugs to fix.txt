@@ -2,13 +2,11 @@
 BUGS:
 
 
-EH43:
+
 
 Next steps:
-NS3: forced choice 2 pics (medium)
-DONE - not yet implemented into full trial sequence
-NS4: forced choice 4 pics (medium+)
-DONE - not yet implemented into full trial sequence
+
+
 NS5: grammaticality judgment (medium++)
 DONE - not yet implemented into full trial sequence
 LR6: production test (straightforward)
@@ -98,6 +96,13 @@ EH38: write script to get data in readable format
 FIXED
 EH42: it always logs 'l' for the key that's the correct answer in 2AFC (so right before RT)
 FIXED
+NS3: forced choice 2 pics (medium)
+DONE 
+EH43: getting a really weird jspsych error; moved almost full utilities into backup, the problem seems to be with initializing the files; NO CLUE but it resolved itself?
+FIXED
+NS4: forced choice 4 pics (medium+)
+DONE - not yet implemented into full trial sequence
+
 
 Abandoned:
 EH7: right now I need to click on the textbox separately for each separate production trial. Is there an easy way to have the cursor start there automatically for each trial? This is way less important than the other stuff, more a convenience thing.

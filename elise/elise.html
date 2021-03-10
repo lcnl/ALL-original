@@ -53,13 +53,27 @@ $(document).ready(function() {
 	
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/traininglist30",
+		url : "/static/elise/traininglist30.txt",
 		dataType : "text",
 		success : function(data) {
 			processData(data);
 		}
 	});
 });
+// Ajax call to get EM list for grammar judgment trials 
+$(document).ready(function() {
+	
+	$.ajax({
+		type : "GET",
+		url : "/static/elise/EMlist.txt",
+		dataType : "text",
+		success : function(data) {
+			processList(data);
+		}
+	});
+});
+
+
 // Calls processMessages to retrieve the message text files and convert them to strings for use in the experiment 
 $(document).ready(function() {
 	processMessages();
@@ -90,14 +104,8 @@ $(document).ready(function() {
 				//console.log(subjectnr + "_setup")
 			},
 			timeline: 
-			//makeExp()
-			[forced_choice_trial_2("/static/elise/img/images/h1.png", "/static/elise/img/images/h2.png", true, "/static/elise/sound/combinedsounds/det1_big0s.wav", false, 0),
-			forced_choice_trial_2("/static/elise/img/images/h1p.png", "/static/elise/img/images/h2p.png", true, "/static/elise/sound/combinedsounds/det1_big0p.wav", true, 0),
-			forced_choice_trial_2("/static/elise/img/images/h1.png", "/static/elise/img/images/h2.png", false, "/static/elise/sound/combinedsounds/det1_big1s.wav", false, 0),
-			forced_choice_trial_2("/static/elise/img/images/h2p.png", "/static/elise/img/images/h1p.png", true, "/static/elise/sound/combinedsounds/det1_big1p.wav", true, 0),
-			forced_choice_trial_2("/static/elise/img/images/h1.png", "/static/elise/img/images/h1p.png", true, "/static/elise/sound/combinedsounds/det1_big0s.wav", false, 0),
-			forced_choice_trial_2("/static/elise/img/images/h1.png", "/static/elise/img/images/h1p.png", false, "/static/elise/sound/combinedsounds/det1_big0p.wav", true, 0)
-			]
+			makeExp()
+			
 		})
 
 	});

@@ -14,18 +14,30 @@ function audioAfterTime(audio, time) {
 }
 
 // Runs an active comprehension trial 
-function grammaticality_judgment_trial(correct, sound) {
+function grammaticality_judgment_trial(correct, sound, plurality, alienidentifiernr) {
 	
 	// Determines the appropriate key and image to set for the correct value in the user interaction (76 is L, 65 is A)
 	var corimage;
 	var key;
+	var match;
 	if (correct) {
 		key = 76;
-		
+		match = 'l';
 	}
 	else {
 		key = 65;
-	
+		match = 'a';
+	}
+
+	var neighborhood = (sound.substring(1+sound.lastIndexOf("/")));
+	console.log(neighborhood)
+	neighborhood = neighborhood.substring(0,neighborhood.lastIndexOf("."))[5];
+	console.log(neighborhood)
+	if(neighborhood == "b"){
+		neighborhood = "big";
+	}
+	else{
+		neighborhood = "small";
 	}
 
     // Retrieves audio file name for the purpose of getting the duration from the dictionary
@@ -80,6 +92,9 @@ function grammaticality_judgment_trial(correct, sound) {
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				console.log(data_from_current_node.csv())
+				var data_array = [subjectnr,cond,trialnr,"EM",alienidentifiernr, sound, neighborhood, String.fromCharCode(data_from_current_node.select('key_press').values[0]),data_from_current_node.select('correct').values[0], match,data_from_current_node.select('rt').values[0], plurality, key]
+				total_data_array.push(data_array)
+				console.log(data_array)
 				
 			}
 		}
