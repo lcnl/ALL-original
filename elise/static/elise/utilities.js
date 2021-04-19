@@ -1226,7 +1226,7 @@ var four_positions = [1,2,3,4];
 			var errortype = curr_trial[2];
 			var singOrPlural = curr_trial[1];
 			var isPlural = false;
-			var isGrammatical = true;
+			var isGrammatical = false;
 			var grammaticalSound = allSounds[monsterIndex][singOrPlural];
 			var trialSound = grammaticalSound;
 			var monsterNeighborhood = participant_data_array[monsterIndex][4];
@@ -1262,6 +1262,10 @@ var four_positions = [1,2,3,4];
 					}
 				}
 				trialSound = "det" + foil_det + grammaticalSound.substring(4,grammaticalSound.length);
+			} else if (errortype == '3') {
+				trialSound = grammaticalSound.substring(0,grammaticalSound.length-5)+"_e" + grammaticalSound.substring(grammaticalSound.length-5,grammaticalSound.length);
+			} else if (errortype == '0') {
+				isGrammatical = true;
 			}
 
 			console.log(grammaticalSound)
@@ -1269,7 +1273,7 @@ var four_positions = [1,2,3,4];
 
 			experiments.push(grammaticality_judgment_trial(isGrammatical, 
 				"/static/elise/sound/combinedsounds/" + trialSound, 
-				isPlural, monsterIndex))
+				isPlural, monsterIndex, errortype))
 
 
 		}
