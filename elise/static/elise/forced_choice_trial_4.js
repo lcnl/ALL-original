@@ -106,7 +106,7 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 				var data_array = [subjectnr,cond,trialnr,"FC",alienidentifiernr,image1,image2, image3, image4,corimage,sound,neighborhood, String.fromCharCode(data_from_current_node.select('key_press').values[0]),data_from_current_node.select('correct').values[0], match,data_from_current_node.select('rt').values[0], plurality, key]
 				total_data_array.push(data_array)
 				console.log(data_array)
-				
+				trialnr++;
 			}
 		}
 		],
