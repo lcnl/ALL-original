@@ -28,8 +28,6 @@ var passivemessage2;
 var prodtest1;
 var prodtest2;
 var prodtestmessage;
-var vocabtestmessage1;
-var vocabtestmessage2;
 
 // Makes ajax calls for each individual text file
 // If message files and names are changed, they will need to have their ajax calls edited/added here 
@@ -254,24 +252,6 @@ function processMessages() {
 			prodtestmessage = data;
 		}
 	});
-	$.ajax({
-		type : "GET",
-		url : "/static/elise/Instructions/vocabtestmessage1.txt",
-		dataType : "text",
-		success : function(data) {
-			vocabtestmessage1 = data;
-		}
-	});
-	$.ajax({
-		type : "GET",
-		url : "/static/elise/Instructions/vocabtestmessage2.txt",
-		dataType : "text",
-		success : function(data) {
-			vocabtestmessage2 = data;
-			
-		}
-	});
-	
 	}
 	
 	
