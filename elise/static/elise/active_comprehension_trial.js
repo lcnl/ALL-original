@@ -65,7 +65,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			correct_text: "<img src='" +"/static/elise/img/images/greencheck.png'style='margin-left: auto;margin-right: auto;'>",
 			incorrect_text: "<img src='" + "/static/elise/img/images/redx.png' style='margin-left: auto;margin-right: auto;'>",
 			// Uses html pre tag to make spaces persist. To adjust distance in between, simply add spaces
-			prompt: "<pre>Mismatch? Press a                                                                                   Match? Press l</pre>",
+			prompt: "<pre>Mismatch? Press A                                                                                   Match? Press L</pre>",
 			show_stim_with_feedback: true,
 			feedback_duration: 1000
 		},
