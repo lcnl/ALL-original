@@ -1,17 +1,15 @@
 
 BUGS:
 
-
+MM1: spell 'jeb' as 'cheb'
+MM3: change font in Gramm judgment.
 
 
 Next steps:
+EH44: test full experiment on server
+EH45: get logs uniform
 
 
-NS5: grammaticality judgment (medium++)
-DONE - not yet implemented into full trial sequence
-LR6: production test (straightforward)
-LR7: logging (straightforward but a lot)
-DONE - for passive, active c+p, soundchecktrials; rest will be similar
 
 Maybe/Later:
 EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side
@@ -101,8 +99,17 @@ DONE
 EH43: getting a really weird jspsych error; moved almost full utilities into backup, the problem seems to be with initializing the files; NO CLUE but it resolved itself?
 FIXED
 NS4: forced choice 4 pics (medium+)
-DONE - not yet implemented into full trial sequence
-
+DONE 
+NS5: grammaticality judgment (medium++)
+DONE
+LR6: production test (straightforward)
+DONE
+LR7: logging (straightforward but a lot)
+DONE 
+MM2: make all on-screen letters capitals so that L is clearer ALSO IN INSTR
+DONE
+EH46: put in all instructions screens in test phase
+DONE
 
 Abandoned:
 EH7: right now I need to click on the textbox separately for each separate production trial. Is there an easy way to have the cursor start there automatically for each trial? This is way less important than the other stuff, more a convenience thing.

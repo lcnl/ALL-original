@@ -389,8 +389,10 @@ function makeExp() {
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, forcedchoicemessage2pic, audiocheckmessage
-		, forcedchoicemessage4pic, audiocheckmessage, , audiocheckmessage, audiocheckmessage, audiocheckmessage
-		, grammaticalityjudgment, audiocheckmessage, audiocheckmessage, audiocheckmessage, audiocheckmessage
+		, forcedchoicemessage4pic, audiocheckmessage, FC4message, audiocheckmessage, FC4message
+		, audiocheckmessage, FC4message, audiocheckmessage
+		, grammaticalityjudgment, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage, grammaticalityjudgmentmessage
+		, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage
 		, prodtest1, prodtest2, audiocheckmessage, prodtestmessage
 		, audiocheckmessage, prodtestmessage, audiocheckmessage, prodtestmessage, audiocheckmessage
 		, endmessagep]
@@ -485,6 +487,10 @@ function makeExp() {
 	for(var i = 24; i < 30;i++){
 		participant_data_array.push([i,allImages[i],allSounds[i]["s"],allSounds[i]["p"],"small","testing"])
 	}
+
+	console.log("participant data array")
+	console.log(participant_data_array)
+
 	// Shuffles the row sequences in trial data 
 	shuffle(trialData);
 
@@ -502,15 +508,15 @@ function makeExp() {
 
 
 	experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
-	///experiments.push(audio_check_trial_1("/static/elise/sound/airplane_w.mp3"))
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
-	///experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.mp3"))
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
+	experiments.push(audio_check_trial_1("/static/elise/sound/airplane_w.mp3"))
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
+	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.mp3"))
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
 
 
 	//[first 6 passive trials]
@@ -530,21 +536,21 @@ function makeExp() {
 
 		// Calls functions to obtain trial objects and pushes them to the timeline
 		// this part of the experiment contains passive comprehension trials
-		///experiments.push(passive_comprehension_trial("/static/elise/img/images/" + allImages[monsterIndex],
-			///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
+		experiments.push(passive_comprehension_trial("/static/elise/img/images/" + allImages[monsterIndex],
+			"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
 
 	}
 
 
 	if (comp) {
-		///experiments.push(active_comprehension_trial("/static/elise/img/images/pear.png", "/static/elise/img/images/apple.png", false, "/static/elise/sound/apple_w.mp3", "apple", false, "-"))
-		///experiments.push(active_comprehension_trial("/static/elise/img/images/apple.png", "/static/elise/img/images/apple.png", true, "/static/elise/sound/apple_w.mp3", "apple", false, "-"))
+		experiments.push(active_comprehension_trial("/static/elise/img/images/pear.png", "/static/elise/img/images/apple.png", false, "/static/elise/sound/apple_w.mp3", "apple", false, "-"))
+		experiments.push(active_comprehension_trial("/static/elise/img/images/apple.png", "/static/elise/img/images/apple.png", true, "/static/elise/sound/apple_w.mp3", "apple", false, "-"))
 	} // if practice trial for production  is desired:
 	//else {
 		//experiments.push(active_production_trial("/static/elise/img/images/apple.png", "/static/elise/sound/apple_w.mp3", "apple", false, "-"))
 	//}
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
 
 
 	// Current row
@@ -630,12 +636,12 @@ function makeExp() {
 				}
 			}
 
-			///experiments.push(active_comprehension_trial(
-				///"/static/elise/img/images/" + firstImage,
-				///"/static/elise/img/images/" + secondImage,
-				///correct,
-				///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
-				///getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
+			experiments.push(active_comprehension_trial(
+				"/static/elise/img/images/" + firstImage,
+				"/static/elise/img/images/" + secondImage,
+				correct,
+				"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+				getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
 
 		}
 	}
@@ -650,11 +656,11 @@ function makeExp() {
 				isPlural = true;
 			}
 
-			///experiments.push(active_production_trial("/static/elise/img/images/" + allImages[monsterIndex],
-				///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
+			experiments.push(active_production_trial("/static/elise/img/images/" + allImages[monsterIndex],
+				"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
 		}
 	}
-	///experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
 
 	/// not sure if I still use this
 	// Pushes block of experiments to matrix
@@ -663,8 +669,8 @@ function makeExp() {
 	// Iterates through the rows in the trial data matrix
 	// Starts at index 1 to account for initial trials that have already been added
 
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
 
 
 	for (var i = 1; i < trialData.length; i++) {
@@ -678,7 +684,7 @@ function makeExp() {
 		shuffle(curr);
 
 		//Passivemessage
-		///experiments.push(playNextInstruction())
+		experiments.push(playNextInstruction())
 
 		//[round of 6 passive trials]
 		// Iterates through the row, obtaining trial objects
@@ -696,8 +702,8 @@ function makeExp() {
 
 			// Calls functions to obtain trial objects and pushes them to the timeline
 			// this part of the experiment contains passive comprehension trials
-			///experiments.push(passive_comprehension_trial("/static/elise/img/images/" + allImages[monsterIndex],
-				///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
+			experiments.push(passive_comprehension_trial("/static/elise/img/images/" + allImages[monsterIndex],
+				"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
 		}
 
 
@@ -723,7 +729,7 @@ function makeExp() {
 		mismatches = new Set(mismatches);
 
 		//Activecompmessage		activeprodmessage
-		///experiments.push(playNextInstruction())
+		experiments.push(playNextInstruction())
 
 		//[round of 6 active comp trials]	[round of 6 active prod trials]
 		// Comprehension trial
@@ -781,12 +787,12 @@ function makeExp() {
 					}
 				}
 
-				///experiments.push(active_comprehension_trial(
-					///"/static/elise/img/images/" + firstImage,
-					///"/static/elise/img/images/" + secondImage,
-					///correct,
-					///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
-					///getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
+				experiments.push(active_comprehension_trial(
+					"/static/elise/img/images/" + firstImage,
+					"/static/elise/img/images/" + secondImage,
+					correct,
+					"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+					getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
 			}
 
 		}
@@ -802,28 +808,27 @@ function makeExp() {
 					isPlural = true;
 				}
 
-				///experiments.push(active_production_trial("/static/elise/img/images/" + allImages[monsterIndex],
-					///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
+				experiments.push(active_production_trial("/static/elise/img/images/" + allImages[monsterIndex],
+					"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
 			}
 		}
 
 		if ((i + 1) % 3 == 0) {
-			///experiments.push(playNextInstruction())
+			experiments.push(playNextInstruction())
 			if (i == 2) {
-				///experiments.push(audio_check_trial_2("/static/elise/sound/wallet_w.mp3"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/wallet_w.mp3"))
 			} else if (i == 5) {
-				///experiments.push(audio_check_trial_2("/static/elise/sound/feather_w.mp3"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/feather_w.mp3"))
 			} else if (i == 8) {
-				///experiments.push(audio_check_trial_2("/static/elise/sound/onion_w.mp3"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/onion_w.mp3"))
 			} else {
-				///experiments.push(audio_check_trial_2("/static/elise/sound/towel_w.mp3"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/towel_w.mp3"))
 			}
 			
 		}
 	}
 
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
 
 	// for the 2AFC trials, we need to randomly pick which 3 (of 6) test-only aliens in each neighborhood will be singular in the first round
 	// so, we pick 3 alien identifiers for each that will be singular in the first round. 
@@ -939,13 +944,14 @@ function makeExp() {
 			}
 		}
 
-		///experiments.push(forced_choice_trial_2(
-			///"/static/elise/img/images/" + firstImage,
-			///"/static/elise/img/images/" + secondImage,
-			///correct_side, 
-			///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
-			///isPlural, monsterIndex));
+		experiments.push(forced_choice_trial_2(
+			"/static/elise/img/images/" + firstImage,
+			"/static/elise/img/images/" + secondImage,
+			correct_side, 
+			"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+			isPlural, monsterIndex));
 	}
+
 
 	for (var i = 0; i < 12; i++) {
 		shuffle(left_right);
@@ -970,13 +976,17 @@ function makeExp() {
 			secondImage = secondImage.substring(0,secondImage.length-4)+"p.png";
 		}
 
-		///experiments.push(forced_choice_trial_2(
-			///"/static/elise/img/images/" + firstImage,
-			///"/static/elise/img/images/" + secondImage,
-			///correct_side, 
-			///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
-			///isPlural, monsterIndex));
+		experiments.push(forced_choice_trial_2(
+			"/static/elise/img/images/" + firstImage,
+			"/static/elise/img/images/" + secondImage,
+			correct_side, 
+			"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+			isPlural, monsterIndex));
 	}
+
+	experiments.push(playNextInstruction())
+	experiments.push(audio_check_trial_2("/static/elise/sound/leaf_w.mp3"))
+	experiments.push(playNextInstruction())
 
 	// for the 4AFC trials, we need to randomly pick which 3 (of 6) / 6 (of 12) aliens in each sub-neighborhood will be singular in the noun round
 	// so we will shuffle all four sub-neighborhoods and the first half will be sg for noun trial, plural for grammar trial; and vice versa
@@ -1151,7 +1161,7 @@ function makeExp() {
 	var all_4AFC = grammar_4AFC.concat(noun_4AFC);
 	shuffle(all_4AFC);
 
-var four_positions = [1,2,3,4];
+	var four_positions = [1,2,3,4];
 	for (var i = 0; i < 60; i++) {
 		shuffle(four_positions);
 		var curr_trial = all_4AFC[i];
@@ -1203,16 +1213,35 @@ var four_positions = [1,2,3,4];
 		var correct_place = four_positions.indexOf(1)+1;
 
 
-		///experiments.push(forced_choice_trial_4(
-			///"/static/elise/img/images/" + firstImage,
-			///"/static/elise/img/images/" + secondImage,
-			///"/static/elise/img/images/" + thirdImage,
-			///"/static/elise/img/images/" + fourthImage,
-			///correct_place, 
-			///"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
-			///isPlural, monsterIndex));
+		experiments.push(forced_choice_trial_4(
+			"/static/elise/img/images/" + firstImage,
+			"/static/elise/img/images/" + secondImage,
+			"/static/elise/img/images/" + thirdImage,
+			"/static/elise/img/images/" + fourthImage,
+			correct_place, 
+			"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+			isPlural, monsterIndex));
+
+		if ((i + 1) % 15 == 0) {
+			experiments.push(playNextInstruction())
+			if (i == 14) {
+				experiments.push(audio_check_trial_2("/static/elise/sound/island_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else if (i == 29) {
+				experiments.push(audio_check_trial_2("/static/elise/sound/eraser_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else if (i == 44) {
+				experiments.push(audio_check_trial_2("/static/elise/sound/pill_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else {
+				experiments.push(audio_check_trial_2("/static/elise/sound/flower_w.mp3"))
+			}
+			
+		}	
+
 	}
 
+	experiments.push(playNextInstruction())
 	shuffle(EMlist);
 
 	// three rounds of error monitoring trials
@@ -1230,8 +1259,6 @@ var four_positions = [1,2,3,4];
 			var grammaticalSound = allSounds[monsterIndex][singOrPlural];
 			var trialSound = grammaticalSound;
 			var monsterNeighborhood = participant_data_array[monsterIndex][4];
-
-			console.log(curr_trial)
 
 			if (singOrPlural == 'p') {
 				isPlural = true;
@@ -1268,19 +1295,82 @@ var four_positions = [1,2,3,4];
 				isGrammatical = true;
 			}
 
-			console.log(grammaticalSound)
-			console.log(trialSound)
-
 			experiments.push(grammaticality_judgment_trial(isGrammatical, 
 				"/static/elise/sound/combinedsounds/" + trialSound, 
 				isPlural, monsterIndex, errortype))
 
-
+			if (i == 0 && j == 20) {
+				experiments.push(playNextInstruction())
+				experiments.push(audio_check_trial_2("/static/elise/sound/shovel_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else if (i == 1 && j == 13) {
+				experiments.push(playNextInstruction())
+				experiments.push(audio_check_trial_2("/static/elise/sound/axe_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else if (i == 2 && j == 7) {
+				experiments.push(playNextInstruction())
+				experiments.push(audio_check_trial_2("/static/elise/sound/trumpet_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else if (i == 2 && j == 27){
+				experiments.push(playNextInstruction())
+				experiments.push(audio_check_trial_2("/static/elise/sound/orange_w.mp3"))
+			}
+			
+			
 		}
 	}
 
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
 
+	// the list for the production trials simply consists of every alien once pictured both plural and singular
 
+	prod_test_list = []
+	for (var j = 0; j < 30; j++) {
+		alien_info = participant_data_array[j];
+		anr = alien_info[0];
+		img = alien_info[1];
+		sound_s = alien_info[2];
+		sound_p = alien_info[3];
+		neigh = alien_info[4];
+		subs = alien_info[5];
+		prompt_s = getPrompt(sound_s);
+		prompt_p = getPrompt(sound_p);
+		singular_trial = [img, sound_s, prompt_s, false, anr, neigh, subs];
+		plural_trial = [img, sound_p, prompt_p, true, anr, neigh, subs];
+		prod_test_list.push(singular_trial);
+		prod_test_list.push(plural_trial);
+	}
+
+	shuffle(prod_test_list);
+
+	console.log(prod_test_list)
+
+	for(var j = 0; j < 60; j++){
+		trial_info = prod_test_list[j];
+		experiments.push(production_test_trial("/static/elise/img/images/" + trial_info[0], 
+			"/static/elise/sound/combinedsounds/" + trial_info[1], 
+			trial_info[2], trial_info[3], trial_info[4], trial_info[5], trial_info[6]));
+		if ((j + 1) % 15 == 0) {
+			experiments.push(playNextInstruction())
+			if (j == 14) {
+				experiments.push(audio_check_trial_2("/static/elise/sound/tooth_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else if (j == 29) {
+				experiments.push(audio_check_trial_2("/static/elise/sound/owl_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else if (j == 44) {
+				experiments.push(audio_check_trial_2("/static/elise/sound/letter_w.mp3"))
+				experiments.push(playNextInstruction())
+			} else {
+				experiments.push(audio_check_trial_2("/static/elise/sound/egg_w.mp3"))
+			}
+		
+		}	
+	} 
+
+	experiments.push(playNextInstruction())
+		
 	// Returns matrix of experiment timelines
 	return experiments;
 }

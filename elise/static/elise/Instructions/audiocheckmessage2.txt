@@ -8,3 +8,4 @@ If you step away for more than 5 minutes, the experiment will abort and you won'
 
 Here's an example of what all following sound checks will be like, with only one chance to hear the audio and the option for a break afterwards. 
 
+Note that from now on, you'll see a screen saying 'SOUND CHECK' right before each sound check trial to remind you of your instructions for this task. 

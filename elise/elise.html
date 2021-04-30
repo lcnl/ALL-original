@@ -14,6 +14,7 @@
 <script src="/static/elise/audio_check_trial_1.js"></script>
 <script src="/static/elise/audio_check_trial_2.js"></script>
 <script src="/static/elise/grammaticality_judgment_trial.js"></script>
+<script src="/static/elise/production_test_trial.js"></script>
 <script src="/static/elise/forced_choice_trial_4.js"></script>
 <script src="/static/elise/forced_choice_trial_2.js"></script>
 <script src="/static/elise/utilities.js"></script>
@@ -97,8 +98,9 @@ $(document).ready(function() {
 		jsPsych.init({
 			on_finish : function() {
 				// Commented out server code to send data when ready
-				sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
-				sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
+				//sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
+				//sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
+				// console logging
 				//console.log(total_data_array)
 				//console.log(participant_data_array)
 				//console.log(subjectnr + "_setup")
