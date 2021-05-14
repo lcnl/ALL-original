@@ -89,7 +89,7 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
 		async: false,
 		func: function() {
 			// TODO: this will be changed to a server ajax call later in process
-			var data_array = [subjectnr,cond,trialnr,"P",alienidentifiernr,image,"-",sound, neighborhood, "-","-","-","-",plurality]
+			var data_array = [subjectnr, cond, trialnr, "P", alienidentifiernr, sound, neighborhood, "training", plurality, image, "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

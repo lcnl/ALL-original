@@ -1,23 +1,26 @@
 
 BUGS:
 
-MM1: spell 'jeb' as 'cheb'
-MM3: change font in Gramm judgment.
 
 
 Next steps:
-EH44: test full experiment on server
-EH45: get logs uniform
+EH53 work through pilot subject comments
+
 
 
 
 Maybe/Later:
 EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side
-EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; zimbaaf; NOTED: stam; dap; chag; 
+EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; zimbaaf;stam; dap; chag; jeb (cheb); burresh; bepaaf;  
 EH27: read through all instructions and make sure they are all consistent, grammatical, etc; replace 'trial' with 'exercise', 'block' with 'group'.
 EH28: make 'next' / 'continue' consistent. Maybe continue if instructions, next if trial?
 EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
 EH41:active prod trial needs to log correct prompt for easy grading
+MM3: change font in Gramm judgment.
+EH47: make sure audio ends on keypress in EM/FC/AC
+EH48: remove the break after the final audiochecktrial?
+EH49: enforce the max 1/5 min breaks
+EH50: time/progress indication on breaks in tests? 
 
 
 
@@ -109,6 +112,16 @@ DONE
 MM2: make all on-screen letters capitals so that L is clearer ALSO IN INSTR
 DONE
 EH46: put in all instructions screens in test phase
+DONE
+EH52: pick audios that are less ambiguous
+DONE
+EH51: normalize sound volume audiochecktrials
+DONE
+EH52: take ambiguous flower/flour out of audiochecktrials
+DONE
+EH44: test full experiment on server
+DONE
+EH45: get logs uniform
 DONE
 
 Abandoned:

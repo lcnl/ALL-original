@@ -14,32 +14,32 @@ function audioAfterTime(audio, time) {
 }
 
 // Runs a forced choice trial with 4 input images, the correct choice between 1 and 4 and the associated sound as arguments
-function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, plurality, alienidentifiernr) {
+function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, plurality, alienidentifiernr, round, subneigh) {
 	
 	// Determines the appropriate key and image to set for the correct value in the user interaction
 	var corimage;
 	var key;
-	var match;
+	var cor_key;
 	switch(correct){
 		case 1:
 		key = 65;
 		corimage = image1;
-		match = 'a';
+		cor_key = 'a';
 		break
 		case 2:
 		key = 76;
 		corimage = image2;
-		match = 'l';
+		cor_key = 'l';
 		break
 		case 3:
 		key = 90;
 		corimage = image3;
-		match = 'z';
+		cor_key = 'z';
 		break
 		case 4:
 		key = 77;
 		corimage = image4;
-		match = 'm';
+		cor_key = 'm';
 		break
 	}
 
@@ -103,7 +103,7 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				console.log(data_from_current_node.csv())
-				var data_array = [subjectnr,cond,trialnr,"FC",alienidentifiernr,image1,image2, image3, image4,corimage,sound,neighborhood, String.fromCharCode(data_from_current_node.select('key_press').values[0]),data_from_current_node.select('correct').values[0], match,data_from_current_node.select('rt').values[0], plurality, key]
+				var data_array = [subjectnr, cond, trialnr, "FC", alienidentifiernr, sound, neighborhood, subneigh, plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], String.fromCharCode(data_from_current_node.select('key_press').values[0]), cor_key, "-", "-", round, "-", image1,image2, image3, image4]
 				total_data_array.push(data_array)
 				console.log(data_array)
 				trialnr++;

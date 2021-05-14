@@ -14,19 +14,19 @@ function audioAfterTime(audio, time) {
 }
 
 // Runs an active comprehension trial 
-function grammaticality_judgment_trial(correct, sound, plurality, alienidentifiernr, errortype) {
+function grammaticality_judgment_trial(correct, sound, plurality, alienidentifiernr, errortype, subneigh) {
 	
 	// Determines the appropriate key and image to set for the correct value in the user interaction (76 is L, 65 is A)
 	var corimage;
 	var key;
-	var match;
+	var cor_key;
 	if (correct) {
 		key = 76;
-		match = 'l';
+		cor_key = 'l';
 	}
 	else {
 		key = 65;
-		match = 'a';
+		cor_key = 'a';
 	}
 
 	var neighborhood = (sound.substring(1+sound.lastIndexOf("/")));
@@ -92,7 +92,7 @@ function grammaticality_judgment_trial(correct, sound, plurality, alienidentifie
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				console.log(data_from_current_node.csv())
-				var data_array = [subjectnr,cond,trialnr,"EM",alienidentifiernr, sound, neighborhood, String.fromCharCode(data_from_current_node.select('key_press').values[0]),data_from_current_node.select('correct').values[0], match,data_from_current_node.select('rt').values[0], plurality, key, errortype]
+				var data_array = [subjectnr, cond, trialnr, "EM", alienidentifiernr, sound, neighborhood, subneigh, plurality, "-",data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], String.fromCharCode(data_from_current_node.select('key_press').values[0]), cor_key, "-", "-", errortype, correct, "-", "-", "-", "-"]
 				total_data_array.push(data_array)
 				console.log(data_array)
 				trialnr++;

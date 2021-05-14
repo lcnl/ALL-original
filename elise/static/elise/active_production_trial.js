@@ -90,7 +90,7 @@ function active_production_trial(image1, sound, prompt,plurality,alienidentifier
 			console.log(data_from_current_node.csv());
 
 
-			var data_array = [subjectnr,cond,trialnr,"AP",alienidentifiernr,image1,"-",sound, neighborhood, JSON.parse(data_from_current_node.select('responses').values[0])["first"],"-", "-",data_from_current_node.select('rt').values[0],plurality, prompt]
+			var data_array = [subjectnr, cond, trialnr, "AP", alienidentifiernr, sound, neighborhood, "training", plurality, image1, data_from_current_node.select('rt').values[0], "-", "-", "-", JSON.parse(data_from_current_node.select('responses').values[0])["first"], prompt, "-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

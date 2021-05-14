@@ -14,7 +14,7 @@ function audioAfterTime(audio, time) {
 }
 
 // Audio check trial that does not allow user to repeat
-function audio_check_trial_2(sound) {
+function audio_check_trial_2(sound, prompt) {
 
     // Retrieves audio file name without file path for the purpose of getting the duration from the dictionary
     var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
@@ -73,7 +73,7 @@ function audio_check_trial_2(sound) {
 			// TODO: this will be changed to a server ajax call later in process
 			var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 			console.log(data_from_current_node.csv());
-			var data_array = [subjectnr,cond,trialnr,"SC","-","-","-",sound, "-", JSON.parse(data_from_current_node.select('responses').values[0])["first"],"-", "-",data_from_current_node.select('rt').values[0],"-"]
+			var data_array = [subjectnr,cond,trialnr,"SC","-",sound, "-", "-", "-", "-", data_from_current_node.select('rt').values[0], "-","-", "-", JSON.parse(data_from_current_node.select('responses').values[0])["first"], prompt, "-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment
