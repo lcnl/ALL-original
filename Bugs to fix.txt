@@ -4,7 +4,30 @@ BUGS:
 
 
 Next steps:
-EH53 work through pilot subject comments
+
+Immediate: 
+
+
+EH54: let experiment time out in all trial types except passive after 30 seconds (?) of inactivity
+STARTED messing around in audiochecktrial_2
+
+Need some figuring out:
+
+
+ML1: Consider changing tab text from ‘My Experiment’ to something like LCNL Experiment or something
+ML5: With regards to the sound recordings:
+Some of the recordings had some crackling sounds (I only noticed it at the beginning)
+Some of the recordings ended on different pitches 
+ML6: I noticed that a lot of times, the last stimulus for the passive block was the first block of the active practice...was that intentional? (Note: she was production condition, I have not worked thru this yet)
+ML8: Would it be possible to auto-focus on the text-boxes so you don’t have to click into the text box for every active trial/test?
+ML9: Double check that all of the next buttons can be triggered by clicking the enter button! (Rn instructions no next trial yes)
+ML/SP: After the summary screen, I just saw a blank screen...was I supposed to see a survey?
+ML/EH: images didn't load smoothly
+ML12: generally instructions are too verbose, shorten?
+MC: make passive trials either self-guided or slower to give people more time to read the spellings/names?
+
+Other to do's:
+- analyze or at least look at pilot pp scores on tests
 
 
 
@@ -123,6 +146,30 @@ EH44: test full experiment on server
 DONE
 EH45: get logs uniform
 DONE
+EH53 work through pilot subject comments and create to do list
+DONE
+SP5: The blue bird figure from the second half of the experiment is a drawing very based on a kids Cartoon Network series called the regular show - I had to look it up but kids I nanny used to watch it so people may already have a memory associated with it (note: h5.png, and it does indeed look a lot like the cartoon character, probably replace if at all possible)
+DONE
+ML/MC/SP: note in insert that spelling does not matter for the test at the end
+DONE
+ML3: For the sound checks, does capitalization matter? (may want to mention this in the sound check instructions)
+DONE
+SP4: Progression bar at the bottom maybe? I dont know if that is too distracting I just know during online studies it motivates me to actually work hard until the end and I know there are notes throughout saying when you get close 
+DONE
+ML4: Since you’re explaining the general idea behind the passive and active learning trials before they happen, idk that you need such a long summary at the beginning of the experiment.
+DONE
+ML7: Was there a full screen option I missed? (It might help to offer a full screen option to reduce distractions)
+DONE
+ML2: Instructions seem really spread out across the screen. Can they be centered more? (i.e. add additional padding within the div…?)
+DONE
+SP1: Click to start in the corner feels weird compared to the text being in the center for the rest of the time - I didn’t notice it right away 
+DONE 
+SP2: Some sentences in the instructions during it are normal grammar and some do not have capitalization “you’ll get to practice words like this where you… Let’s continue learning”
+DONE
+ML11: For some of the tests, the instructions said we’d see that we’re ¼ done, etc. but I didn’t actually see those messages.
+DONE (untested)
+SP3: Maybe add a countdown timer for the breaks? If It is easy could be a nice additive otherwise not something super needed 
+DONE 
 
 Abandoned:
 EH7: right now I need to click on the textbox separately for each separate production trial. Is there an easy way to have the cursor start there automatically for each trial? This is way less important than the other stuff, more a convenience thing.

@@ -21,11 +21,15 @@
 <script src="/static/elise/prompts.js"></script>
 <script src="/static/elise/processMessages.js"></script>
 <script
+	src="/static/common/jspsych-6.1.0/plugins/jspsych-fullscreen.js"></script>
+<script
 	src="/static/common/jspsych-6.1.0/plugins/jspsych-instructions.js"></script>
 <script
 	src="/static/common/jspsych-6.1.0/plugins/jspsych-categorize-html.js"></script>
 <script
 	src="/static/common/jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.1.0/plugins/jspsych-html-button-response.js"></script>
 <script
 	src="/static/common/jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
 <script
@@ -45,8 +49,9 @@
 </link>
 </head>
 <body>
-	<p>click anywhere to start
-	<p>
+	<div style='white-space: pre-wrap; padding: 30%;font-size: 20px;font-family: arial'><p>
+		click anywhere to start
+	</p></div>
 </body>
 <script>
 // Ajax call to get training list for training trials 
@@ -106,7 +111,8 @@ $(document).ready(function() {
 				//console.log(subjectnr + "_setup")
 			},
 			timeline: 
-			makeExp()
+			makeExp(),
+			show_progress_bar: true
 			
 		})
 

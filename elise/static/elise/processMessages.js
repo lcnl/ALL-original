@@ -19,9 +19,7 @@ var forcedchoicemessage4pic;
 var FC4message;
 var grammaticalityjudgment;
 var grammaticalityjudgmentmessage;
-var openingmessagec;
-var openingmessagep;
-var overviewmessage;
+var openingmessage;
 var passivemessage;
 var passivemessage1;
 var passivemessage2;
@@ -181,27 +179,11 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/openingmessagec.txt",
+		url : "/static/elise/Instructions/openingmessage.txt",
 		dataType : "text",
 		success : function(data) {
-			openingmessagec = data;
-			console.log(openingmessagec);
-		}
-	});
-	$.ajax({
-		type : "GET",
-		url : "/static/elise/Instructions/openingmessagep.txt",
-		dataType : "text",
-		success : function(data) {
-			openingmessagep = data;
-		}
-	});
-	$.ajax({
-		type : "GET",
-		url : "/static/elise/Instructions/overviewmessage.txt",
-		dataType : "text",
-		success : function(data) {
-			overviewmessage = data;
+			openingmessage = data;
+			console.log(openingmessage);
 		}
 	});
 	$.ajax({

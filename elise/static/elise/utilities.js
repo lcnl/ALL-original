@@ -322,7 +322,7 @@ function playNextInstruction() {
 		else {
 			instruction = {
 				type: 'instructions',
-				pages: ["<div style='white-space: pre-wrap;'>" + compMessageSequence[currentInstructionCounter] + "</div>"]
+				pages: ["<div style='white-space: pre-wrap; padding-left:20%; padding-right:20%'>" + compMessageSequence[currentInstructionCounter] + "</div>"]
 				,
 				show_clickable_nav: true,
 				allow_backward:false
@@ -341,7 +341,7 @@ function playNextInstruction() {
 		else {
 			instruction = {
 				type: 'instructions',
-				pages: ["<div style='white-space: pre-wrap;'>" + prodMessageSequence[currentInstructionCounter] + "</div>"]
+				pages: ["<div style='white-space: pre-wrap; padding-left:20%; padding-right:20%'>" + prodMessageSequence[currentInstructionCounter] + "</div>"]
 				,
 				show_clickable_nav: true,
 				allow_backward:false
@@ -373,48 +373,52 @@ function getParamFromURL( name ) {
 		return results[1];
 }
 
+
 // Files storing message sequence globals that will be assigned within the makeExp function. They are assigned within this function because it won't be called until the files have already been processed 
 var prodMessageSequence;
 var compMessageSequence;
 
+var quarter_message = "You are now through 1/4th of this test. Keep it up!";
+var half_message = "You are now through 2/4th of this test. Keep it up!";
+var threequarter_message = "You are now through 1/4th of this test. Keep it up!";
 
 // Generates an experiment timeline 
 function makeExp() {
 	
 	// Sequences for messages. 
-	prodMessageSequence = [openingmessagep, overviewmessage, audiocheckmessage1, audiocheckmessage2, audiocheckmessage, audiocheckmessage3, passivemessage1
+	prodMessageSequence = [openingmessage, audiocheckmessage1, audiocheckmessage2, audiocheckmessage, audiocheckmessage3, passivemessage1
 		, passivemessage, passivemessage2, activeprodmessage1, activeprodmessage, activeprodmessage2
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, forcedchoicemessage2pic, audiocheckmessage
-		, forcedchoicemessage4pic, audiocheckmessage, FC4message, audiocheckmessage, FC4message
-		, audiocheckmessage, FC4message, audiocheckmessage
-		, grammaticalityjudgment, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage, grammaticalityjudgmentmessage
-		, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage
-		, prodtest1, prodtest2, audiocheckmessage, prodtestmessage
-		, audiocheckmessage, prodtestmessage, audiocheckmessage, prodtestmessage, audiocheckmessage
-		, endmessagep]
+		, forcedchoicemessage4pic, quarter_message, audiocheckmessage, FC4message, half_message, audiocheckmessage, FC4message
+		, threequarter_message, audiocheckmessage, FC4message, audiocheckmessage
+		, grammaticalityjudgment, quarter_message, audiocheckmessage, grammaticalityjudgmentmessage, half_message, audiocheckmessage
+		, grammaticalityjudgmentmessage, threequarter_message, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage
+		, prodtest1, prodtest2, quarter_message, audiocheckmessage, prodtestmessage
+		, half_message, audiocheckmessage, prodtestmessage, threequarter_message, audiocheckmessage, prodtestmessage
+		, audiocheckmessage, endmessagep]
 	for (var i = 0; i < prodMessageSequence.length; i++) {
 		if (prodMessageSequence[i] == ""){
 		prodMessageSequence[i] = null;
 		}
 	}
-	compMessageSequence = [openingmessagec, overviewmessage, audiocheckmessage1, audiocheckmessage2, audiocheckmessage, audiocheckmessage3, passivemessage1
+	compMessageSequence = [openingmessage, audiocheckmessage1, audiocheckmessage2, audiocheckmessage, audiocheckmessage3, passivemessage1
 		, passivemessage, passivemessage2, activecompmessage1bcd, activecompmessage11, activecompmessage, activecompmessage2
 		, passivemessage, activecompmessage, passivemessage, activecompmessage, audiocheckmessage
 		, passivemessage, activecompmessage, passivemessage, activecompmessage, passivemessage, activecompmessage, audiocheckmessage
 		, passivemessage, activecompmessage, passivemessage, activecompmessage, passivemessage, activecompmessage, audiocheckmessage
 		, passivemessage, activecompmessage, passivemessage, activecompmessage, passivemessage, activecompmessage, audiocheckmessage
 		, forcedchoicemessage2pic, audiocheckmessage
-		, forcedchoicemessage4pic, audiocheckmessage, FC4message, audiocheckmessage, FC4message
-		, audiocheckmessage, FC4message, audiocheckmessage
-		, grammaticalityjudgment, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage, grammaticalityjudgmentmessage
-		, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage
-		, prodtest1, prodtest2, audiocheckmessage, prodtestmessage
-		, audiocheckmessage, prodtestmessage, audiocheckmessage, prodtestmessage, audiocheckmessage
-		, endmessagec]
+		, forcedchoicemessage4pic, quarter_message, audiocheckmessage, FC4message, half_message, audiocheckmessage, FC4message
+		, threequarter_message, audiocheckmessage, FC4message, audiocheckmessage
+		, grammaticalityjudgment, quarter_message, audiocheckmessage, grammaticalityjudgmentmessage, half_message, audiocheckmessage
+		, grammaticalityjudgmentmessage, threequarter_message, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage
+		, prodtest1, prodtest2, quarter_message, audiocheckmessage, prodtestmessage
+		, half_message, audiocheckmessage, prodtestmessage, threequarter_message, audiocheckmessage, prodtestmessage
+		, audiocheckmessage, endmessagec]
 	for (var i = 1; i < compMessageSequence.length; i++) {
 		if (compMessageSequence[i] == ""){
 		compMessageSequence[i] = null;
@@ -506,8 +510,12 @@ function makeExp() {
 	// Stores experiment timeline object
 	var experiments = [];
 
+	experiments.push({
+  		type: 'fullscreen',
+  		fullscreen_mode: true
+		});
 
-	experiments.push(playNextInstruction())
+
 	experiments.push(playNextInstruction())
 	experiments.push(playNextInstruction())
 	experiments.push(audio_check_trial_1("/static/elise/sound/airplane_w.wav"))
