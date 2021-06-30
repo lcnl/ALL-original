@@ -42,7 +42,22 @@ function audio_check_trial_2(sound, prompt) {
 			type: 'survey-html-form',
 			preamble: "",
 			// HTML form for user to enter info. "username" form serves only to prevent chrome from autocompleting
-			html: '<input id="username" autocomplete = "off" style="display:none" type="text" name="fakeusernameremembered"><p style="display:block;margin-left: auto;margin-right: auto;"> Type the English word you hear. </p><input name="first" type="text" style="display:block;margin-left: auto;margin-right: auto;" required autocomplete="off";/>'
+			html: '<input id="username" autocomplete = "off" style="display:none" type="text" name="fakeusernameremembered"><p style="display:block;margin-left: auto;margin-right: auto;"> Type the English word you hear. </p><p>Feel free to take a break, but make sure to continue within 5 minutes! To help, this is how much time is left: <span id="clock">5:00</span>. Make sure to hit "continue" before the time is up, otherwise the experiment will end.</p><input name="first" type="text" style="display:block;margin-left: auto;margin-right: auto;" required autocomplete="off";/>'
+			on_load: function(){
+		    var wait_time = 5 * 60 * 1000; // in milliseconds
+		    var start_time = performance.now();
+		    var interval = setInterval(function(){
+		      var time_left = wait_time - (performance.now() - start_time);
+		      var minutes = Math.floor(time_left / 1000 / 60);
+		      var seconds = Math.floor((time_left - minutes*1000*60)/1000);
+		      var seconds_str = seconds.toString().padStart(2,'0');
+		      document.querySelector('#clock').innerHTML = minutes + ':' + seconds_str
+		      if(time_left <= 0){
+		        document.querySelector('#clock').innerHTML = "0:00";
+		        clearInterval(interval);
+		        jsPsych.endExperiment("You paused for longer than 5 minutes, and so the experiment has ended. You will receive compensation for the proportion of the experiment you completed.")
+		      }
+		    }, 250)
 		},
 		{
 			// Blank screen before image is displayed again
@@ -51,13 +66,26 @@ function audio_check_trial_2(sound, prompt) {
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 500
 		}, 
-		{	
-			// Instruction page allows user to continue when ready 
-			type: 'instructions',
-			pages: ["TAKE A BREAK IF YOU NEED TO (MAX 5 MINUTES)."]
-			,
-			show_clickable_nav: true,
-			allow_backward:false
+		{
+		  type: 'html-button-response',
+		  stimulus: '<p>Feel free to take a break, but make sure to continue within 5 minutes! To help, this is how much time is left: <span id="clock">5:00</span>. Make sure to hit "continue" before the time is up, otherwise the experiment will end.',
+		  choices: ['Continue'],
+		  on_load: function(){
+		    var wait_time = 5 * 60 * 1000; // in milliseconds
+		    var start_time = performance.now();
+		    var interval = setInterval(function(){
+		      var time_left = wait_time - (performance.now() - start_time);
+		      var minutes = Math.floor(time_left / 1000 / 60);
+		      var seconds = Math.floor((time_left - minutes*1000*60)/1000);
+		      var seconds_str = seconds.toString().padStart(2,'0');
+		      document.querySelector('#clock').innerHTML = minutes + ':' + seconds_str
+		      if(time_left <= 0){
+		        document.querySelector('#clock').innerHTML = "0:00";
+		        clearInterval(interval);
+		        jsPsych.endExperiment("You paused for longer than 5 minutes, and so the experiment has ended. You will receive compensation for the proportion of the experiment you completed.")
+		      }
+		    }, 250)
+		  }
 		}
 		, {
 		// Retrieves and separates relevant data from the appropriate timeline node
