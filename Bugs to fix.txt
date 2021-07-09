@@ -3,33 +3,23 @@ BUGS:
 
 
 
-Next steps:
+Next steps: EH58:
+
 
 Immediate: 
+EH56: text for timer after soundchecktrials needs to be less wide
 
-
-EH54: let experiment time out in all trial types except passive after 30 seconds (?) of inactivity
-STARTED messing around in audiochecktrial_2
 
 Need some figuring out:
-
-
 ML1: Consider changing tab text from ‘My Experiment’ to something like LCNL Experiment or something
 ML5: With regards to the sound recordings:
 Some of the recordings had some crackling sounds (I only noticed it at the beginning)
 Some of the recordings ended on different pitches 
-ML6: I noticed that a lot of times, the last stimulus for the passive block was the first block of the active practice...was that intentional? (Note: she was production condition, I have not worked thru this yet)
-ML8: Would it be possible to auto-focus on the text-boxes so you don’t have to click into the text box for every active trial/test?
 ML9: Double check that all of the next buttons can be triggered by clicking the enter button! (Rn instructions no next trial yes)
-ML/SP: After the summary screen, I just saw a blank screen...was I supposed to see a survey?
 ML/EH: images didn't load smoothly
 ML12: generally instructions are too verbose, shorten?
 MC: make passive trials either self-guided or slower to give people more time to read the spellings/names?
-
-Other to do's:
-- analyze or at least look at pilot pp scores on tests
-
-
+EH54: let experiment time out in all trial types except passive after 30 seconds (?) of inactivity
 
 
 Maybe/Later:
@@ -38,7 +28,6 @@ EH25: double check all audio to see if pronunciation of stems match; note down s
 EH27: read through all instructions and make sure they are all consistent, grammatical, etc; replace 'trial' with 'exercise', 'block' with 'group'.
 EH28: make 'next' / 'continue' consistent. Maybe continue if instructions, next if trial?
 EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
-EH41:active prod trial needs to log correct prompt for easy grading
 MM3: change font in Gramm judgment.
 EH47: make sure audio ends on keypress in EM/FC/AC
 EH48: remove the break after the final audiochecktrial?
@@ -170,10 +159,22 @@ ML11: For some of the tests, the instructions said we’d see that we’re ¼ do
 DONE (untested)
 SP3: Maybe add a countdown timer for the breaks? If It is easy could be a nice additive otherwise not something super needed 
 DONE 
-
-Abandoned:
+EH55 analyze or at least look at pilot pp scores on tests
+DONE
+ML8: Would it be possible to auto-focus on the text-boxes so you don’t have to click into the text box for every active trial/test?
+DONE
+ML/SP: After the summary screen, I just saw a blank screen...was I supposed to see a survey?
+DONE
+EH57: experiment times out, need to fix timer in soundchecktrials
+DONE
 EH7: right now I need to click on the textbox separately for each separate production trial. Is there an easy way to have the cursor start there automatically for each trial? This is way less important than the other stuff, more a convenience thing.
 LR:Can't move user's cursor in chrome
+DONE
+EH41:active prod trial needs to log correct prompt for easy grading
+DONE
+
+Abandoned:
+
 EH5: my terminal has a funny message (I think only after I closed the experiment?) that doesn't seem to cause problems:
 127.0.0.1 - - [21/Dec/2020 14:18:31] code 404, message File not found
 127.0.0.1 - - [21/Dec/2020 14:18:31] "GET /favicon.ico HTTP/1.1" 404 -
