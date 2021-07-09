@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="lcnl javascript experiments/jquery-3.5.1.min.js"></script>
+
+
+<title>My experiment</title>
+<script src="lcnl javascript experiments/jspsych-6.1.0/jspsych.js"></script>
+<script src="lcnl javascript experiments/active_comprehension_trial1.js"></script>
+<script
+	src="lcnl javascript experiments/passive_comprehension_trial1.js"></script>
+<script src="lcnl javascript experiments/active_production_trial.js"></script>
+<script src="lcnl javascript experiments/shuffle.js"></script>
+<script src="lcnl javascript experiments/imagesandsounds.js"></script>
+<script
+	src="lcnl javascript experiments/jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+<script
+	src="lcnl javascript experiments/jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
+<script
+	src="lcnl javascript experiments/jspsych-6.1.0/plugins/jspsych-audio-keyboard-response.js"></script>
+<script
+	src="lcnl javascript experiments/jspsych-6.1.0/plugins/jspsych-image-button-response.js"></script>
+<script
+	src="lcnl javascript experiments/jspsych-6.1.0/plugins/jspsych-categorize-image.js"></script>
+<script
+	src="lcnl javascript experiments/jspsych-6.1.0/plugins/jspsych-call-function.js"></script>
+<script
+	src="lcnl javascript experiments/jspsych-6.1.0/plugins/jspsych-survey-html-form.js"></script>
+<link href="lcnl javascript experiments/jspsych-6.1.0/css/jspsych.css"
+	rel="stylesheet" type="text/css">
+</link>
+</head>
+<body>
+	<p>click anywhere to start
+	<p>
+</body>
+<script>
+// Ajax call to get training list 
+$(document).ready(function() {
+	$.ajax({
+		type : "GET",
+		url : "lcnl javascript experiments/traininglist30",
+		dataType : "text",
+		success : function(data) {
+			processData(data);
+		}
+	});
+});
+	document.addEventListener("click", function() {
+		document.removeEventListener('click', arguments.callee);
+		jsPsych.init({
+			timeline : [
+					passive_comprehension_trial(
+						'lcnl javascript experiments/apple.png',
+						'lcnl javascript experiments/t2w1s1n1.wav', "I am an apple"),
+					active_comprehension_trial(
+							'lcnl javascript experiments/apple.png',
+							'lcnl javascript experiments/pear.png', true,
+							'lcnl javascript experiments/t2w1s1n1.wav', "I am a pear"),
+					
+					active_production_trial(
+							'lcnl javascript experiments/apple.png',
+							'lcnl javascript experiments/t2w1s1n1.wav', "I am an apple") ]
+		})
+	});
+</script>
+</html>
