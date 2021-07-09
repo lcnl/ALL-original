@@ -51,7 +51,8 @@ function active_production_trial(image1, sound, prompt,plurality,alienidentifier
 			type: 'survey-html-form',
 			preamble: "<img src='" +image1 + "' style='display:block;margin-left: auto;margin-right: auto;'>",
 			// html form for user to enter info. The "username" form serves only to prevent chrome from autofilling the form 
-			html: '<input id="username" autocomplete = "off" style="display:none" type="text" name="fakeusernameremembered"><p style="display:block;margin-left: auto;margin-right: auto;"> Type the name! </p><input name="first" type="text" style="display:block;margin-left: auto;margin-right: auto;" required autocomplete="off";/>'
+			html: '<input id="username" autocomplete = "off" style="display:none" type="text" name="fakeusernameremembered"><p style="display:block;margin-left: auto;margin-right: auto;"> Type the name! </p><input id = "focus" name="first" type="text" style="display:block;margin-left: auto;margin-right: auto;" required autocomplete="off";/>',
+			on_load: function(){ document.getElementById("focus").focus() }
 		},
 		{
 			// Blank screen before image is displayed again

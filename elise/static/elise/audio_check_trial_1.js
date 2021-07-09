@@ -42,7 +42,8 @@ function audio_check_trial_1(sound) {
 			type: 'survey-html-form',
 			preamble: "<button onClick = 'playAudio(new Audio(\""+sound+"\"))'>Repeat audio</button>",
 			// HTML form for user. "username" form serves only to prevent chrome from autocompleting 
-			html: '<input id="username" autocomplete = "off" style="display:none" type="text" name="fakeusernameremembered"><p style="display:block;margin-left: auto;margin-right: auto;"> Type the English word you hear. </p><input name="first" type="text" style="display:block;margin-left: auto;margin-right: auto;" required autocomplete="off";/>'
+			html: '<input id="username" autocomplete = "off" style="display:none" type="text" name="fakeusernameremembered"><p style="display:block;margin-left: auto;margin-right: auto;"> Type the English word you hear. </p><input id = "focus" name="first" type="text" style="display:block;margin-left: auto;margin-right: auto;" required autocomplete="off";/>',
+			on_load: function(){ document.getElementById("focus").focus() }
 		},
 		{
 			// Blank screen before image is displayed again
