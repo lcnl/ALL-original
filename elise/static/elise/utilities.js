@@ -399,7 +399,7 @@ function makeExp() {
 		, grammaticalityjudgmentmessage, threequarter_message, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage
 		, prodtest1, prodtest2, quarter_message, audiocheckmessage, prodtestmessage
 		, half_message, audiocheckmessage, prodtestmessage, threequarter_message, audiocheckmessage, prodtestmessage
-		, audiocheckmessage, endmessagep]
+		, audiocheckmessage, surveymessage, endmessagep]
 	for (var i = 0; i < prodMessageSequence.length; i++) {
 		if (prodMessageSequence[i] == ""){
 		prodMessageSequence[i] = null;
@@ -418,7 +418,7 @@ function makeExp() {
 		, grammaticalityjudgmentmessage, threequarter_message, audiocheckmessage, grammaticalityjudgmentmessage, audiocheckmessage
 		, prodtest1, prodtest2, quarter_message, audiocheckmessage, prodtestmessage
 		, half_message, audiocheckmessage, prodtestmessage, threequarter_message, audiocheckmessage, prodtestmessage
-		, audiocheckmessage, endmessagec]
+		, audiocheckmessage, surveymessage, endmessagec]
 	for (var i = 1; i < compMessageSequence.length; i++) {
 		if (compMessageSequence[i] == ""){
 		compMessageSequence[i] = null;
@@ -510,17 +510,20 @@ function makeExp() {
 	// Stores experiment timeline object
 	var experiments = [];
 
-	experiments.push({
-  		type: 'fullscreen',
-  		fullscreen_mode: true
-		});
+	///experiments.push({
+  	///	type: 'fullscreen',
+  	///	fullscreen_mode: true
+	///	});
 
 
-	experiments.push(playNextInstruction())
-	experiments.push(playNextInstruction())
-	experiments.push(audio_check_trial_1("/static/elise/sound/airplane_w.wav"))
-	experiments.push(playNextInstruction())
-	experiments.push(playNextInstruction())
+	///experiments.push(playNextInstruction())
+	///experiments.push(playNextInstruction())
+	///experiments.push(audio_check_trial_1("/static/elise/sound/airplane_w.wav"))
+	///experiments.push(playNextInstruction())
+	///experiments.push(playNextInstruction())
+	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
+	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
+	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
 	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
 	experiments.push(playNextInstruction())
 	experiments.push(playNextInstruction())
@@ -1372,7 +1375,13 @@ function makeExp() {
 			}
 		
 		}	
-	} 
+	}
+
+	experiments.push(playNextInstruction())
+
+	experiments.push(survey_trial("Please tell us anything you noticed about how the alien language and its grammar work."))
+	experiments.push(survey_trial("You were one of the first participants to do this experiment, and we are still fine-tuning it before we collect the full data sample in Fall 2021. Please share any feedback about the experiment here! We will implement suggested changes later this summer, and really value any thoughts you want to share with us. "))
+
 
 	experiments.push(playNextInstruction())
 		

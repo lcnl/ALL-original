@@ -26,6 +26,7 @@ var passivemessage2;
 var prodtest1;
 var prodtest2;
 var prodtestmessage;
+var surveymessage;
 
 // Makes ajax calls for each individual text file
 // If message files and names are changed, they will need to have their ajax calls edited/added here 
@@ -232,6 +233,14 @@ function processMessages() {
 		dataType : "text",
 		success : function(data) {
 			prodtestmessage = data;
+		}
+	});
+	$.ajax({
+		type : "GET",
+		url : "/static/elise/Instructions/surveymessage.txt",
+		dataType : "text",
+		success : function(data) {
+			surveymessage = data;
 		}
 	});
 	}
