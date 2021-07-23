@@ -325,7 +325,9 @@ function playNextInstruction() {
 				pages: ["<div style='white-space: pre-wrap; padding-left:20%; padding-right:20%'>" + compMessageSequence[currentInstructionCounter] + "</div>"]
 				,
 				show_clickable_nav: true,
-				allow_backward:false
+				allow_backward:false,
+				key_forward: 'Enter',
+				button_label_next: 'Continue'
 			}
 		}
 	}
@@ -344,7 +346,9 @@ function playNextInstruction() {
 				pages: ["<div style='white-space: pre-wrap; padding-left:20%; padding-right:20%'>" + prodMessageSequence[currentInstructionCounter] + "</div>"]
 				,
 				show_clickable_nav: true,
-				allow_backward:false
+				allow_backward:false,
+				key_forward: 'Enter',
+				button_label_next: 'Continue'
 			}
 		}
 	}
@@ -380,7 +384,7 @@ var compMessageSequence;
 
 var quarter_message = "You are now through 1/4th of this test. Keep it up!";
 var half_message = "You are now through 2/4th of this test. Keep it up!";
-var threequarter_message = "You are now through 1/4th of this test. Keep it up!";
+var threequarter_message = "You are now through 3/4th of this test. Keep it up!";
 
 // Generates an experiment timeline 
 function makeExp() {
@@ -510,20 +514,19 @@ function makeExp() {
 	// Stores experiment timeline object
 	var experiments = [];
 
-	///experiments.push({
-  	///	type: 'fullscreen',
-  	///	fullscreen_mode: true
-	///	});
+	experiments.push({
+  		type: 'fullscreen',
+  		fullscreen_mode: true
+		});
 
+	var data_header = ["subjectnr", "condition", "trialnr", "trial_type", "target_aliennr", "target_sound", "neighborhood", "subneighborhood", "target_plural", "target_image", "RT", "correct", "key_pressed", "correct_key", "typed_response", "target_response", "trial_subtype", "match_or_grammatical", "left_top_or_foil_image", "right_top_image", "left_bottom_image", "right_bottom_image", "timestamp", "break_time"]
+	total_data_array.push(data_header)
 
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
-	///experiments.push(audio_check_trial_1("/static/elise/sound/airplane_w.wav"))
-	///experiments.push(playNextInstruction())
-	///experiments.push(playNextInstruction())
-	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
-	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
-	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
+	experiments.push(audio_check_trial_1("/static/elise/sound/airplane_w.wav"))
+	experiments.push(playNextInstruction())
+	experiments.push(playNextInstruction())
 	experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
 	experiments.push(playNextInstruction())
 	experiments.push(playNextInstruction())
@@ -1229,23 +1232,26 @@ function makeExp() {
 			"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
 			isPlural, monsterIndex, trial_type, subneigh));
 
-		if ((i + 1) % 15 == 0) {
+		if (i == 14) {
 			experiments.push(playNextInstruction())
-			if (i == 14) {
-				experiments.push(audio_check_trial_2("/static/elise/sound/island_w.wav", "island"))
-				experiments.push(playNextInstruction())
-			} else if (i == 29) {
-				experiments.push(audio_check_trial_2("/static/elise/sound/engine_w.wav", "engine"))
-				experiments.push(playNextInstruction())
-			} else if (i == 44) {
-				experiments.push(audio_check_trial_2("/static/elise/sound/printer_w.wav", "printer"))
-				experiments.push(playNextInstruction())
-			} else {
-				experiments.push(audio_check_trial_2("/static/elise/sound/airport_w.wav", "airport"))
-			}
-			
-		}	
-
+			experiments.push(playNextInstruction())
+			experiments.push(audio_check_trial_2("/static/elise/sound/island_w.wav", "island"))
+			experiments.push(playNextInstruction())
+		} else if (i == 29) {
+			experiments.push(playNextInstruction())
+			experiments.push(playNextInstruction())
+			experiments.push(audio_check_trial_2("/static/elise/sound/engine_w.wav", "engine"))
+			experiments.push(playNextInstruction())
+		} else if (i == 44) {
+			experiments.push(playNextInstruction())
+			experiments.push(playNextInstruction())
+			experiments.push(audio_check_trial_2("/static/elise/sound/printer_w.wav", "printer"))
+			experiments.push(playNextInstruction())
+		} else if (i == 59) {
+			experiments.push(playNextInstruction())
+			experiments.push(audio_check_trial_2("/static/elise/sound/airport_w.wav", "airport"))
+		}
+	
 	}
 
 	experiments.push(playNextInstruction())
@@ -1309,13 +1315,16 @@ function makeExp() {
 
 			if (i == 0 && j == 20) {
 				experiments.push(playNextInstruction())
+				experiments.push(playNextInstruction())
 				experiments.push(audio_check_trial_2("/static/elise/sound/shovel_w.wav", "shovel"))
 				experiments.push(playNextInstruction())
 			} else if (i == 1 && j == 13) {
 				experiments.push(playNextInstruction())
+				experiments.push(playNextInstruction())
 				experiments.push(audio_check_trial_2("/static/elise/sound/armchair_w.wav", "armchair"))
 				experiments.push(playNextInstruction())
 			} else if (i == 2 && j == 7) {
+				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
 				experiments.push(audio_check_trial_2("/static/elise/sound/trumpet_w.wav", "trumpet"))
 				experiments.push(playNextInstruction())
@@ -1359,23 +1368,27 @@ function makeExp() {
 		experiments.push(production_test_trial("/static/elise/img/images/" + trial_info[0], 
 			"/static/elise/sound/combinedsounds/" + trial_info[1], 
 			trial_info[2], trial_info[3], trial_info[4], trial_info[5], trial_info[6]));
-		if ((j + 1) % 15 == 0) {
-			experiments.push(playNextInstruction())
-			if (j == 14) {
-				experiments.push(audio_check_trial_2("/static/elise/sound/windmill_w.wav", "windmill"))
-				experiments.push(playNextInstruction())
-			} else if (j == 29) {
-				experiments.push(audio_check_trial_2("/static/elise/sound/olive_w.wav", "olive"))
-				experiments.push(playNextInstruction())
-			} else if (j == 44) {
-				experiments.push(audio_check_trial_2("/static/elise/sound/keyhole_w.wav", "keyhole"))
-				experiments.push(playNextInstruction())
-			} else {
-				experiments.push(audio_check_trial_2("/static/elise/sound/eggplant_w.wav", "eggplant"))
-			}
 		
-		}	
-	}
+		if (j == 14) {
+			experiments.push(playNextInstruction())
+			experiments.push(playNextInstruction())
+			experiments.push(audio_check_trial_2("/static/elise/sound/windmill_w.wav", "windmill"))
+			experiments.push(playNextInstruction())
+		} else if (j == 29) {
+			experiments.push(playNextInstruction())
+			experiments.push(playNextInstruction())
+			experiments.push(audio_check_trial_2("/static/elise/sound/olive_w.wav", "olive"))
+			experiments.push(playNextInstruction())
+		} else if (j == 44) {
+			experiments.push(playNextInstruction())
+			experiments.push(playNextInstruction())
+			experiments.push(audio_check_trial_2("/static/elise/sound/keyhole_w.wav", "keyhole"))
+			experiments.push(playNextInstruction())
+		} else if (j == 59) {
+			experiments.push(playNextInstruction())
+			experiments.push(audio_check_trial_3("/static/elise/sound/eggplant_w.wav", "eggplant"))
+		}
+}
 
 	experiments.push(playNextInstruction())
 

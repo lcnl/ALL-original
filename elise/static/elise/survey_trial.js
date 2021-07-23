@@ -20,7 +20,7 @@ function survey_trial(prompt) {
 			var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 			console.log(data_from_current_node.csv());
 			console.log(JSON.parse(data_from_current_node.select('responses').values[0])["Q0"])
-			var data_array = [subjectnr, cond, trialnr, "SV", "-", "-",  "-", "-",  "-",  "-", data_from_current_node.select('rt').values[0], "-", "-", "-", JSON.parse(data_from_current_node.select('responses').values[0])["Q0"],  "-", "-", "-", "-", "-", "-", "-"]
+			var data_array = [subjectnr, cond, trialnr, "SV", "-", "-",  "-", "-",  "-",  "-", data_from_current_node.select('rt').values[0], "-", "-", "-", JSON.parse(data_from_current_node.select('responses').values[0])["Q0"],  "-", "-", "-", "-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

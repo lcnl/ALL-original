@@ -3,36 +3,28 @@ BUGS:
 
 
 
-Next steps: EH58:
+Next steps: EH59:
+
 
 
 Immediate: 
-EH56: text for timer after soundchecktrials needs to be less wide
 
-
-Need some figuring out:
-ML1: Consider changing tab text from ‘My Experiment’ to something like LCNL Experiment or something
 ML5: With regards to the sound recordings:
 Some of the recordings had some crackling sounds (I only noticed it at the beginning)
 Some of the recordings ended on different pitches 
-ML9: Double check that all of the next buttons can be triggered by clicking the enter button! (Rn instructions no next trial yes)
+EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; zimbaaf;stam; dap; chag; jeb (cheb); burresh; bepaaf; frusok; heefaaf; heefesh; 
+
+
+
+Maybe/Later/dependent on feedback:
 ML/EH: images didn't load smoothly
 ML12: generally instructions are too verbose, shorten?
 MC: make passive trials either self-guided or slower to give people more time to read the spellings/names?
 EH54: let experiment time out in all trial types except passive after 30 seconds (?) of inactivity
-
-
-Maybe/Later:
 EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side
-EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; zimbaaf;stam; dap; chag; jeb (cheb); burresh; bepaaf;  
-EH27: read through all instructions and make sure they are all consistent, grammatical, etc; replace 'trial' with 'exercise', 'block' with 'group'.
-EH28: make 'next' / 'continue' consistent. Maybe continue if instructions, next if trial?
 EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
-MM3: change font in Gramm judgment.
-EH47: make sure audio ends on keypress in EM/FC/AC
-EH48: remove the break after the final audiochecktrial?
-EH49: enforce the max 1/5 min breaks
-EH50: time/progress indication on breaks in tests? 
+MM3: change font in Gramm judgment & active comp.
+
 
 
 
@@ -172,9 +164,30 @@ LR:Can't move user's cursor in chrome
 DONE
 EH41:active prod trial needs to log correct prompt for easy grading
 DONE
+EH58:send a timestamp when participant is done
+DONE
+EH56: text for timer after soundchecktrials needs to be less wide
+DONE
+ML1: Consider changing tab text from ‘My Experiment’ to something like LCNL Experiment or something
+DONE
+ML9: Double check that all of the next buttons can be triggered by clicking the enter button! (Rn instructions no next trial yes)
+DONE for instructions, just doesn't work on the very first trial (fullscreen mode)
+EH49: enforce the max 5 min breaks
+DONE
+EH50: time/progress indication on breaks in tests? 
+DONE
+
+EH47: make sure audio ends on keypress in EM/FC/AC
+DONE
+EH28: make 'next' / 'continue' consistent. Maybe continue if instructions, next if trial?
+DONE
+EH48: remove the break after the final audiochecktrial?
+DONE
+EH27: read through all instructions and make sure they are all consistent, grammatical, etc; replace 'trial' with 'exercise', 'block' with 'round/exercises'.
 
 Abandoned:
 
 EH5: my terminal has a funny message (I think only after I closed the experiment?) that doesn't seem to cause problems:
 127.0.0.1 - - [21/Dec/2020 14:18:31] code 404, message File not found
 127.0.0.1 - - [21/Dec/2020 14:18:31] "GET /favicon.ico HTTP/1.1" 404 -
+I'd have to upload a favicon.ico to appear in the tab of the browser; not worthwhile/necessary.
