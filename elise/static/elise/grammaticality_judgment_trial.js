@@ -70,7 +70,7 @@ function grammaticality_judgment_trial(correct, sound, plurality, alienidentifie
 			correct_text: "<p></p>",
 			incorrect_text: "<p></p>",
 			// Uses html pre tag to make spaces persist. To adjust distance in between, simply add spaces
-			prompt: "<pre>ungrammatical push A                                                                                   grammatical push L</pre>",
+			prompt: "<pre>ungrammatical push A                                     grammatical push L</pre>",
 			feedback_duration: 0
 		},
 		{

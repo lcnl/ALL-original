@@ -526,6 +526,8 @@ function makeExp() {
   		fullscreen_mode: true
 		});
 
+	console.log(platform.description);
+
 	var data_header = ["subjectnr", "condition", "trialnr", "trial_type", "target_aliennr", "target_sound", "neighborhood", "subneighborhood", "target_plural", "target_image", "RT", "correct", "key_pressed", "correct_key", "typed_response", "target_response", "trial_subtype", "match_or_grammatical", "left_top_or_foil_image", "right_top_image", "left_bottom_image", "right_bottom_image", "timestamp", "break_time"]
 	total_data_array.push(data_header)
 

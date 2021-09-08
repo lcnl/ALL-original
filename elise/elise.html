@@ -22,6 +22,7 @@
 <script src="/static/elise/prompts.js"></script>
 <script src="/static/elise/processMessages.js"></script>
 <script src="/static/elise/survey_trial.js"></script>
+<script src="/static/elise/platform.js"></script>
 <script
 	src="/static/common/jspsych-6.3.1/plugins/jspsych-fullscreen.js"></script>
 <script
@@ -101,6 +102,8 @@ $(document).ready(function() {
 	var total_data_array = []
 	// Stores participant data 
 	var participant_data_array = []
+	// Stores info on participant leaving window
+	var participant_browser_interaction = []
 	
 	document.addEventListener("click", function() {
        
@@ -109,17 +112,26 @@ $(document).ready(function() {
 		jsPsych.init({
 			on_finish : function() {
 				// Commented out server code to send data when ready
-				sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
-				sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
+				//sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
+				//sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
+				//sendJSONData(JSON.stringify(participant_browser_interaction), "s_" + subjectnr + "_browserinteractions")
 				// console logging
-				//console.log(total_data_array)
-				//console.log(participant_data_array)
-				//console.log(subjectnr + "_setup")
+				console.log(total_data_array)
+				console.log(participant_data_array)
+				console.log(subjectnr + "_setup")
+			},
+			on_interaction_data_update: function(data) {
+				console.log(JSON.stringify(data))
+				participant_browser_interaction.push(data)
 			},
 			timeline: 
 			makeExp(),
-			show_progress_bar: true
-			
+			show_progress_bar: true,
+			exclusions: {
+			    min_width: 850,
+			    min_height: 680,
+			    audio: true
+			  }
 		})
 
 	});
