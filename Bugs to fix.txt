@@ -1,9 +1,27 @@
 
-BUGS:
+BUGS: EH76
+
+EH75: get Levi to look at RT precision with audio/image loading time. Can we somehow track those? Or calculate RT more precisely based on loading speed?
+
+EH74: NEED to log sound-durations... for processing RT's!!
+- preload
+- test audioAfterTime function by hand with timestamps, Levi will troubleshoot if not working
+- figure out how to log browser info in jspsych
+- set up qualtrics to kick ppl out if not on chrome?
+
+EH69: MAJOR BUG: only doing 3 (instead of 4) rounds of error monitoring.... [adding this would take 3 extra minutes]
+EH72: add pictures to EM
 
 
 
-Next steps: EH59:
+Next steps: 
+
+
+EH68: make sure logging is flawless, still uneven columns right now
+EH64: process RT's
+EH65: look at RT's for pilots
+
+EH66: preregister study as predicted
 
 
 
@@ -12,8 +30,12 @@ Immediate:
 ML5: With regards to the sound recordings:
 Some of the recordings had some crackling sounds (I only noticed it at the beginning)
 Some of the recordings ended on different pitches 
+
 EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; zimbaaf;stam; dap; chag; jeb (cheb); burresh; bepaaf; frusok; heefaaf; heefesh; 
 
+MM: do brief audio recordings to check for background noise at different points
+
+MM: cutoff: >1 (2+) real errors, >2?3? (3+?4+?) Typos cutoff
 
 
 Maybe/Later/dependent on feedback:
@@ -176,7 +198,6 @@ EH49: enforce the max 5 min breaks
 DONE
 EH50: time/progress indication on breaks in tests? 
 DONE
-
 EH47: make sure audio ends on keypress in EM/FC/AC
 DONE
 EH28: make 'next' / 'continue' consistent. Maybe continue if instructions, next if trial?
@@ -184,6 +205,24 @@ DONE
 EH48: remove the break after the final audiochecktrial?
 DONE
 EH27: read through all instructions and make sure they are all consistent, grammatical, etc; replace 'trial' with 'exercise', 'block' with 'round/exercises'.
+EH59: flesh out text on scoring system w examples (in table) in .Rmd
+DONE
+EH60: look at neigh x sub neigh x condition not just for total scores but for different elements of the language
+DONE
+EH61: reanalyze EM using signal detection
+DONE
+EH63: go through pilot feedback in feedback survey
+DONE
+EH71: not all soundcheck trials seem to log / get analyzed.... [I think in R!! Yep, to do with different versions logging slightly different]
+DONE
+EH62: consider adding pictures (or captions) during EM test to help make it easier [I think yes but want to discuss w MM; once this is decided I can run some RA pilots]
+DONE
+EH70: figure out how much longer an extra 28 EM trials would make the experiment as a whole [3 minutes, so I vote yes]
+DONE
+EH67: look at timestamps to see how long the study took pilot apps [about 1 hour actual experiment time, a bit longer with breaks and surveys]
+DONE
+EH73: weird bug in R where it reads in true/false as strings for all but s71914; even same version s71804
+DONE
 
 Abandoned:
 
