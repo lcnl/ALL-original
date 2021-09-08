@@ -20,11 +20,11 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 	var key;
 	var cor_key;
 	if (match) {
-		key = 76;
+		key = "l";
 		cor_key = "l";
 	}
 	else {
-		key = 65;
+		key = "a";
 		cor_key = "a";
 	}
 
@@ -64,7 +64,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			type: 'categorize-image',
 			stimulus: image1,
 			key_answer: key,
-			choices: [76, 65],
+			choices: ["l", "a"],
 			correct_text: "<img src='" +"/static/elise/img/images/greencheck.png'style='margin-left: auto;margin-right: auto;'>",
 			incorrect_text: "<img src='" + "/static/elise/img/images/redx.png' style='margin-left: auto;margin-right: auto;'>",
 			// Uses html pre tag to make spaces persist. To adjust distance in between, simply add spaces
@@ -107,7 +107,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			console.log(valid_node_id)
 			var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 			console.log(data_from_current_node.csv())
-			var data_array = [subjectnr, cond, trialnr, "AC", alienidentifiernr, sound, neighborhood, "training", plurality, image2, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], String.fromCharCode(data_from_current_node.select('key_press').values[0]), cor_key, "-", "-", "-", match, image1, "-", "-", "-", "-"]
+			var data_array = [subjectnr, cond, trialnr, "AC", alienidentifiernr, sound, neighborhood, "training", plurality, image2, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", "-", match, image1, "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

@@ -70,7 +70,7 @@ function audio_check_trial_3(sound, prompt) {
 			// TODO: this will be changed to a server ajax call later in process
 			var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 			console.log(data_from_current_node.csv());
-			var data_array = [subjectnr,cond,trialnr,"SC","-",sound, "-", "-", "-", "-", data_from_current_node.select('rt').values[0], "-","-", "-", JSON.parse(data_from_current_node.select('responses').values[0])["first"], prompt, "-", "-", "-", "-", "-", "-", data_from_current_node.select('timestamp').values[0], "-"]
+			var data_array = [subjectnr,cond,trialnr,"SC","-",sound, "-", "-", "-", "-", data_from_current_node.select('rt').values[0], "-","-", "-", data_from_current_node.select('response').values[0]["first"], prompt, "-", "-", "-", "-", "-", "-", data_from_current_node.select('timestamp').values[0], "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

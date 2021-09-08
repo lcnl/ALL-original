@@ -514,6 +514,13 @@ function makeExp() {
 	// Stores experiment timeline object
 	var experiments = [];
 
+	var preload = {
+    	type: 'preload',
+    	auto_preload: true 
+	}
+
+	experiments.push(preload);
+
 	experiments.push({
   		type: 'fullscreen',
   		fullscreen_mode: true
@@ -1257,7 +1264,7 @@ function makeExp() {
 	experiments.push(playNextInstruction())
 	shuffle(EMlist);
 
-	// three rounds of error monitoring trials
+	// three rounds of error monitoring trials // NOPE FOUR
 	for (var i = 0; i < 3; i++) {
 		round_list = EMlist[i];
 		shuffle(round_list);

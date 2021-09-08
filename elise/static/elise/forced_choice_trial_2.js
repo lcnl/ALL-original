@@ -21,12 +21,12 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 	var key;
 	var cor_key;
 	if (correct) {
-		key = 65;
+		key = "a";
 		corimage = image1;
 		cor_key = 'a';
 	}
 	else {
-		key = 76;
+		key = "l";
 		corimage = image2;
 		cor_key = 'l';
 	}
@@ -66,7 +66,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 			type: 'categorize-html',
 			stimulus: "<div style='float:left'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>L</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div>",
 			key_answer: key,
-			choices: [65, 76],
+			choices: ["a", "l"],
 			prompt: "<p></p>",
 			correct_text:"<p></p>",
 			incorrect_text:"<p></p>",
@@ -93,7 +93,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				console.log(data_from_current_node.csv())
-				var data_array = [subjectnr, cond, trialnr, "TC", alienidentifiernr, sound, neighborhood, "testing", plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], String.fromCharCode(data_from_current_node.select('key_press').values[0]), cor_key, "-", "-", round, "-", key, image1, image2, "-", "-", "-", "-"]
+				var data_array = [subjectnr, cond, trialnr, "TC", alienidentifiernr, sound, neighborhood, "testing", plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", key, image1, image2, "-", "-", "-", "-"]
 				total_data_array.push(data_array)
 				console.log(data_array)
 				trialnr++;
