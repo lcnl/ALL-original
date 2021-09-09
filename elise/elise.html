@@ -62,8 +62,23 @@
 </body>
 <script>
 
-// Ajax call to get training list for training trials 
+// Ajax call to get training list for training trials
 $(document).ready(function() {
+// Add event listener on keypress
+document.addEventListener('keypress', (event) => {
+console.log("hit");
+	var name = event.key;
+	if(name == "l" || name == "a"){
+		var sounds = document.getElementsByTagName('audio');
+		console.log(sounds)
+		console.log("event listener is working")
+		for(i=0; i<sounds.length; i++) {
+			sounds[i].pause();
+			console.log(sounds[i]);
+		}
+	}
+}, false);
+	
 	$.ajax({
 		type : "GET",
 		url : "/static/elise/traininglist30.txt",
@@ -111,20 +126,25 @@ $(document).ready(function() {
 		jsPsych.init({
 			on_finish : function() {
 				// Commented out server code to send data when ready
-				//sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
-				//sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
-				//sendJSONData(JSON.stringify(participant_browser_interaction), "s_" + subjectnr + "_browserinteractions")
+				sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
+				sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
+				sendJSONData(JSON.stringify(participant_browser_interaction), "s_" + subjectnr + "_browserinteractions")
 				// console logging
-				console.log(total_data_array)
-				console.log(participant_data_array)
-				console.log(subjectnr + "_setup")
+				//console.log(total_data_array)
+				//console.log(participant_data_array)
+				//console.log(subjectnr + "_setup")
 			},
 			on_interaction_data_update: function(data) {
 				console.log(JSON.stringify(data))
 				participant_browser_interaction.push(data)
 			},
 			timeline: 
-			makeExp(),
+			//makeExp(),
+			[forced_choice_trial_4("/static/elise/img/images/h1.png", "/static/elise/img/images/h2.png","/static/elise/img/images/h1p.png", "/static/elise/img/images/h2p.png", 1, "/static/elise/sound/combinedsounds/det1_big0s.wav", false, 0),
+			forced_choice_trial_4("/static/elise/img/images/h3p.png", "/static/elise/img/images/h4p.png","/static/elise/img/images/h1p.png", "/static/elise/img/images/h2p.png", 2, "/static/elise/sound/combinedsounds/det2_big3p.wav", true, 0),
+			forced_choice_trial_4("/static/elise/img/images/h1.png", "/static/elise/img/images/h2.png","/static/elise/img/images/h3.png", "/static/elise/img/images/h4.png", 3, "/static/elise/sound/combinedsounds/det1_big2s.wav", false, 0),
+			grammaticality_judgment_trial_image(true, "/static/elise/sound/combinedsounds/det1_big0s.wav", false, 0,0, "trained","/static/elise/img/images/h2.png"),
+			grammaticality_judgment_trial_image(false, "/static/elise/sound/combinedsounds/det1_big0_es.wav", false, 0,0, "trained","/static/elise/img/images/h2.png")],
 			show_progress_bar: true,
 			exclusions: {
 			    min_width: 850,

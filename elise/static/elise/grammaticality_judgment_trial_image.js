@@ -47,6 +47,15 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 	// Audio instance is set 
 	var audio = new Audio(sound);
 
+	audio.addEventListener('keypress', (event) => {
+		console.log("hi")
+		var name = event.key;
+		if(name == "l" || name == "a"){
+			console.log("skip")
+			audio.pause();
+		}
+	}, false);
+
 
 	// variable storing the timeline for the trial that will be output
 	let grammaticality_judgment_trial= {

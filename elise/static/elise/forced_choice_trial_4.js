@@ -59,6 +59,15 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 	// Audio instance is set 
 	var audio = new Audio(sound);
 
+	audio.addEventListener('keypress', (event) => {
+		console.log("hi")
+		var name = event.key;
+		if(name == "l" || name == "a"){
+			console.log("skip")
+			audio.pause();
+		}
+	}, false);
+
 
 	// variable storing the timeline for the trial that will be output
 	let forced_choice_trial_4 = {
