@@ -30,9 +30,7 @@ function grammaticality_judgment_trial(correct, sound, plurality, alienidentifie
 	}
 
 	var neighborhood = (sound.substring(1+sound.lastIndexOf("/")));
-	console.log(neighborhood)
 	neighborhood = neighborhood.substring(0,neighborhood.lastIndexOf("."))[5];
-	console.log(neighborhood)
 	if(neighborhood == "b"){
 		neighborhood = "big";
 	}
@@ -92,7 +90,7 @@ function grammaticality_judgment_trial(correct, sound, plurality, alienidentifie
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				console.log(data_from_current_node.csv())
-				var data_array = [subjectnr, cond, trialnr, "EM", alienidentifiernr, sound, neighborhood, subneigh, plurality, "-",data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", errortype, correct, "-", "-", "-", "-", "-", "-"]
+				var data_array = [subjectnr, cond, trialnr, "EM", alienidentifiernr, sound, neighborhood, subneigh, plurality, "-",data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", errortype, correct, "-", "-", "-", "-", "-", "-", "-", "-"]
 				total_data_array.push(data_array)
 				console.log(data_array)
 				trialnr++;

@@ -91,13 +91,12 @@ function audio_check_trial_2(sound, prompt) {
 			var data_from_timer_node = jsPsych.data.getDataByTimelineNode(timer_node_id);
 			console.log(data_from_current_node.csv());
 			console.log(data_from_timer_node.csv());
-			var data_array = [subjectnr,cond,trialnr,"SC","-",sound, "-", "-", "-", "-", data_from_current_node.select('rt').values[0], "-","-", "-", data_from_current_node.select('response').values[0]["first"], prompt, "-", "-", "-", "-", "-", "-", data_from_timer_node.select('timestamp').values[0],data_from_timer_node.select('rt').values[0]]
+			var data_array = [subjectnr,cond,trialnr,"SC","-",sound, "-", "-", "-", "-", data_from_current_node.select('rt').values[0], "-","-", "-", data_from_current_node.select('response').values[0]["first"], prompt, "-", "-", "-", "-", "-", "-", data_from_timer_node.select('timestamp').values[0],data_from_timer_node.select('rt').values[0], window.innerWidth, window.innerHeight]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment
 			trialnr++;
 			var button_responded = data_from_timer_node.select('response').values[0];
-			console.log(button_responded)
 		    if (button_responded == null){
 				console.log("did not respond on time");
 				jsPsych.endExperiment("You paused for longer than 5 minutes, and so the experiment has ended. You will receive compensation for the proportion of the experiment you completed.")

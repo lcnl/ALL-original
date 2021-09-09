@@ -93,7 +93,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				console.log(data_from_current_node.csv())
-				var data_array = [subjectnr, cond, trialnr, "TC", alienidentifiernr, sound, neighborhood, "testing", plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", key, image1, image2, "-", "-", "-", "-"]
+				var data_array = [subjectnr, cond, trialnr, "TC", alienidentifiernr, sound, neighborhood, "testing", plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", image1, image2, "-", "-", "-", "-", "-", "-"]
 				total_data_array.push(data_array)
 				console.log(data_array)
 				trialnr++;

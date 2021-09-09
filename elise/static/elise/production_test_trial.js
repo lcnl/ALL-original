@@ -69,7 +69,7 @@ function production_test_trial(image1, sound, prompt,plurality,alienidentifiernr
 			console.log(data_from_current_node.csv());
 
 
-			var data_array = [subjectnr, cond, trialnr, "PT", alienidentifiernr,sound, neighborhood, subset, plurality, image1, data_from_current_node.select('rt').values[0], "-", "-", "-", data_from_current_node.select('response').values[0]["first"], prompt,"-", "-","-", "-","-", "-", "-", "-"]
+			var data_array = [subjectnr, cond, trialnr, "PT", alienidentifiernr,sound, neighborhood, subset, plurality, image1, data_from_current_node.select('rt').values[0], "-", "-", "-", data_from_current_node.select('response').values[0]["first"], prompt,"-", "-","-", "-","-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

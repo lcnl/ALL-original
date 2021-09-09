@@ -14,7 +14,7 @@
 <script src="/static/elise/audio_check_trial_1.js"></script>
 <script src="/static/elise/audio_check_trial_2.js"></script>
 <script src="/static/elise/audio_check_trial_3.js"></script>
-<script src="/static/elise/grammaticality_judgment_trial.js"></script>
+<script src="/static/elise/grammaticality_judgment_trial_image.js"></script>
 <script src="/static/elise/production_test_trial.js"></script>
 <script src="/static/elise/forced_choice_trial_4.js"></script>
 <script src="/static/elise/forced_choice_trial_2.js"></script>
@@ -22,7 +22,7 @@
 <script src="/static/elise/prompts.js"></script>
 <script src="/static/elise/processMessages.js"></script>
 <script src="/static/elise/survey_trial.js"></script>
-<script src="/static/elise/platform.js"></script>
+<script src="/static/elise/platform/platform.js"></script>
 <script
 	src="/static/common/jspsych-6.3.1/plugins/jspsych-fullscreen.js"></script>
 <script
@@ -61,9 +61,9 @@
 	</p></div>
 </body>
 <script>
+
 // Ajax call to get training list for training trials 
 $(document).ready(function() {
-	
 	$.ajax({
 		type : "GET",
 		url : "/static/elise/traininglist30.txt",
@@ -106,7 +106,6 @@ $(document).ready(function() {
 	var participant_browser_interaction = []
 	
 	document.addEventListener("click", function() {
-       
 		
 		document.removeEventListener('click', arguments.callee);
 		jsPsych.init({

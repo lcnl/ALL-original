@@ -89,7 +89,7 @@ function active_production_trial(image1, sound, prompt,plurality,alienidentifier
 			// TODO: this will be changed to a server ajax call later in process
 			var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 			console.log(data_from_current_node.csv());
-			var data_array = [subjectnr, cond, trialnr, "AP", alienidentifiernr, sound, neighborhood, "training", plurality, image1, data_from_current_node.select('rt').values[0], "-", "-", "-", data_from_current_node.select('response').values[0]["first"], prompt, "-", "-", "-", "-", "-", "-", "-"]
+			var data_array = [subjectnr, cond, trialnr, "AP", alienidentifiernr, sound, neighborhood, "training", plurality, image1, data_from_current_node.select('rt').values[0], "-", "-", "-", data_from_current_node.select('response').values[0]["first"], prompt, "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment
