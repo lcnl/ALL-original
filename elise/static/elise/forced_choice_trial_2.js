@@ -1,17 +1,5 @@
 
-// Plays audio file 
-async function playAudio(audio) {
-	audio.play()
-}
 
-// Function used to set a timer and then call the audio file player
-function audioAfterTime(audio, time) {
-	return new Promise(resolve => {
-		setTimeout(() => {
-			playAudio(audio);
-		}, time);
-	});
-}
 
 // Runs a forced choice 2 trial with 2 images, a boolean determining which is correct and an associated sound file  
 function forced_choice_trial_2(image1, image2, correct, sound, plurality, alienidentifiernr, round) {

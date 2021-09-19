@@ -1,17 +1,4 @@
 
-// Plays audio file 
-async function playAudio(audio) {
-	audio.play()
-}
-
-// Sets timer then calls audio play function
-function audioAfterTime(audio, time) {
-	return new Promise(resolve => {
-		setTimeout(() => {
-			playAudio(audio);
-		}, time);
-	});
-}
 
 // Audio check trial that allows user to repeat
 function audio_check_trial_1(sound) {

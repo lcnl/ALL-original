@@ -1,17 +1,4 @@
 
-// Plays audio file 
-async function playAudio(audio) {
-	audio.play()
-}
-
-// Sets timer then calls audio play function
-function audioAfterTime(audio, time) {
-	return new Promise(resolve => {
-		setTimeout(() => {
-			playAudio(audio);
-		}, time);
-	});
-}
 
 // Returns the active entry trial timeline
 function active_production_trial(image1, sound, prompt,plurality,alienidentifiernr) {

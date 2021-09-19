@@ -1,17 +1,4 @@
 
-// Plays audio file 
-async function playAudio(audio) {
-	audio.play()
-}
-
-// Sets timer then calls audio play function
-function audioAfterTime(audio, time) {
-	return new Promise(resolve => {
-		setTimeout(() => {
-			playAudio(audio);
-		}, time);
-	});
-}
 // Saves current folder in server for ease of path determination
 	var loc = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
 	
@@ -22,7 +9,8 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
     var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
 
 	// Sets audio instance
-	var audio = new Audio(sound);
+	let audio = new Audio(sound);
+
 	
 	// Sets image based on plurality(true indicates singular, false plural)
 	if(plurality){

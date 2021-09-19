@@ -1,4 +1,29 @@
 
+
+// Plays audio file 
+async function playAudio(audio) {
+	// Stops audio after keys hit
+	document.addEventListener('keyup', (event) => {
+			var name = event.key;
+			if(name == "l" || name == "a"){
+				audio.pause();
+			}
+		}, false);
+	audio.play()
+	
+
+}
+
+// Function used to set a timer and then call the audio file player
+function audioAfterTime(audio, time) {
+	console.log("this function hit")
+	return new Promise(resolve => {
+		setTimeout(() => {
+			playAudio(audio);
+		}, time);
+	});
+}
+
 // Fisher-Yates shuffle algorithm https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 function shuffle(array) {
 	var m = array.length, t, i;

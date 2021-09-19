@@ -1,17 +1,4 @@
 
-// Plays audio file 
-async function playAudio(audio) {
-	audio.play()
-}
-
-// Function used to set a timer and then call the audio file player
-function audioAfterTime(audio, time) {
-	return new Promise(resolve => {
-		setTimeout(() => {
-			playAudio(audio);
-		}, time);
-	});
-}
 
 // Runs an active comprehension trial 
 function grammaticality_judgment_trial_image(correct, sound, plurality, alienidentifiernr, errortype, subneigh, image1) {
@@ -44,18 +31,8 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
     // Retrieves audio file name for the purpose of getting the duration from the dictionary
     var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
 
-	// Audio instance is set 
-	var audio = new Audio(sound);
-
-	audio.addEventListener('keypress', (event) => {
-		console.log("hi")
-		var name = event.key;
-		if(name == "l" || name == "a"){
-			console.log("skip")
-			audio.pause();
-		}
-	}, false);
-
+	// Sets audio instance
+	let audio = new Audio(sound);
 
 	// variable storing the timeline for the trial that will be output
 	let grammaticality_judgment_trial= {
