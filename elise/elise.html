@@ -63,22 +63,7 @@
 <script>
 
 // Ajax call to get training list for training trials
-$(document).ready(function() {
-// Add event listener on keypress
-document.addEventListener('keypress', (event) => {
-console.log("hit");
-	var name = event.key;
-	if(name == "l" || name == "a"){
-		var sounds = document.getElementsByTagName('audio');
-		console.log(sounds)
-		console.log("event listener is working")
-		for(i=0; i<sounds.length; i++) {
-			sounds[i].pause();
-			console.log(sounds[i]);
-		}
-	}
-}, false);
-	
+$(document).ready(function() {	
 	$.ajax({
 		type : "GET",
 		url : "/static/elise/traininglist30.txt",
