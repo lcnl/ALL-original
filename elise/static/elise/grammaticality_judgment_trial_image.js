@@ -34,6 +34,8 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 	// Sets audio instance
 	let audio = new Audio(sound);
 
+	var wait_time = 2500;
+
 	// variable storing the timeline for the trial that will be output
 	let grammaticality_judgment_trial= {
 		timeline: [{
@@ -46,7 +48,15 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 			// Calls sound in 1 second so that it will play during the image display
 			type: 'call-function',
 			async: false,
-			func: function() { audioAfterTimePausable(audio, 1000) }
+			func: function() { audioAfterTimePausable(audio, wait_time) }
+		},{
+			// Displays image while waiting so that no response can be given until sound starts. 
+			type: 'image-keyboard-response',
+			stimulus: image1,
+			choices: jsPsych.NO_KEYS,
+			prompt: "<pre>incorrect? push A                                     correct? push K</pre>",
+			// Retrieves sound duration from the dictionary and adds it to the trial duration 
+			trial_duration: wait_time
 		},
 		{
 			// Displays image and asks user to select K for correct or A for incorrect based on the sound that is played
@@ -74,7 +84,7 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 			func: function() {
 				var current_node_id = jsPsych.currentTimelineNodeID();
 				// Navigates from the end of the timeline to the node associated with the categorize image trial
-				var valid_node_id = current_node_id.substring(0, current_node_id.length - 3) + "2.0";
+				var valid_node_id = current_node_id.substring(0, current_node_id.length - 3) + "3.0";
 				// Gets data from this node and prints it to the screen
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);

@@ -45,7 +45,7 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 
 	// Audio instance is set 
 	var audio = new Audio(sound);
-
+	var wait_time = 1000;
 
 	// variable storing the timeline for the trial that will be output
 	let forced_choice_trial_4 = {
@@ -59,7 +59,15 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 			// Calls sound in 1 second so that it will play during the image display
 			type: 'call-function',
 			async: false,
-			func: function() { audioAfterTimePausable(audio, 1000) }
+			func: function() { audioAfterTimePausable(audio, wait_time)}
+		},{
+			// Displays image until audio so that no responses can be given until after sound begins. 
+			type: 'html-keyboard-response',
+			prompt: "<p></p>",
+			stimulus: "<div style='float:left;'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right;'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div><div style='float:left;'><img src='" +image3+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>Z</p></div><div style='float:right;'><img src='" + image4+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>M</p></div>",
+			choices: jsPsych.NO_KEYS,
+			// Retrieves sound duration from the dictionary and adds it to the trial duration 
+			trial_duration: wait_time
 		},
 		{
 			// Displays images and selects correct key based on function argument "correct", which is stored as "key" in the switch statement earlier in the function
@@ -85,14 +93,14 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 			func: function() {
 				var current_node_id = jsPsych.currentTimelineNodeID();
 				// Navigates from the end of the timeline to the node associated with the categorize image trial
-				var valid_node_id = current_node_id.substring(0, current_node_id.length - 3) + "2.0";
+				var valid_node_id = current_node_id.substring(0, current_node_id.length - 3) + "3.0";
 				// Gets data from this node and prints it to the screen
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				//console.log(data_from_current_node.csv())
 				var data_array = [subjectnr, cond, trialnr, "FC", alienidentifiernr, sound, neighborhood, subneigh, plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", image1,image2, image3, image4, "-", "-", "-", "-"]
 				total_data_array.push(data_array)
-				//console.log(data_array)
+				console.log(data_array)
 				trialnr++;
 			}
 		}

@@ -83,7 +83,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 			func: function() {
 				var current_node_id = jsPsych.currentTimelineNodeID();
 				// Navigates from the end of the timeline to the node associated with the categorize image trial
-				var valid_node_id = current_node_id.substring(0, current_node_id.length - 3) + "2.0";
+				var valid_node_id = current_node_id.substring(0, current_node_id.length - 3) + "3.0";
 				// Gets data from this node and prints it to the screen
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);

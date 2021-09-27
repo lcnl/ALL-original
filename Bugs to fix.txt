@@ -12,7 +12,7 @@ Meeting w MM:
 
 Next steps: 
 
-EH85: figure out audio stops on keypress and make sure it's only implemented/active when needed
+
 EH81: upload new version to server (with longer pause before EM audio) & test with bad wifi
 
 EH80: write script to analyze break time / time experiment takes
@@ -22,9 +22,6 @@ EH66: preregister study as predicted
 
 
 Levi:
-EH78: stop audio on button press in EM & FC
-DONE
-EH86: get active comp trial to wait for button press (by changing categorize-image?) or get flash of white to go.
 EH83: ask Arella for sound sample code & implement quick sound recordings
 DONE (not tested on server)
 EH84: troubleshoot this....
@@ -256,6 +253,12 @@ DONE
 EH82: save to server earlier [after training and after each test maybe?]
 DONE
 EH79: work thru 3 new pilot data (first python step done, now R, python, R to do)
+DONE
+EH78: stop audio on button press in EM & FC
+DONE
+EH86: get active comp trial to wait for button press (by changing categorize-image?) or get flash of white to go.
+DONE
+EH85: figure out audio stops on keypress and make sure it's only implemented/active when needed
 DONE
 
 Abandoned:
