@@ -1,31 +1,38 @@
 
-BUGS: EH76
+BUGS: EH85
 
-EH75: get Levi to look at RT precision with audio/image loading time. Can we somehow track those? Or calculate RT more precisely based on loading speed?
 
-EH74: NEED to log sound-durations... for processing RT's!!
-- preload
-- test audioAfterTime function by hand with timestamps, Levi will troubleshoot if not working
-- figure out how to log browser info in jspsych
-- set up qualtrics to kick ppl out if not on chrome?
 
-EH69: MAJOR BUG: only doing 3 (instead of 4) rounds of error monitoring.... [adding this would take 3 extra minutes]
-EH72: add pictures to EM
+Meeting w MM: 
 
+- with pictures in EM now so def important to stop audio if ppl press quickly
+- ok to run some ppl in person; allows more debriefing but is different population. 1 at a time is ok for piloting but not for real. 
+- ask participants explicitly to do experiment alone in room without music/media/friends etc. Add to SONA/Qualtrics!!
 
 
 Next steps: 
 
+EH81: upload new version to server (with longer pause before EM audio) & test with bad wifi
 
-EH68: make sure logging is flawless, still uneven columns right now
-EH64: process RT's
-EH65: look at RT's for pilots
-
+EH80: write script to analyze break time / time experiment takes
+EH77: polish audio stimuli
+MM/EH: decide on SC cutoff: >1 (2+) real errors, >2?3? (3+?4+?) Typos cutoff
 EH66: preregister study as predicted
 
 
+Levi:
+EH78: stop audio on button press in EM & FC
+EH83: ask Arella for sound sample code & implement quick sound recordings
+DONE (not tested on server)
+EH84: troubleshoot this....
+EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side
+EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
+MM3: change font in Gramm judgment & active comp.
+EH76: time out audio on button press in active comp, 2AFC, 4AFC, grammar judgment.
+MM: do brief audio recordings to check for background noise at different points
+ML/EH: need video (10 frames) trials for motivation experiment
 
-Immediate: 
+Left to do before SONA: 
 
 ML5: With regards to the sound recordings:
 Some of the recordings had some crackling sounds (I only noticed it at the beginning)
@@ -33,20 +40,13 @@ Some of the recordings ended on different pitches
 
 EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; zimbaaf;stam; dap; chag; jeb (cheb); burresh; bepaaf; frusok; heefaaf; heefesh; 
 
-MM: do brief audio recordings to check for background noise at different points
-
-MM: cutoff: >1 (2+) real errors, >2?3? (3+?4+?) Typos cutoff
-
 
 Maybe/Later/dependent on feedback:
-ML/EH: images didn't load smoothly
-ML12: generally instructions are too verbose, shorten?
+
 MC: make passive trials either self-guided or slower to give people more time to read the spellings/names?
 EH54: let experiment time out in all trial types except passive after 30 seconds (?) of inactivity
-EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side
-EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
-MM3: change font in Gramm judgment & active comp.
-
+IV: too many breaks, tempted to stop, made it hard to concentrate. 
+DM3: Practice rounds may be helpful to avoid any skewed data due to people not understanding
 
 
 
@@ -223,6 +223,37 @@ EH67: look at timestamps to see how long the study took pilot apps [about 1 hour
 DONE
 EH73: weird bug in R where it reads in true/false as strings for all but s71914; even same version s71804
 DONE
+EH74: NEED to log sound-durations... for processing RT's!!
+DONE in R
+EH64: process RT's
+DONE
+EH65: look at RT's for pilots
+DONE
+EH69: MAJOR BUG: only doing 3 (instead of 4) rounds of error monitoring.... [adding this would take 3 extra minutes]
+DONE
+EH72: add pictures to EM
+DONE
+EH68: make sure logging is flawless, still uneven columns right now
+DONE
+EH75: bug test:
+- check that logs are flawless
+- check browser log w inactivity etc. 
+DONE
+ML/EH/IV: images didn't load smoothly
+DONE
+EH78: introduce 'do not close browser until' and 'you are now fine to close browser' language in instructions
+DONE
+DM1: the letter choices "a" for left and "l" for right are very confusing- people automatically associate "l" with left
+DONE
+IV1: Lastly, I think it would've been helpful to have a small description in the beginning stating that the experiment would test our knowledge in different ways.
+DONE
+DM2:  no initial instructions about how the study is going to work. It took me a few rounds to understand it.  The study would be a lot more interesting and engaging if people knew what was going on. an explanation of why the study is happening may create more of an incentive
+EH79: get browserinteractions to log in array. Following columns: browser, event, trial, time, event2, trial2, time2, timediff; browser only probed once just logged same for every row. Event2 etc only necessary if it was a blur/focus sequence. 
+DONE
+EH82: save to server earlier [after training and after each test maybe?]
+DONE
+EH79: work thru 3 new pilot data (first python step done, now R, python, R to do)
+DONE
 
 Abandoned:
 
@@ -230,3 +261,5 @@ EH5: my terminal has a funny message (I think only after I closed the experiment
 127.0.0.1 - - [21/Dec/2020 14:18:31] code 404, message File not found
 127.0.0.1 - - [21/Dec/2020 14:18:31] "GET /favicon.ico HTTP/1.1" 404 -
 I'd have to upload a favicon.ico to appear in the tab of the browser; not worthwhile/necessary.
+ElPi: add instructions on dragging window bigger if size not ok; move that check to after fullscreen.
+This is done in jspysch.js, I don't really want to mess with that ....
