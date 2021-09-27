@@ -12,21 +12,20 @@ var audiocheckmessage1;
 var audiocheckmessage2;
 var audiocheckmessage3;
 var audiocheckmessage;
-var endmessagec;
-var endmessagep;
+var endmessage;
 var forcedchoicemessage2pic;
 var forcedchoicemessage4pic;
 var FC4message;
 var grammaticalityjudgment;
 var grammaticalityjudgmentmessage;
-var openingmessage;
+var openingmessage1;
+var openingmessage2;
 var passivemessage;
 var passivemessage1;
 var passivemessage2;
 var prodtest1;
 var prodtest2;
 var prodtestmessage;
-var surveymessage;
 
 // Makes ajax calls for each individual text file
 // If message files and names are changed, they will need to have their ajax calls edited/added here 
@@ -124,18 +123,10 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/endmessagec.txt",
+		url : "/static/elise/Instructions/endmessage.txt",
 		dataType : "text",
 		success : function(data) {
-			endmessagec = data;
-		}
-	});
-	$.ajax({
-		type : "GET",
-		url : "/static/elise/Instructions/endmessagep.txt",
-		dataType : "text",
-		success : function(data) {
-			endmessagep = data;
+			endmessage = data;
 		}
 	});
 	$.ajax({
@@ -180,11 +171,18 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/openingmessage.txt",
+		url : "/static/elise/Instructions/openingmessage1.txt",
 		dataType : "text",
 		success : function(data) {
-			openingmessage = data;
-			console.log(openingmessage);
+			openingmessage1 = data;
+		}
+	});
+	$.ajax({
+		type : "GET",
+		url : "/static/elise/Instructions/openingmessage2.txt",
+		dataType : "text",
+		success : function(data) {
+			openingmessage2 = data;
 		}
 	});
 	$.ajax({
@@ -235,16 +233,4 @@ function processMessages() {
 			prodtestmessage = data;
 		}
 	});
-	$.ajax({
-		type : "GET",
-		url : "/static/elise/Instructions/surveymessage.txt",
-		dataType : "text",
-		success : function(data) {
-			surveymessage = data;
-		}
-	});
-	}
-	
-	
-	
-	
+}
