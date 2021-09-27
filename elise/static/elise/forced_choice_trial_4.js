@@ -14,9 +14,9 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 		cor_key = 'a';
 		break
 		case 2:
-		key = "l";
+		key = "k";
 		corimage = image2;
-		cor_key = 'l';
+		cor_key = 'k';
 		break
 		case 3:
 		key = "z";
@@ -46,15 +46,6 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 	// Audio instance is set 
 	var audio = new Audio(sound);
 
-	audio.addEventListener('keypress', (event) => {
-		console.log("hi")
-		var name = event.key;
-		if(name == "l" || name == "a"){
-			console.log("skip")
-			audio.pause();
-		}
-	}, false);
-
 
 	// variable storing the timeline for the trial that will be output
 	let forced_choice_trial_4 = {
@@ -73,9 +64,9 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 		{
 			// Displays images and selects correct key based on function argument "correct", which is stored as "key" in the switch statement earlier in the function
 			type: 'categorize-html',
-			stimulus: "<div style='float:left;'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right;'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>L</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div><div style='float:left;'><img src='" +image3+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>Z</p></div><div style='float:right;'><img src='" + image4+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>M</p></div>",
+			stimulus: "<div style='float:left;'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right;'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div><div style='float:left;'><img src='" +image3+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>Z</p></div><div style='float:right;'><img src='" + image4+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>M</p></div>",
 			key_answer: key,
-			choices: ["a", "l", "z", "m"],
+			choices: ["a", "k", "z", "m"],
 			prompt: "<p></p>",
 			correct_text:"<p></p>",
 			incorrect_text:"<p></p>",
@@ -98,10 +89,10 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 				// Gets data from this node and prints it to the screen
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
-				console.log(data_from_current_node.csv())
+				//console.log(data_from_current_node.csv())
 				var data_array = [subjectnr, cond, trialnr, "FC", alienidentifiernr, sound, neighborhood, subneigh, plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", image1,image2, image3, image4, "-", "-", "-", "-"]
 				total_data_array.push(data_array)
-				console.log(data_array)
+				//console.log(data_array)
 				trialnr++;
 			}
 		}

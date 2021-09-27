@@ -23,6 +23,10 @@
 <script src="/static/elise/processMessages.js"></script>
 <script src="/static/elise/survey_trial.js"></script>
 <script src="/static/elise/platform/platform.js"></script>
+<script src="/static/elise/audio_recorder.js"></script>
+<script src="/static/elise/recorder/jquery-1.11.0.min.js"></script>
+<script src="/static/elise/recorder/libmp3lame.min.js"></script>
+<script src="/static/elise/recorder/recorderWorker.js"></script>
 <script
 	src="/static/common/jspsych-6.3.1/plugins/jspsych-fullscreen.js"></script>
 <script
@@ -62,8 +66,66 @@
 </body>
 <script>
 
+/* Set up audio stream */
+
+var audio_context;
+var input;
+
+function initExp() {
+    try {
+          // webkit shim
+          window.AudioContext = window.AudioContext || window.webkitAudioContext;
+          navigator.getUserMedia = ( navigator.getUserMedia ||
+                           navigator.webkitGetUserMedia ||
+                           navigator.mozGetUserMedia ||
+                           navigator.msGetUserMedia);
+          window.URL = window.URL || window.webkitURL;
+
+          audio_context = new AudioContext;
+          console.log('Audio context set up.');
+          console.log('navigator.getUserMedia ' + (navigator.getUserMedia ? 'available.' : 'not present!'));
+        } catch (e) {
+          alert('No web audio support in this browser!');
+        }
+
+
+    navigator.mediaDevices.getUserMedia({audio: true})
+    .then(startUserMedia)
+    .catch(function(err) {
+      console.log('No live audio input: ' + err);
+      alert("No microphone detected. Please make sure your microphone is switched on and retry.");
+    });
+}
+
+
+
+function startUserMedia(stream) {
+    input = audio_context.createMediaStreamSource(stream);
+    console.log(input);
+    console.log('Media stream created.' );
+    console.log("input sample rate " +input.context.sampleRate);
+
+    // Feedback!
+    //input.connect(audio_context.destination);
+    //console.log('Input connected to audio context destination.');
+
+}
+
+
+/*
+As of December 2018, Chrome requires user interaction to use audio stream once created
+Event listener: on button click, resume audio stream and launch experiment
+*/
+function updateLoadedCount(nLoaded){
+    var percentcomplete = nLoaded / images.length * 100;
+
+    // could put something fancier here, like a progress bar
+    // or updating text in the DOM.
+    console.log('Loaded '+percentcomplete+'% of images');
+}
+
 // Ajax call to get training list for training trials
-$(document).ready(function() {	
+$(document).ready(function() {
 	$.ajax({
 		type : "GET",
 		url : "/static/elise/traininglist30.txt",
@@ -104,6 +166,10 @@ $(document).ready(function() {
 	var participant_data_array = []
 	// Stores info on participant leaving window
 	var participant_browser_interaction = []
+	// For testing, parameter to decide if to skip actual trials
+	var skips = [];
+	var browser_id;
+	var prev_time = 0;
 	
 	document.addEventListener("click", function() {
 		
@@ -118,25 +184,24 @@ $(document).ready(function() {
 				//console.log(total_data_array)
 				//console.log(participant_data_array)
 				//console.log(subjectnr + "_setup")
+				window.location = "https://uwmadison.co1.qualtrics.com/jfe/form/SV_3OBz38VKFIZqTqK?id=" + subjectnr + "&cond=" + cond
 			},
 			on_interaction_data_update: function(data) {
-				console.log(JSON.stringify(data))
-				participant_browser_interaction.push(data)
+				var time_diff = data["time"] - prev_time;
+				prev_time = data["time"]
+				participant_browser_interaction.push([browser_id, data["event"], data["trial"], data["time"], time_diff]);
 			},
 			timeline: 
-			//makeExp(),
-			[forced_choice_trial_4("/static/elise/img/images/h1.png", "/static/elise/img/images/h2.png","/static/elise/img/images/h1p.png", "/static/elise/img/images/h2p.png", 1, "/static/elise/sound/combinedsounds/det1_big0s.wav", false, 0),
-			forced_choice_trial_4("/static/elise/img/images/h3p.png", "/static/elise/img/images/h4p.png","/static/elise/img/images/h1p.png", "/static/elise/img/images/h2p.png", 2, "/static/elise/sound/combinedsounds/det2_big3p.wav", true, 0),
-			forced_choice_trial_4("/static/elise/img/images/h1.png", "/static/elise/img/images/h2.png","/static/elise/img/images/h3.png", "/static/elise/img/images/h4.png", 3, "/static/elise/sound/combinedsounds/det1_big2s.wav", false, 0),
-			grammaticality_judgment_trial_image(true, "/static/elise/sound/combinedsounds/det1_big0s.wav", false, 0,0, "trained","/static/elise/img/images/h2.png"),
-			grammaticality_judgment_trial_image(false, "/static/elise/sound/combinedsounds/det1_big0_es.wav", false, 0,0, "trained","/static/elise/img/images/h2.png")],
+			makeExp(),
 			show_progress_bar: true,
 			exclusions: {
 			    min_width: 850,
 			    min_height: 680,
-			    audio: true
+			    audio: true,
+			    fullscreen: true
 			  }
 		})
+		initExp(); 
 
 	});
 </script>
