@@ -14,9 +14,9 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 		cor_key = 'a';
 	}
 	else {
-		key = "l";
+		key = "k";
 		corimage = image2;
-		cor_key = 'l';
+		cor_key = 'k';
 	}
 
 	var neighborhood = (corimage.substring(1+corimage.lastIndexOf("/")));
@@ -52,9 +52,9 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 		{
 			// Displays image and asks user to select y for yes or n for no based on the sound that is played
 			type: 'categorize-html',
-			stimulus: "<div style='float:left'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>L</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div>",
+			stimulus: "<div style='float:left'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div>",
 			key_answer: key,
-			choices: ["a", "l"],
+			choices: ["a", "k"],
 			prompt: "<p></p>",
 			correct_text:"<p></p>",
 			incorrect_text:"<p></p>",

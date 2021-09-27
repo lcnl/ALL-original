@@ -1,6 +1,6 @@
 Now you will do an active learning round. Active learning will help you remember the words better.
 
-In this exercise you will see a picture and hear words in the language. If the words you hear match the picture you see, push the "L" key. If the words you hear do not match the picture you see, push the "A" key.
+In this exercise you will see a picture and hear words in the language. If the words you hear match the picture you see, push the "K" key. If the words you hear do not match the picture you see, push the "A" key.
 
 After you make your choice, you will get feedback on whether you were correct or not. You will see a green checkmark if you were correct , and you will see a red X if you were wrong. Don't worry if you don't know the words very well yet - we don't expect you to. Just try your best and use this as practice. It will help you learn the words.
 

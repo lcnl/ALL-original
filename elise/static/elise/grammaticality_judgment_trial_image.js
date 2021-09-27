@@ -8,8 +8,8 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 	var key;
 	var cor_key;
 	if (correct) {
-		key = "l";
-		cor_key = 'l';
+		key = "k";
+		cor_key = 'k';
 	}
 	else {
 		key = "a";
@@ -57,7 +57,7 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 			correct_text: "<p></p>",
 			incorrect_text: "<p></p>",
 			// Uses html pre tag to make spaces persist. To adjust distance in between, simply add spaces
-			prompt: "<pre>wrong? push A                                     right? push L</pre>",
+			prompt: "<pre>incorrect? push A                                     correct? push K</pre>",
 			feedback_duration: 0
 		},
 		{

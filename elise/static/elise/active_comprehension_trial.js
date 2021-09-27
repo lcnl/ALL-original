@@ -7,8 +7,8 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 	var key;
 	var cor_key;
 	if (match) {
-		key = "l";
-		cor_key = "l";
+		key = "k";
+		cor_key = "k";
 	}
 	else {
 		key = "a";
@@ -47,15 +47,15 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			func: function() { audioAfterTime(audio, 1000) }
 		},
 		{
-			// Displays image and asks user to select L for correct or A for incorrect based on the sound that is played
+			// Displays image and asks user to select K for correct or A for incorrect based on the sound that is played
 			type: 'categorize-image',
 			stimulus: image1,
 			key_answer: key,
-			choices: ["l", "a"],
+			choices: ["k", "a"],
 			correct_text: "<img src='" +"/static/elise/img/images/greencheck.png'style='margin-left: auto;margin-right: auto;'>",
 			incorrect_text: "<img src='" + "/static/elise/img/images/redx.png' style='margin-left: auto;margin-right: auto;'>",
 			// Uses html pre tag to make spaces persist. To adjust distance in between, simply add spaces
-			prompt: "<pre>Mismatch? Press A                                     Match? Press L</pre>",
+			prompt: "<pre>Mismatch? Press A                                     Match? Press K</pre>",
 			show_stim_with_feedback: true,
 			feedback_duration: 1000
 		},
