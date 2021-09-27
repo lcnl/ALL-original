@@ -48,6 +48,14 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 			type: 'call-function',
 			async: false,
 			func: function() { audioAfterTime(audio, 1000) }
+		},{
+			// Displays image while playing audio so that no responses can be given until after sound is done. 
+			type: 'html-keyboard-response',
+			prompt: "<p></p>",
+			stimulus: "<div style='float:left'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div>",
+			choices: jsPsych.NO_KEYS,
+			// Retrieves sound duration from the dictionary and adds it to the trial duration 
+			trial_duration: 1000+1000*(parseFloat(durationDict[audioFileName]))
 		},
 		{
 			// Displays image and asks user to select y for yes or n for no based on the sound that is played
@@ -59,7 +67,6 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 			correct_text:"<p></p>",
 			incorrect_text:"<p></p>",
 			feedback_duration:0
-
 		},
 		{
 			// Blank screen to implement pause

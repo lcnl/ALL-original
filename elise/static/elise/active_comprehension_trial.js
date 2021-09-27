@@ -30,6 +30,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 
 	// Audio instance is set 
 	var audio = new Audio(sound);
+	var tot_time = 1000 + 1000*(parseFloat(durationDict[audioFileName]));
 
 
 	// variable storing the timeline for the trial that will be output
@@ -45,6 +46,15 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			type: 'call-function',
 			async: false,
 			func: function() { audioAfterTime(audio, 1000) }
+		},
+		{
+			// Displays image while playing audio so that no responses can be given until after sound is done. 
+			type: 'image-keyboard-response',
+			prompt: "<pre>Mismatch? Press A                                     Match? Press K</pre>",
+			stimulus: image1,
+			choices: jsPsych.NO_KEYS,
+			// Retrieves sound duration from the dictionary and adds it to the trial duration 
+			trial_duration: 1000+1000*(parseFloat(durationDict[audioFileName]))
 		},
 		{
 			// Displays image and asks user to select K for correct or A for incorrect based on the sound that is played

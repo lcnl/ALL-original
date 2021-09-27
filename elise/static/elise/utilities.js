@@ -1,17 +1,17 @@
-
-
 // Plays audio file 
-async function playAudio(audio) {
+async function playAudioPausable(audio) {
 	// Stops audio after keys hit
 	document.addEventListener('keyup', (event) => {
 			var name = event.key;
-			if(name == "l" || name == "a"){
+			if(name == "k" || name == "a" || name == "z" || name == "m"){
 				audio.pause();
 			}
 		}, false);
 	audio.play()
-	
+}
 
+async function playAudio(audio) {
+	audio.play()
 }
 
 // Function used to set a timer and then call the audio file player
@@ -20,6 +20,16 @@ function audioAfterTime(audio, time) {
 	return new Promise(resolve => {
 		setTimeout(() => {
 			playAudio(audio);
+		}, time);
+	});
+}
+
+// Function used to set a timer and then call the audio file player
+function audioAfterTimePausable(audio, time) {
+	console.log("this function hit")
+	return new Promise(resolve => {
+		setTimeout(() => {
+			playAudioPausable(audio);
 		}, time);
 	});
 }

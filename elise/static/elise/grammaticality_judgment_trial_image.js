@@ -46,14 +46,14 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 			// Calls sound in 1 second so that it will play during the image display
 			type: 'call-function',
 			async: false,
-			func: function() { audioAfterTime(audio, 1000) }
+			func: function() { audioAfterTimePausable(audio, 1000) }
 		},
 		{
-			// Displays image and asks user to select L for correct or A for incorrect based on the sound that is played
+			// Displays image and asks user to select K for correct or A for incorrect based on the sound that is played
 			type: 'categorize-image',
 			stimulus: image1,
 			key_answer: key,
-			choices: ["l", "a"],
+			choices: ["k", "a"],
 			correct_text: "<p></p>",
 			incorrect_text: "<p></p>",
 			// Uses html pre tag to make spaces persist. To adjust distance in between, simply add spaces

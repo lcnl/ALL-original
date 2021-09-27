@@ -43,18 +43,18 @@ function grammaticality_judgment_trial(correct, sound, plurality, alienidentifie
 			// Calls sound in 1 second so that it will play during the image display
 			type: 'call-function',
 			async: false,
-			func: function() { audioAfterTime(audio, 1000) }
+			func: function() { audioAfterTimePausable(audio, 1000) }
 		},
 		{
 			// Displays image and asks user to select y for yes or n for no based on the sound that is played
 			type: 'categorize-html',
 			stimulus: "<p></p>",
 			key_answer: key,
-			choices: ["a", "l"],
+			choices: ["a", "k"],
 			correct_text: "<p></p>",
 			incorrect_text: "<p></p>",
 			// Uses html pre tag to make spaces persist. To adjust distance in between, simply add spaces
-			prompt: "<pre>ungrammatical push A                                     grammatical push L</pre>",
+			prompt: "<pre>ungrammatical push A                                     grammatical push K</pre>",
 			feedback_duration: 0
 		},
 		{

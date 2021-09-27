@@ -59,7 +59,7 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 			// Calls sound in 1 second so that it will play during the image display
 			type: 'call-function',
 			async: false,
-			func: function() { audioAfterTime(audio, 1000) }
+			func: function() { audioAfterTimePausable(audio, 1000) }
 		},
 		{
 			// Displays images and selects correct key based on function argument "correct", which is stored as "key" in the switch statement earlier in the function
