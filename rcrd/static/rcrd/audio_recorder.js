@@ -45,7 +45,7 @@ jsPsych.plugins["audio_recorder"] = (function () {
       trial_duration: {
         type: jsPsych.plugins.parameterType.INT,
         pretty_name: 'Trial duration',
-        default: -1,
+        default: 2000,
         description: 'The duration of recording.'
       },
       file_name_recording: {
@@ -69,8 +69,8 @@ jsPsych.plugins["audio_recorder"] = (function () {
   plugin.trial = function(display_element, trial) {
 
 
-    trial.trial_duration = trial.trial_duration || -1;
-
+   //trial.trial_duration = trial.trial_duration || -1;
+   trial.trial_duration = 2000;
 
    // ------ VISUAL FEATURES ------ //
 
@@ -112,8 +112,8 @@ jsPsych.plugins["audio_recorder"] = (function () {
 
 
 
-  var WORKER_PATH = 'static/common/recording/recorderWorker.js';
-  var encoderWorker = new Worker('static/common/recording/mp3Worker.js');
+  var WORKER_PATH = '../../static/common/recording/recorderWorker.js';
+  var encoderWorker = new Worker('../../static/common/recording/mp3Worker.js');
   console.log("New encoder worker created");
   console.log(WORKER_PATH)
 
@@ -280,15 +280,17 @@ jsPsych.plugins["audio_recorder"] = (function () {
   function startRecording() {
     recorder && recorder.record();
     console.log("Start");
+    console.log(Date.now());
   }
 
   function stopRecording() {
     recorder && recorder.stop();
     console.log("Stop");
+    console.log(Date.now());
     // create WAV download link using audio data blob
     createDownloadLink();
     recorder.clear();
-    var newhtml = '<div><img width = "200" src = "static/rcrd/img/redx.png" style="position:absolute;top:35%;left:44%"></img></div>';
+    var newhtml = '<div><img width = "200" src = "../../static/rcrd/img/redx.png" style="position:absolute;top:35%;left:44%"></img></div>';
     display_element.innerHTML = newhtml;
 
 
