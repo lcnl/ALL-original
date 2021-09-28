@@ -29,7 +29,7 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 		image1 = image1.substring(0,image1.length-4)+"p.png";
 	}
     // Retrieves audio file name for the purpose of getting the duration from the dictionary
-    var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
+    var audioFileName = "combined_sounds/" + (sound.substring(1+sound.lastIndexOf("/")))
 
 	// Sets audio instance
 	let audio = new Audio(sound);
@@ -89,7 +89,7 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				console.log(data_from_current_node.csv())
-				var data_array = [subjectnr, cond, trialnr, "EM", alienidentifiernr, sound, neighborhood, subneigh, plurality, "-",data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", errortype, correct, image1, "-", "-", "-", "-", "-", "-", "-"]
+				var data_array = [subjectnr, cond, trialnr, "EM", alienidentifiernr, sound, neighborhood, subneigh, plurality, "-",data_from_current_node.select('rt').values[0], soundDurations[audioFileName]["tot_dur"],soundDurations[audioFileName]["w1_dur"],soundDurations[audioFileName]["sil"],soundDurations[audioFileName]["w2_dur"], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", errortype, correct, image1, "-", "-", "-", "-", "-", "-", "-"]
 				total_data_array.push(data_array)
 				console.log(data_array)
 				trialnr++;

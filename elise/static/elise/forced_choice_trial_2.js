@@ -29,7 +29,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 	}
 
     // Retrieves audio file name without file path for the purpose of getting the duration from the dictionary
-    var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
+    var audioFileName = "combined_sounds/" + (sound.substring(1+sound.lastIndexOf("/")))
 
 	// Audio instance is set 
 	var audio = new Audio(sound);
@@ -55,7 +55,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 			stimulus: "<div style='float:left'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div>",
 			choices: jsPsych.NO_KEYS,
 			// Retrieves sound duration from the dictionary and adds it to the trial duration 
-			trial_duration: 1000+1000*(parseFloat(durationDict[audioFileName]))
+			trial_duration: 1000+1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]))
 		},
 		{
 			// Displays image and asks user to select y for yes or n for no based on the sound that is played
@@ -88,7 +88,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				console.log(data_from_current_node.csv())
-				var data_array = [subjectnr, cond, trialnr, "TC", alienidentifiernr, sound, neighborhood, "testing", plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", image1, image2, "-", "-", "-", "-", "-", "-"]
+				var data_array = [subjectnr, cond, trialnr, "TC", alienidentifiernr, sound, neighborhood, "testing", plurality, corimage, data_from_current_node.select('rt').values[0], soundDurations[audioFileName]["tot_dur"],soundDurations[audioFileName]["w1_dur"],soundDurations[audioFileName]["sil"],soundDurations[audioFileName]["w2_dur"], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", image1, image2, "-", "-", "-", "-", "-", "-"]
 				total_data_array.push(data_array)
 				console.log(data_array)
 				trialnr++;

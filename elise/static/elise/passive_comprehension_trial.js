@@ -6,7 +6,7 @@
 function passive_comprehension_trial(image, sound, prompt, plurality, alienidentifiernr) {
 	
 	// Retrieves audio file name without file path for the purpose of getting the duration from the dictionary
-    var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
+    var audioFileName = "combined_sounds/" + (sound.substring(1+sound.lastIndexOf("/")))
 
 	// Sets audio instance
 	let audio = new Audio(sound);
@@ -48,7 +48,7 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
 			stimulus: jsPsych.timelineVariable('img'),
 			choices: jsPsych.NO_KEYS,
 			// Retrieves sound duration from the dictionary and adds it to the trial duration 
-			trial_duration: 2500+1000*(parseFloat(durationDict[audioFileName]))
+			trial_duration: 2500+1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]))
 		},
 		{
 			// Blank screen in between displays
@@ -69,7 +69,7 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
 			prompt: '<p>'+prompt+'<\p>',
 			stimulus: jsPsych.timelineVariable('img'),
 			choices: jsPsych.NO_KEYS,
-			trial_duration: 2000+1000*(parseFloat(durationDict[audioFileName]))
+			trial_duration: 2000+1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]))
 		}
 		, {
 		// Retrieves and separates relevant data from the appropriate timeline node
@@ -77,7 +77,7 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
 		async: false,
 		func: function() {
 			// TODO: this will be changed to a server ajax call later in process
-			var data_array = [subjectnr, cond, trialnr, "P", alienidentifiernr, sound, neighborhood, "training", plurality, image, "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
+			var data_array = [subjectnr, cond, trialnr, "P", alienidentifiernr, sound, neighborhood, "training", plurality, image, "-",soundDurations[audioFileName]["tot_dur"],soundDurations[audioFileName]["w1_dur"],soundDurations[audioFileName]["sil"],soundDurations[audioFileName]["w2_dur"], "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

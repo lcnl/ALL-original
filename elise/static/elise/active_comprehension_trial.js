@@ -26,11 +26,13 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 	}
 
     // Retrieves audio file name without file path for the purpose of getting the duration from the dictionary
-    var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
+    var audioFileName = "combined_sounds/" + (sound.substring(1+sound.lastIndexOf("/")))
+
 
 	// Audio instance is set 
 	var audio = new Audio(sound);
-	var tot_time = 1000 + 1000*(parseFloat(durationDict[audioFileName]));
+
+	var tot_time = 1000 + 1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]));
 
 
 	// variable storing the timeline for the trial that will be output
@@ -54,7 +56,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			stimulus: image1,
 			choices: jsPsych.NO_KEYS,
 			// Retrieves sound duration from the dictionary and adds it to the trial duration 
-			trial_duration: 1000+1000*(parseFloat(durationDict[audioFileName]))
+			trial_duration: tot_time
 		},
 		{
 			// Displays image and asks user to select K for correct or A for incorrect based on the sound that is played
@@ -89,7 +91,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			stimulus: image2,
 			choices: jsPsych.NO_KEYS,
 			// Retrieves sound duration from the dictionary and adds it to the trial duration 
-			trial_duration: 2000+1000*(parseFloat(durationDict[audioFileName]))
+			trial_duration: tot_time + 1000
 		} 
 		, {
 		// Retrieves and separates relevant data from the appropriate timeline node
@@ -104,7 +106,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			console.log(valid_node_id)
 			var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 			console.log(data_from_current_node.csv())
-			var data_array = [subjectnr, cond, trialnr, "AC", alienidentifiernr, sound, neighborhood, "training", plurality, image2, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", "-", match, image1, "-", "-", "-", "-", "-", "-", "-"]
+			var data_array = [subjectnr, cond, trialnr, "AC", alienidentifiernr, sound, neighborhood, "training", plurality, image2, data_from_current_node.select('rt').values[0],soundDurations[audioFileName]["tot_dur"],soundDurations[audioFileName]["w1_dur"],soundDurations[audioFileName]["sil"],soundDurations[audioFileName]["w2_dur"], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", "-", match, image1, "-", "-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

@@ -4,7 +4,7 @@
 function active_production_trial(image1, sound, prompt,plurality,alienidentifiernr) {
 
     // Retrieves audio file name without file path for the purpose of getting the duration from the dictionary
-    var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
+    var audioFileName = "combined_sounds/" + (sound.substring(1+sound.lastIndexOf("/")))
 	
 	// Audio instance is set
 	var audio = new Audio(sound);
@@ -61,7 +61,7 @@ function active_production_trial(image1, sound, prompt,plurality,alienidentifier
 			stimulus: image1,
 			choices: jsPsych.NO_KEYS,
 			// Retrieves sound duration from the dictionary and adds it to the trial duration 
-			trial_duration: 2000+1000*(parseFloat(durationDict[audioFileName]))
+			trial_duration: 2000+1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]))
 		}
 		, {
 		// Retrieves and separates relevant data from the appropriate timeline node
@@ -76,7 +76,7 @@ function active_production_trial(image1, sound, prompt,plurality,alienidentifier
 			// TODO: this will be changed to a server ajax call later in process
 			var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 			console.log(data_from_current_node.csv());
-			var data_array = [subjectnr, cond, trialnr, "AP", alienidentifiernr, sound, neighborhood, "training", plurality, image1, data_from_current_node.select('rt').values[0], "-", "-", "-", data_from_current_node.select('response').values[0]["first"], prompt, "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
+			var data_array = [subjectnr, cond, trialnr, "AP", alienidentifiernr, sound, neighborhood, "training", plurality, image1, data_from_current_node.select('rt').values[0], soundDurations[audioFileName]["tot_dur"],soundDurations[audioFileName]["w1_dur"],soundDurations[audioFileName]["sil"],soundDurations[audioFileName]["w2_dur"], "-", "-", "-", data_from_current_node.select('response').values[0]["first"], prompt, "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
 			total_data_array.push(data_array)
 			console.log(data_array)
 			// Increments trial number to account for adding this trial to experiment

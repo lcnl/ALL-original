@@ -1,22 +1,20 @@
 
-BUGS: EH87
+BUGS: EH88
 
 
 
 Meeting w MM: 
 
-- with pictures in EM now so def important to stop audio if ppl press quickly
 - ok to run some ppl in person; allows more debriefing but is different population. 1 at a time is ok for piloting but not for real. 
 - ask participants explicitly to do experiment alone in room without music/media/friends etc. Add to SONA/Qualtrics!!
 
 
 Next steps: 
-
-
-EH81: upload new version to server (with longer pause before EM audio) & test with bad wifi
-
+EH87: update durationDict
+EH81: upload new version to server & test with bad wifi & test all conditions
+EH88: set up on Qualtrics/SONA & test, include prompts alone in room no music etc.
 EH80: write script to analyze break time / time experiment takes
-EH77: polish audio stimuli
+EH77: polish audio stimuli [Marcela is working on this]
 MM/EH: decide on SC cutoff: >1 (2+) real errors, >2?3? (3+?4+?) Typos cutoff
 EH66: preregister study as predicted
 
@@ -38,7 +36,9 @@ ML5: With regards to the sound recordings:
 Some of the recordings had some crackling sounds (I only noticed it at the beginning)
 Some of the recordings ended on different pitches 
 
-EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; zimbaaf;stam; dap; chag; jeb (cheb); burresh; bepaaf; frusok; heefaaf; heefesh; 
+EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; jeb (cheb);frusok; stam;dap;bepaaf; heefaaf; heefesh;  burresh; chag;
+
+ zimbaaf;  
 
 
 Maybe/Later/dependent on feedback:

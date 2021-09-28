@@ -41,7 +41,7 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 	
 
     // Retrieves audio file name without path for the purpose of getting the duration from the dictionary
-    var audioFileName = (sound.substring(1+sound.lastIndexOf("/")))
+    var audioFileName = "combined_sounds/" + (sound.substring(1+sound.lastIndexOf("/")))
 
 	// Audio instance is set 
 	var audio = new Audio(sound);
@@ -98,7 +98,7 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 				// TODO: this will be changed to a server ajax call later in process
 				var data_from_current_node = jsPsych.data.getDataByTimelineNode(valid_node_id);
 				//console.log(data_from_current_node.csv())
-				var data_array = [subjectnr, cond, trialnr, "FC", alienidentifiernr, sound, neighborhood, subneigh, plurality, corimage, data_from_current_node.select('rt').values[0], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", image1,image2, image3, image4, "-", "-", "-", "-"]
+				var data_array = [subjectnr, cond, trialnr, "FC", alienidentifiernr, sound, neighborhood, subneigh, plurality, corimage, data_from_current_node.select('rt').values[0], soundDurations[audioFileName]["tot_dur"],soundDurations[audioFileName]["w1_dur"],soundDurations[audioFileName]["sil"],soundDurations[audioFileName]["w2_dur"], data_from_current_node.select('correct').values[0], data_from_current_node.select('response').values[0], cor_key, "-", "-", round, "-", image1,image2, image3, image4, "-", "-", "-", "-"]
 				total_data_array.push(data_array)
 				console.log(data_array)
 				trialnr++;

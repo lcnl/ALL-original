@@ -5,7 +5,6 @@
 <title>GP2 experiment</title>
 <script src="/static/common/jspsych-6.3.1/jspsych.js"></script>
 <script src="/static/elise/active_comprehension_trial.js"></script>
-<script src="/static/elise/durationDict.js"></script>
 <script
 	src="/static/elise/passive_comprehension_trial.js"></script>
 <script src="/static/elise/active_production_trial.js"></script>
@@ -19,7 +18,6 @@
 <script src="/static/elise/utilities.js"></script>
 <script src="/static/elise/prompts.js"></script>
 <script src="/static/elise/processMessages.js"></script>
-<script src="/static/elise/survey_trial.js"></script>
 <script src="/static/elise/platform/platform.js"></script>
 <script
 	src="/static/common/jspsych-6.3.1/plugins/jspsych-fullscreen.js"></script>
@@ -141,7 +139,17 @@ $(document).ready(function() {
 		}
 	});
 });
-
+// Ajax call to get list of sound durations
+$(document).ready(function() {
+	$.ajax({
+		type : "GET",
+		url : "/static/elise/listofsounddurations.txt",
+		dataType : "text",
+		success : function(data) {
+			processTxt(data);
+		}
+	});
+});
 
 // Calls processMessages to retrieve the message text files and convert them to strings for use in the experiment 
 $(document).ready(function() {
