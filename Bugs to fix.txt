@@ -1,17 +1,17 @@
 
-BUGS: EH88
+BUGS: EH89
 
 
 
 Meeting w MM: 
 
 - ok to run some ppl in person; allows more debriefing but is different population. 1 at a time is ok for piloting but not for real. 
-- ask participants explicitly to do experiment alone in room without music/media/friends etc. Add to SONA/Qualtrics!!
 
 
 Next steps: 
-EH87: update durationDict
+
 EH81: upload new version to server & test with bad wifi & test all conditions
+DONE [not tested with bad wifi yet]
 EH88: set up on Qualtrics/SONA & test, include prompts alone in room no music etc.
 EH80: write script to analyze break time / time experiment takes
 EH77: polish audio stimuli [Marcela is working on this]
@@ -26,19 +26,10 @@ EH84: troubleshoot this....
 EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side
 EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
 MM3: change font in Gramm judgment & active comp.
-EH76: time out audio on button press in active comp, 2AFC, 4AFC, grammar judgment.
-MM: do brief audio recordings to check for background noise at different points
 ML/EH: need video (10 frames) trials for motivation experiment
 
 Left to do before SONA: 
 
-ML5: With regards to the sound recordings:
-Some of the recordings had some crackling sounds (I only noticed it at the beginning)
-Some of the recordings ended on different pitches 
-
-EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; jeb (cheb);frusok; stam;dap;bepaaf; heefaaf; heefesh;  burresh; chag;
-
- zimbaaf;  
 
 
 Maybe/Later/dependent on feedback:
@@ -260,6 +251,16 @@ EH86: get active comp trial to wait for button press (by changing categorize-ima
 DONE
 EH85: figure out audio stops on keypress and make sure it's only implemented/active when needed
 DONE
+EH87: update durationDict
+DONE
+EH76: time out audio on button press in active comp, 2AFC, 4AFC, grammar judgment.
+DONE
+ML5: With regards to the sound recordings:
+Some of the recordings had some crackling sounds (I only noticed it at the beginning)
+Some of the recordings ended on different pitches 
+DONE
+EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; jeb (cheb);frusok; stam;dap;bepaaf; heefaaf; heefesh;  burresh; chag; zimbaaf;  
+DONE [MC & EH went through and current recordings are best available; MC will record new ones]
 
 Abandoned:
 

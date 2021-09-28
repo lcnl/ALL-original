@@ -27,13 +27,12 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 
     // Retrieves audio file name without file path for the purpose of getting the duration from the dictionary
     var audioFileName = "combined_sounds/" + (sound.substring(1+sound.lastIndexOf("/")))
-
+    console.log(audioFileName)
 
 	// Audio instance is set 
 	var audio = new Audio(sound);
 
 	var tot_time = 1000 + 1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]));
-
 
 	// variable storing the timeline for the trial that will be output
 	let active_comprehension_trial = {

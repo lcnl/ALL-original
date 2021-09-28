@@ -16,7 +16,6 @@ async function playAudio(audio) {
 
 // Function used to set a timer and then call the audio file player
 function audioAfterTime(audio, time) {
-	console.log("this function hit")
 	return new Promise(resolve => {
 		setTimeout(() => {
 			playAudio(audio);
@@ -26,7 +25,6 @@ function audioAfterTime(audio, time) {
 
 // Function used to set a timer and then call the audio file player
 function audioAfterTimePausable(audio, time) {
-	console.log("this function hit")
 	return new Promise(resolve => {
 		setTimeout(() => {
 			playAudioPausable(audio);
@@ -284,6 +282,7 @@ function processTxt(allText) {
 
 		}
 	}
+	soundDurations["combined_sounds/apple_w.wav"] = {"tot_dur": "0.535","w1_dur": "0.535","sil": "0", "w2_dur": "0"}
 }
 
 // Given an image number, outputs a string with the file name for that image
@@ -659,10 +658,7 @@ function makeExp() {
 	var data_header = ["subjectnr", "condition", "trialnr", "trial_type", "target_aliennr", "target_sound", "neighborhood", "subneighborhood", "target_plural", "target_image", "RT", "tot_dur", "w1_dur", "sil", "w2_dur", "correct", "key_pressed", "correct_key", "typed_response", "target_response", "trial_subtype", "match_or_grammatical", "left_top_or_foil_image", "right_top_image", "left_bottom_image", "right_bottom_image", "timestamp", "break_time", "browser_x", "browser_y"]
 	total_data_array.push(data_header)
 
-	console.log(soundDurations['combined_sounds/det4_small11s.wav'])
-	console.log(soundDurations['combined_sounds/det4_small11s.wav']["tot_dur"])
-
-	// this code is just so that I can skip parts of the experiment when testing
+	
 	
 	/*var test_recording =  {
 		type: 'audio_recorder',
@@ -675,6 +671,7 @@ function makeExp() {
 	if (skips.includes("intro") == false) {
 		experiments.push(test_recording)
 	}*/
+	// this code is just so that I can skip parts of the experiment when testing
 	if (skips.includes("intro") == false) {
 		experiments.push(playNextInstruction())
 		experiments.push(playNextInstruction())
