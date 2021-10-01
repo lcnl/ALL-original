@@ -1,19 +1,26 @@
 
-BUGS: EH89
+BUGS: EH91
 
 
 
 Meeting w MM: 
 
 - ok to run some ppl in person; allows more debriefing but is different population. 1 at a time is ok for piloting but not for real. 
+-- what about establishing how often pp allowed to blur when not in breaks? As a prerequisite for not considering data? 
 
 
 Next steps: 
 
+EH91: play around with 'sleep' instead of extra trial for pausing w/o button press before audio starts
+EH93: look into programming warnings / quit experiment when participants repeatedly blur; look into programming it to go back to fullscreen when participant exits fullscreen
+EH94: can I log console error messages and download them? 
+
 EH81: upload new version to server & test with bad wifi & test all conditions
 DONE [not tested with bad wifi yet]
-EH88: set up on Qualtrics/SONA & test, include prompts alone in room no music etc.
-EH80: write script to analyze break time / time experiment takes
+
+
+
+EH80: write script to analyze break time / time experiment takes (and what about blur/focus stuff? By hand or automated?)
 EH77: polish audio stimuli [Marcela is working on this]
 MM/EH: decide on SC cutoff: >1 (2+) real errors, >2?3? (3+?4+?) Typos cutoff
 EH66: preregister study as predicted
@@ -23,6 +30,7 @@ Levi:
 EH83: ask Arella for sound sample code & implement quick sound recordings
 DONE (not tested on server)
 EH84: troubleshoot this....
+EH92: ask about adjusting code for trial so that it does not allow button press till specified time
 EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side
 EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
 MM3: change font in Gramm judgment & active comp.
@@ -261,6 +269,13 @@ Some of the recordings ended on different pitches
 DONE
 EH25: double check all audio to see if pronunciation of stems match; note down stems where I find pronunciation weird or where audio volume is awkward. NOTED: monok; jeb (cheb);frusok; stam;dap;bepaaf; heefaaf; heefesh;  burresh; chag; zimbaaf;  
 DONE [MC & EH went through and current recordings are best available; MC will record new ones]
+EH88: set up on Qualtrics/SONA & test, include prompts alone in room no music etc.
+DONE
+EH90: for my own convenience wipe the eliseNN data folders off the server....
+DONE
+EH89: make server send back some data RIGHT WHEN EXPERIMENT STARTS and also at various points during training to get a sense of how far participants get who don't finish. UPLOAD THAT before putting up new times lots!!!
+DONE
+
 
 Abandoned:
 

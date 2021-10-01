@@ -636,6 +636,13 @@ function makeExp() {
 	// Stores experiment timeline object
 	var experiments = [];
 
+	var send_setup_data = {
+	    type: 'call-function',
+	    func: function(){send_data_to_server(participant_data_array, "setup")}
+	}
+	experiments.push(send_setup_data)
+	console.log("setup logged to server")
+
 	preload_soundcheck();
 	preload_other_images();
 	
@@ -830,6 +837,11 @@ function makeExp() {
 		}
 	}
 
+	var send_first_training_data = {
+	    type: 'call-function',
+	    func: function(){send_data_to_server(total_data_array, "training_first")}
+	}
+	experiments.push(send_first_training_data)
 
 	// Iterates through the rows in the trial data matrix
 	// Starts at index 1 to account for initial trials that have already been added
@@ -1003,7 +1015,7 @@ function makeExp() {
 
 	var send_training_data = {
 	    type: 'call-function',
-	    func: function(){send_data_to_server(total_data_array, "training")}
+	    func: function(){send_data_to_server(total_data_array, "training_full")}
 	}
 	experiments.push(send_training_data)
 

@@ -168,6 +168,7 @@ $(document).ready(function() {
 	var participant_data_array = []
 	// Stores info on participant leaving window
 	var participant_browser_interaction = []
+	participant_browser_interaction.push(["browser_id", "event", "trialnr", "time", "time_diff"]);
 	// For testing, parameter to decide if to skip actual trials
 	var skips = [];
 	var browser_id;
@@ -180,7 +181,7 @@ $(document).ready(function() {
 			on_finish : function() {
 				// Commented out server code to send data when ready
 				sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
-				sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
+				//sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
 				sendJSONData(JSON.stringify(participant_browser_interaction), "s_" + subjectnr + "_browserinteractions")
 				// console logging
 				//console.log(total_data_array)
