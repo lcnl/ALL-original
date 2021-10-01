@@ -462,6 +462,8 @@ function sleep(milliseconds) {
 		currentDate = Date.now();
 	} while (currentDate - date < milliseconds);
 }
+
+
 // Function for grabbing parameters from URL
 function getParamFromURL( name ) {
 	name = name.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");

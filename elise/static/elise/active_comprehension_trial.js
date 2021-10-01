@@ -1,5 +1,4 @@
 
-
 // Runs an active comprehension trial 
 function active_comprehension_trial(image1, image2, match, sound, prompt,plurality,alienidentifiernr) {
 	
@@ -42,11 +41,12 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			stimulus: '+',
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 500
-		} ,{
+		} ,
+		{
 			// Calls sound in 1 second so that it will play during the image display
 			type: 'call-function',
 			async: false,
-			func: function() { audioAfterTime(audio, 1000) }
+			func: function() {audioAfterTime(audio, 1000) }
 		},
 		{
 			// Displays image while playing audio so that no responses can be given until after sound is done. 

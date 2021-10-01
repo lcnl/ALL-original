@@ -1,5 +1,5 @@
 
-BUGS: EH91
+BUGS: EH96
 
 
 
@@ -11,9 +11,10 @@ Meeting w MM:
 
 Next steps: 
 
-EH91: play around with 'sleep' instead of extra trial for pausing w/o button press before audio starts
+
 EH93: look into programming warnings / quit experiment when participants repeatedly blur; look into programming it to go back to fullscreen when participant exits fullscreen
 EH94: can I log console error messages and download them? 
+EH95: something's not going right with setup data being logged later after all??
 
 EH81: upload new version to server & test with bad wifi & test all conditions
 DONE [not tested with bad wifi yet]
@@ -27,6 +28,8 @@ EH66: preregister study as predicted
 
 
 Levi:
+EH91: play around with 'sleep' instead of extra trial for pausing w/o button press before audio starts
+HELP can't figure this out...
 EH83: ask Arella for sound sample code & implement quick sound recordings
 DONE (not tested on server)
 EH84: troubleshoot this....
