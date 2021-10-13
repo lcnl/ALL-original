@@ -1,0 +1,6 @@
+Before we start with the experiment, we want to make sure your sound is working. We will have several of these sound checks during the experiment.
+
+In a sound check, you will hear a simple English word. Your job is simply to type in the word, no capitalization needed.
+
+For this first sound check, you will have the opportunity to replay the sound. So, if you don't hear anything initially, make sure your computer sound is on and you allow sound in the browser. Then, press 'repeat audio'. 
+
