@@ -180,7 +180,6 @@ $(document).ready(function() {
 			on_finish : function() {
 				// Commented out server code to send data when ready
 				sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
-				//sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
 				sendJSONData(JSON.stringify(participant_browser_interaction), "s_" + subjectnr + "_browserinteractions")
 				// console logging
 				//console.log(total_data_array)

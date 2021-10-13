@@ -322,7 +322,7 @@ jsPsych.plugins["audio_recorder"] = (function () {
     // add stimulus and initialize trial parameters
     let html = '<div id="jspsych-html-audio-response-stimulus">'+trial.stimulus+'</div>';
     display_element.innerHTML = html;
-    setTimeout(stopRecording, 10) 
+    setTimeout(stopRecording, 4000) 
   }
 
 
@@ -341,7 +341,7 @@ jsPsych.plugins["audio_recorder"] = (function () {
     $("img").ready(startRecording);
 
     // Stop recording
-    setTimeout(showex, 10); 
+    setTimeout(showex, 4000); 
 
 
   };
