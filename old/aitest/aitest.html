@@ -1,0 +1,97 @@
+
+<html>
+<head>
+<script src="/static/common/jquery/jquery-3.3.1.min.js"></script>
+<title>AI test</title>
+<script src="/static/common/jspsych-6.3.1/jspsych.js"></script>
+<script
+	src="/static/aitest/image_audio.js"></script>
+<script
+	src="/static/aitest/utilities.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-fullscreen.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-preload.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-instructions.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-categorize-html.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-html-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-html-button-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-image-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-audio-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-image-button-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-categorize-image.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-call-function.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-survey-html-form.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-survey-text.js"></script>
+<script src="/static/common/js/lcnl-helpers.js"></script>
+<link href="/static/common/jspsych-6.3.1/css/jspsych.css"
+	rel="stylesheet" type="text/css">
+</link>
+</head>
+<body>
+	<div style='white-space: pre-wrap; padding: 30%;font-size: 20px;font-family: arial'><p>
+		click anywhere to start
+	</p></div>
+</body>
+<script>
+
+
+
+
+	// URL param that sets whether this is a comprehension or production trial
+	var comp;
+	var cond;
+	// Subject number
+	var subjectnr;
+	// Stores trial number which will be continuously incremented throughout the experiment
+	var trialnr = 1;
+	// Stores array of each trial data subarray
+	var total_data_array = []
+	// Stores participant data 
+	var participant_data_array = []
+	// Stores info on participant leaving window
+	var participant_browser_interaction = []
+	// For testing, parameter to decide if to skip actual trials
+	var skips = [];
+	var browser_id;
+	var prev_time = 0;
+	
+	document.addEventListener("click", function() {
+		
+		document.removeEventListener('click', arguments.callee);
+		jsPsych.init({
+			on_finish : function() {
+				// Commented out server code to send data when ready
+				sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
+				sendJSONData(JSON.stringify(participant_data_array), "s_" + subjectnr + "_setup");
+				sendJSONData(JSON.stringify(participant_browser_interaction), "s_" + subjectnr + "_browserinteractions")
+				// console logging
+				console.log(total_data_array)
+				console.log(participant_data_array)
+				console.log(subjectnr + "_setup")
+			},
+			timeline: 
+			makeExp(),
+			show_progress_bar: true,
+			exclusions: {
+			    min_width: 850,
+			    min_height: 680,
+			    audio: true,
+			    fullscreen: true
+			  }
+		})
+
+	});
+</script>
+</html>

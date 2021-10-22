@@ -1,6 +1,7 @@
+//modified from HLPlab Socalign1
 (function(window){
 
-  var WORKER_PATH = '/static/lib/recorderWorker.js';
+  var WORKER_PATH = '/static/common/recording/recorderWorker.js';
 
   var Recorder = function(source, cfg){
     var config = cfg || {};

@@ -1,3 +1,4 @@
+//from HLPlab Socalign1
 var recLength = 0,
   recBuffers = [],
   sampleRate,
