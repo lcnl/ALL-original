@@ -282,7 +282,7 @@ function processTxt(allText) {
 
 		}
 	}
-	soundDurations["combined_sounds/apple_w.wav"] = {"tot_dur": "0.535","w1_dur": "0.535","sil": "0", "w2_dur": "0"}
+	soundDurations["combined_sounds/apple.wav"] = {"tot_dur": "1.010","w1_dur": "1.010","sil": "0", "w2_dur": "0"}
 }
 
 // Given an image number, outputs a string with the file name for that image
@@ -477,16 +477,17 @@ function getParamFromURL( name ) {
 }
 // function for preloading all English words used in the experiment
 function preload_soundcheck(){
-	var english_words = ['apple', 'airport', 'armchair', 'candle', 'diamond', 'eggplant', 'engine', 'feather', 'island', 'keyhole', 'olive', 'onion', 'orange', 'printer', 'shovel', 'towel', 'trumpet', 'wallet', 'windmill'];
+	var english_words = ['apple', 'animal', 'chair', 'dust', 'family', 'friend', 'fish', 'glass', 'guest', 'jacket', 'jump', 'pencil', 'pony', 'simple', 'sweet', 'train', 'uncle', 'water', 'yellow'];
 	for (var i = 0; i < english_words.length; i++) {
 		var ew = english_words[i];
-		var ew_path = "/static/elise/sound/" + ew + "_w.wav";
+		var ew_path = "/static/elise/sound/" + ew + ".wav";
 		preload_sounds_training.push(ew_path);
 	}
+	preload_sounds_training.push("/static/elise/sound/paragraphEdited.wav")
 }
 // function for preloading all random images used in the experiment (so all but the monsters)
 function preload_other_images(){
-	var other_images = ['blank', 'greencheck', 'redx', 'width', 'apple', 'pear']
+	var other_images = ['blank', 'greencheck', 'redx', 'width', 'apple', 'pear', 'overview']
 	for (var i = 0; i < other_images.length; i++) {
 		var oi = other_images[i];
 		var oi_path = "/static/elise/img/images/" + oi + ".png";
@@ -507,13 +508,13 @@ var threequarter_message = "You are now through 3/4th of this test. Keep it up!"
 function makeExp() {
 	
 	// Sequences for messages. 
-	prodMessageSequence = [openingmessage1, openingmessage2, audiocheckmessage1, audiocheckmessage2, audiocheckmessage, audiocheckmessage3, passivemessage1
+	prodMessageSequence = [openingmessage1, audiocheckmessage1, audiocheckmessage2, audiocheckmessage, audiocheckmessage3, passivemessage1
 		, passivemessage, passivemessage2, activeprodmessage1, activeprodmessage, activeprodmessage2
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
 		, passivemessage, activeprodmessage, passivemessage, activeprodmessage, passivemessage, activeprodmessage, audiocheckmessage
-		, forcedchoicemessage2pic, audiocheckmessage
+		, PTEmessage, passivemessage, passivemessage, passivemessage, passivemessage, forcedchoicemessage2pic, audiocheckmessage
 		, forcedchoicemessage4pic, quarter_message, audiocheckmessage, FC4message, half_message, audiocheckmessage, FC4message
 		, threequarter_message, audiocheckmessage, FC4message, audiocheckmessage
 		, grammaticalityjudgment, quarter_message, audiocheckmessage, grammaticalityjudgmentmessage, half_message, audiocheckmessage
@@ -526,13 +527,13 @@ function makeExp() {
 		prodMessageSequence[i] = null;
 		}
 	}
-	compMessageSequence = [openingmessage1, openingmessage2, audiocheckmessage1, audiocheckmessage2, audiocheckmessage, audiocheckmessage3, passivemessage1
+	compMessageSequence = [openingmessage1, audiocheckmessage1, audiocheckmessage2, audiocheckmessage, audiocheckmessage3, passivemessage1
 		, passivemessage, passivemessage2, activecompmessage1bcd, activecompmessage11, activecompmessage, activecompmessage2
 		, passivemessage, activecompmessage, passivemessage, activecompmessage, audiocheckmessage
 		, passivemessage, activecompmessage, passivemessage, activecompmessage, passivemessage, activecompmessage, audiocheckmessage
 		, passivemessage, activecompmessage, passivemessage, activecompmessage, passivemessage, activecompmessage, audiocheckmessage
 		, passivemessage, activecompmessage, passivemessage, activecompmessage, passivemessage, activecompmessage, audiocheckmessage
-		, forcedchoicemessage2pic, audiocheckmessage
+		, PTEmessage, passivemessage, passivemessage, passivemessage, passivemessage, forcedchoicemessage2pic, audiocheckmessage
 		, forcedchoicemessage4pic, quarter_message, audiocheckmessage, FC4message, half_message, audiocheckmessage, FC4message
 		, threequarter_message, audiocheckmessage, FC4message, audiocheckmessage
 		, grammaticalityjudgment, quarter_message, audiocheckmessage, grammaticalityjudgmentmessage, half_message, audiocheckmessage
@@ -557,13 +558,13 @@ function makeExp() {
 	skip = getParamFromURL('skip');
 	if (skip == 'all') {
 		skips = ["intro", "passive_training_intro", "active_training_intro", "passive_training", "active_training"
-					, "2AFC", "4AFC", "EM", "PT"];
+					, "PTE", "2AFC", "4AFC", "EM", "PT"];
 	} else if (skip == 'most') {
-		skips = ["intro", "active_training_intro", "passive_training", "active_training"
-					, "2AFC", "4AFC", "EM", "PT"];
-	} else if (skip = "introonly") {
-		["passive_training_intro", "active_training_intro", "passive_training", "active_training"
-					, "2AFC", "4AFC", "EM", "PT"];
+		skips = ["passive_training_intro", "active_training_intro", "passive_training", "active_training"
+					, "PTE", "2AFC","4AFC", "PT"];
+	} else if (skip == "introonly") {
+		skips = ["passive_training_intro", "active_training_intro", "passive_training", "active_training"
+					, "PTE","2AFC", "4AFC", "EM", "PT"];
 	}
 	if (cond == 'c') {
 		comp = true;
@@ -571,7 +572,6 @@ function makeExp() {
 		comp = false;
 		cond = 'p';
 	}
-
 
 	// Constructs dictionary of appropriate sound and image files
 	constructValues();
@@ -643,7 +643,6 @@ function makeExp() {
 	    func: function(){send_data_to_server(participant_data_array, "setup")}
 	}
 	experiments.push(send_setup_data)
-	console.log("setup logged to server")
 
 	preload_soundcheck();
 	preload_other_images();
@@ -684,15 +683,17 @@ function makeExp() {
 	if (skips.includes("intro") == false) {
 		experiments.push(playNextInstruction())
 		experiments.push(playNextInstruction())
+		experiments.push(audio_check_trial_1("/static/elise/sound/apple.wav"))
 		experiments.push(playNextInstruction())
-		experiments.push(audio_check_trial_1("/static/elise/sound/airplane_w.wav"))
 		experiments.push(playNextInstruction())
+		experiments.push(audio_check_trial_2("/static/elise/sound/chair.wav", "chair"))
 		experiments.push(playNextInstruction())
-		experiments.push(audio_check_trial_2("/static/elise/sound/candle_w.wav", "candle"))
-		experiments.push(playNextInstruction())
+		experiments.push(image_audio('/static/elise/img/images/overview.png', "/static/elise/sound/paragraphEdited.wav", 70000))
 		experiments.push(playNextInstruction())
 		experiments.push(playNextInstruction())
 	}
+
+
 
 	//[first 6 passive trials]
 	// Iterates through the row, obtaining trial objects
@@ -717,19 +718,19 @@ function makeExp() {
 		}
 	}
 
-	if (skips.includes("active_training_intro") == false) {
+	//if (skips.includes("active_training_intro") == false) {
 
 		experiments.push(playNextInstruction())
 
 		if (comp) {
 			experiments.push(playNextInstruction())
-			experiments.push(active_comprehension_trial("/static/elise/img/images/pear.png", "/static/elise/img/images/apple.png", false, "/static/elise/sound/apple_w.wav", "apple", false, "-"))
-			experiments.push(active_comprehension_trial("/static/elise/img/images/apple.png", "/static/elise/img/images/apple.png", true, "/static/elise/sound/apple_w.wav", "apple", false, "-"))
+			experiments.push(active_comprehension_trial("/static/elise/img/images/pear.png", "/static/elise/img/images/apple.png", false, "/static/elise/sound/apple.wav", "apple", false, "-"))
+			experiments.push(active_comprehension_trial("/static/elise/img/images/apple.png", "/static/elise/img/images/apple.png", true, "/static/elise/sound/apple.wav", "apple", false, "-"))
 		}
 		experiments.push(playNextInstruction())
 		experiments.push(playNextInstruction())
 
-	}
+	//}
 	// Current row
 	curr = trialData[0];
 
@@ -860,10 +861,10 @@ function makeExp() {
 
 		// Shuffles the row itself
 		shuffle(curr);
-		if (skips.includes("passive_training") == false) {
+		//if (skips.includes("passive_training") == false) {
 		//Passivemessage
 			experiments.push(playNextInstruction())
-		}
+		//}
 		//[round of 6 passive trials]
 		// Iterates through the row, obtaining trial objects
 		for (var j = 0; j < curr.length; j++) {
@@ -908,9 +909,9 @@ function makeExp() {
 		mismatches = new Set(mismatches);
 
 		//Activecompmessage		activeprodmessage
-		if (skips.includes("active_training") == false) {
+		//if (skips.includes("active_training") == false) {
 			experiments.push(playNextInstruction())
-		}
+		//}
 		//[round of 6 active comp trials]	[round of 6 active prod trials]
 		// Comprehension trial
 		if (comp) {
@@ -994,32 +995,161 @@ function makeExp() {
 				}
 			}
 		}
-		if (skips.includes("active_training_intro") == false) {
+		//if (skips.includes("active_training_intro") == false) {
 			if ((i + 1) % 3 == 0) {
 				experiments.push(playNextInstruction())
 				if (i == 2) {
-					experiments.push(audio_check_trial_2("/static/elise/sound/wallet_w.wav", "wallet"))
+					experiments.push(audio_check_trial_2("/static/elise/sound/glass.wav", "wallet"))
 				} else if (i == 5) {
-					experiments.push(audio_check_trial_2("/static/elise/sound/feather_w.wav", "feather"))
+					experiments.push(audio_check_trial_2("/static/elise/sound/yellow.wav", "feather"))
 				} else if (i == 8) {
-					experiments.push(audio_check_trial_2("/static/elise/sound/onion_w.wav", "onion"))
+					experiments.push(audio_check_trial_2("/static/elise/sound/water.wav", "onion"))
 				} else {
-					experiments.push(audio_check_trial_2("/static/elise/sound/towel_w.wav", "towel"))
+					experiments.push(audio_check_trial_2("/static/elise/sound/simple.wav", "towel"))
 				}
 				
 			}
-		}
+		//}
 	}
 
 	experiments.push(playNextInstruction())
 
 
 
+
+
+	// now, we first expose participants to passive trials about the new, untrained aliens
+
+	// for the 2AFC trials, we need to randomly pick which 3 (of 6) test-only aliens in each neighborhood will be singular in the first round
+	// so, we pick 3 alien identifiers for each that will be singular in the first round. 
+
+	// additionally, since we'll run two blocks of 6 aliens per round, and we want those as balanced as possible for both plurality and neighborhood, 
+	// we're assigning a 0 or 1 to each alien to indicate whether it will feature in the first or second block of the first round with this plurality. 
+
+	let passive_exposure_test_only = []
+
+	index_list_big_pl = []
+	for (var j = 12; j < 18; j++) {
+		index_list_big_pl.push(j);
+	}
+	randind = (Math.floor(Math.random() * 6))
+	randchoice = (index_list_big_pl.splice(randind, 1)[0])
+	passive_exposure_test_only.push([randchoice, 0, 0, 'p', "big"]);
+	randind = (Math.floor(Math.random() * 5))
+	randchoice = (index_list_big_pl.splice(randind, 1)[0])
+	passive_exposure_test_only.push([randchoice, 0, 1, 'p', "big"]);
+	randind = (Math.floor(Math.random() * 4))
+	randchoice = (index_list_big_pl.splice(randind,1)[0])
+	passive_exposure_test_only.push([randchoice, 1, 1, 'p', "big"]);
+
+	// also need to attach the 0/1 to the big ones that will be singular in the first round;
+	// we assigned two plurals to block 0 and one plural to block 1
+	// so we'll assign one singular to block 0 and two singulars to block 1
+	// that way each block has three big neigh aliens, balanced as best as possible for plurality
+	shuffle(index_list_big_pl);
+	for (var i = 0; i < 3; i++){
+		var bl_r1 = 1;
+		var bl_r2 = 0;
+		if (i == 0) {
+			bl_r1 = 0
+		} else if (i == 1){
+			bl_r2 = 1
+		}
+		passive_exposure_test_only.push([index_list_big_pl[i],bl_r1, bl_r2, 's', "big"])
+	}
+
+	// so for the small ones, we'll assign one plural to block 0 and two plurals to block 1 (to keep plurality balanced within block)
+
+	index_list_small_pl = []
+	for (var j = 24; j < 30; j++) {
+		index_list_small_pl.push(j);
+	}
+	randind = (Math.floor(Math.random() * 6))
+	randchoice = (index_list_small_pl.splice(randind, 1)[0])
+	passive_exposure_test_only.push([randchoice,0, 0,'p', "small"]);
+	randind = (Math.floor(Math.random() * 5))
+	randchoice = (index_list_small_pl.splice(randind, 1)[0])
+	passive_exposure_test_only.push([randchoice,1, 0, 'p', "small"]);
+	randind = (Math.floor(Math.random() * 4))
+	randchoice = (index_list_small_pl.splice(randind, 1)[0])
+	passive_exposure_test_only.push([randchoice,1, 1, 'p', "small"]);
+
+	// and reversely, we'll assign two singulars to block 0 and one singular to block 1. 
+
+	shuffle(index_list_small_pl);
+	for (var i = 0; i < 3; i++){
+		var bl_r1 = 0;
+		var bl_r2 = 1;
+		if (i == 0) {
+			bl_r1 = 1
+		} else if (i == 1){
+			bl_r2 = 0
+		}
+		passive_exposure_test_only.push([index_list_small_pl[i],bl_r1, bl_r2, 's', "small"])
+	}
+
+	// now, we create both rounds (each round is two blocks of 6 aliens) of passive exposure to the testing-only aliens
+
+	var round_1_b0 = [];
+	var round_1_b1 = [];
+	var round_2_b0 = [];
+	var round_2_b1 = [];
+
+	for (var i = 0; i < 12; i++){
+		var entry = passive_exposure_test_only[i];
+		if (entry[1] == 0){
+			round_1_b0.push([entry[0], entry[3], entry[4]])
+		} else if (entry[1] == 1){
+			round_1_b1.push([entry[0], entry[3], entry[4]])
+		}
+		if (entry[3] == 'p'){
+			var r2_nr = 's'
+		} else if (entry[3] == 's'){
+			var r2_nr = 'p'
+		}
+		if (entry[2] == 0){
+			round_2_b0.push([entry[0], r2_nr, entry[4]])
+		} else if (entry[2] == 1) {
+			round_2_b1.push([entry[0], r2_nr, entry[4]])
+		}
+	}
+
+	var passive_test_blocks = [[round_1_b0, round_1_b1],[round_2_b0, round_2_b1]];
+	shuffle(passive_test_blocks)
+
+
+	for (var r = 0; r < 2; r++){
+		var round_list = passive_test_blocks[r]
+		shuffle(round_list)
+		for (var b = 0; b < 2; b++){
+			var block_list = round_list[b];
+			shuffle(block_list)
+			experiments.push(playNextInstruction())
+			for (var i = 0; i < 6; i++){
+				
+				var monsterIndex = block_list[i][0]
+				var singOrPlural = block_list[i][1] // this is 1 or 2; need to look up what passive trial expects....
+				var isPlural = false;
+				if (singOrPlural == 'p'){
+					isPlural = true;
+				}
+				if (skips.includes("PTE") == false) {
+					// play passive trial
+					experiments.push(passive_comprehension_trial("/static/elise/img/images/" + allImages[monsterIndex],
+					"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
+				}
+				
+			}
+		}
+	}
+	
+
 	var send_training_data = {
 	    type: 'call-function',
 	    func: function(){send_data_to_server(total_data_array, "training_full")}
 	}
 	experiments.push(send_training_data)
+	experiments.push(playNextInstruction())
 
 	// for the 2AFC trials, we need to randomly pick which 3 (of 6) test-only aliens in each neighborhood will be singular in the first round
 	// so, we pick 3 alien identifiers for each that will be singular in the first round. 
@@ -1176,11 +1306,11 @@ function makeExp() {
 				isPlural, monsterIndex, "neighborhood_round"));
 		}
 	}
-	if (skips.includes("2AFC") == false) {
+	//if (skips.includes("2AFC") == false) {
 		experiments.push(playNextInstruction())
-		experiments.push(audio_check_trial_2("/static/elise/sound/diamond_w.wav", "diamond"))
+		experiments.push(audio_check_trial_2("/static/elise/sound/train.wav", "diamond"))
 		experiments.push(playNextInstruction())
-	}
+	//}
 
 	var send_2AFC_data = {
 	    type: 'call-function',
@@ -1422,27 +1552,28 @@ function makeExp() {
 				correct_place, 
 				"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
 				isPlural, monsterIndex, trial_type, subneigh));
+		}
 
 			if (i == 14) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/island_w.wav", "island"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/dust.wav", "dust"))
 				experiments.push(playNextInstruction())
 			} else if (i == 29) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/engine_w.wav", "engine"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/jacket.wav", "jacket"))
 				experiments.push(playNextInstruction())
 			} else if (i == 44) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/printer_w.wav", "printer"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/pencil.wav", "pencil"))
 				experiments.push(playNextInstruction())
 			} else if (i == 59) {
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/airport_w.wav", "airport"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/pony.wav", "pony"))
 			}
-		}
+		
 	}
 
 	var send_4AFC_data = {
@@ -1524,27 +1655,28 @@ function makeExp() {
 					"/static/elise/sound/combinedsounds/" + trialSound, 
 					isPlural, monsterIndex, errortype, subNeighborhood,
 					targetImage))
+			}
 
 				if (i == 0 && j == 27) {
 					experiments.push(playNextInstruction())
 					experiments.push(playNextInstruction())
-					experiments.push(audio_check_trial_2("/static/elise/sound/shovel_w.wav", "shovel"))
+					experiments.push(audio_check_trial_2("/static/elise/sound/guest.wav", "guest"))
 					experiments.push(playNextInstruction())
 				} else if (i == 1 && j == 27) {
 					experiments.push(playNextInstruction())
 					experiments.push(playNextInstruction())
-					experiments.push(audio_check_trial_2("/static/elise/sound/armchair_w.wav", "armchair"))
+					experiments.push(audio_check_trial_2("/static/elise/sound/family.wav", "family"))
 					experiments.push(playNextInstruction())
 				} else if (i == 2 && j == 27) {
 					experiments.push(playNextInstruction())
 					experiments.push(playNextInstruction())
-					experiments.push(audio_check_trial_2("/static/elise/sound/trumpet_w.wav", "trumpet"))
+					experiments.push(audio_check_trial_2("/static/elise/sound/jump.wav", "jump"))
 					experiments.push(playNextInstruction())
 				} else if (i == 3 && j == 27){
 					experiments.push(playNextInstruction())
-					experiments.push(audio_check_trial_2("/static/elise/sound/orange_w.wav", "orange"))
+					experiments.push(audio_check_trial_2("/static/elise/sound/sweet.wav", "sweet"))
 				}
-			}
+			
 			
 		}
 	}
@@ -1586,28 +1718,29 @@ function makeExp() {
 			experiments.push(production_test_trial("/static/elise/img/images/" + trial_info[0], 
 				"/static/elise/sound/combinedsounds/" + trial_info[1], 
 				trial_info[2], trial_info[3], trial_info[4], trial_info[5], trial_info[6]));
+		}
 			
 			if (j == 14) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/windmill_w.wav", "windmill"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/friend.wav", "friend"))
 				experiments.push(playNextInstruction())
 			} else if (j == 29) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/olive_w.wav", "olive"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/animal.wav", "animal"))
 				experiments.push(playNextInstruction())
 			} else if (j == 44) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/keyhole_w.wav", "keyhole"))
+				experiments.push(audio_check_trial_2("/static/elise/sound/uncle.wav", "uncle"))
 				experiments.push(playNextInstruction())
 			} else if (j == 59) {
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_3("/static/elise/sound/eggplant_w.wav", "eggplant"))
+				experiments.push(audio_check_trial_3("/static/elise/sound/fish.wav", "fish"))
 			}
-		}
-}
+		
+	}
 	var send_PT_data = {
 	    type: 'call-function',
 	    func: function(){send_data_to_server(total_data_array, "PT")}

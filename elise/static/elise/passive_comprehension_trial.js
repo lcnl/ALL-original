@@ -46,6 +46,7 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
 			// Adds sound duration to trial time
 			type: 'image-keyboard-response',
 			stimulus: jsPsych.timelineVariable('img'),
+			stimulus_height: 400,
 			choices: jsPsych.NO_KEYS,
 			// Retrieves sound duration from the dictionary and adds it to the trial duration 
 			trial_duration: 2500+1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]))
@@ -68,6 +69,7 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
 			type: 'image-keyboard-response',
 			prompt: '<p>'+prompt+'<\p>',
 			stimulus: jsPsych.timelineVariable('img'),
+			stimulus_height: 400,
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 2000+1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]))
 		}

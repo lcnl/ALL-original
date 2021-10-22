@@ -2,7 +2,7 @@ Great job! You are now done with the training and about halfway done with the ex
 
 Let's see how well you know the language! You will get several different tests of different lengths. 
 
-In the first test, which is very brief, you'll see aliens and hear a description in the novel language, just like earlier. In this test though, you will see aliens on both sides of the screen, and you will choose which set of aliens the description matches. The aliens will be unfamiliar to you. Your job is to pick out the correct one with a button press.
+In the first test, which is very brief, you'll see aliens and hear a description in the novel language, just like earlier. In this test though, you will see aliens on both sides of the screen, and you will choose which set of aliens the description matches. Your job is to pick out the correct one with a button press.
 
 Press 'A' for the left picture and 'K' for the picture on the right. These keys will also be on the screen!
 

@@ -1,6 +1,5 @@
 
-BUGS: EH96
-
+BUGS: EH100
 
 
 Meeting w MM: 
@@ -10,6 +9,10 @@ Meeting w MM:
 
 
 Next steps: 
+EH77: polish audio stimuli (about halfway)
+EH98: grab Marcela's audio's & combine them
+
+
 
 
 EH93: look into programming warnings / quit experiment when participants repeatedly blur; look into programming it to go back to fullscreen when participant exits fullscreen
@@ -22,19 +25,17 @@ DONE [not tested with bad wifi yet]
 
 
 EH80: write script to analyze break time / time experiment takes (and what about blur/focus stuff? By hand or automated?)
-EH77: polish audio stimuli [Marcela is working on this]
+DONE (blur/focus not done yet, only total time )
+
+
 MM/EH: decide on SC cutoff: >1 (2+) real errors, >2?3? (3+?4+?) Typos cutoff
 EH66: preregister study as predicted
 
 
 Levi:
-EH91: play around with 'sleep' instead of extra trial for pausing w/o button press before audio starts
-HELP can't figure this out...
-EH83: ask Arella for sound sample code & implement quick sound recordings
-DONE (not tested on server)
-EH84: troubleshoot this....
-EH92: ask about adjusting code for trial so that it does not allow button press till specified time
-EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side
+
+
+EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side; SOLUTION: code an empty white check/x into every part of the trial.... That way it won't move.... As well as empty prompt.... 
 EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
 MM3: change font in Gramm judgment & active comp.
 ML/EH: need video (10 frames) trials for motivation experiment
@@ -278,7 +279,21 @@ EH90: for my own convenience wipe the eliseNN data folders off the server....
 DONE
 EH89: make server send back some data RIGHT WHEN EXPERIMENT STARTS and also at various points during training to get a sense of how far participants get who don't finish. UPLOAD THAT before putting up new times lots!!!
 DONE
+EH97: triple check that the Passive Exposure Test items blocks now do what they should
+DONE
+EH96: add the intro overview picture looking thing
+DONE
+EH97: add/change instructions & update instruction sequence
+DONE
+EH99: check timing on previous round of pilots to learn about timing.
+DONEEH91: play around with 'sleep' instead of extra trial for pausing w/o button press before audio starts
+HELP can't figure this out...
+DONE
+EH83: ask Arella for sound sample code & implement quick sound recordings
+DONE (not tested on server)
 
+EH92: ask about adjusting code for trial so that it does not allow button press till specified time
+DONE
 
 Abandoned:
 

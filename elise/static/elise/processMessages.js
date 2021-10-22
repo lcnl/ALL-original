@@ -19,13 +19,13 @@ var FC4message;
 var grammaticalityjudgment;
 var grammaticalityjudgmentmessage;
 var openingmessage1;
-var openingmessage2;
 var passivemessage;
 var passivemessage1;
 var passivemessage2;
 var prodtest1;
 var prodtest2;
 var prodtestmessage;
+var PTEmessage;
 
 // Makes ajax calls for each individual text file
 // If message files and names are changed, they will need to have their ajax calls edited/added here 
@@ -179,14 +179,6 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/openingmessage2.txt",
-		dataType : "text",
-		success : function(data) {
-			openingmessage2 = data;
-		}
-	});
-	$.ajax({
-		type : "GET",
 		url : "/static/elise/Instructions/passivemessage.txt",
 		dataType : "text",
 		success : function(data) {
@@ -209,7 +201,6 @@ function processMessages() {
 			passivemessage2 = data;
 		}
 	});
-	
 	$.ajax({
 		type : "GET",
 		url : "/static/elise/Instructions/prodtest1.txt",
@@ -231,6 +222,14 @@ function processMessages() {
 		dataType : "text",
 		success : function(data) {
 			prodtestmessage = data;
+		}
+	});
+	$.ajax({
+		type : "GET",
+		url : "/static/elise/Instructions/PTEmessage.txt",
+		dataType : "text",
+		success : function(data) {
+			PTEmessage = data;
 		}
 	});
 }
