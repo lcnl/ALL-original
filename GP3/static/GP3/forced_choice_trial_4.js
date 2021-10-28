@@ -58,7 +58,7 @@ function forced_choice_trial_4(image1, image2, image3, image4, correct, sound, p
 		{
 			// Displays image and asks user to select y for yes or n for no based on the sound that is played
 			type: 'audio-html-keyboard-response',
-			stimulus_html: "<div style='float:left;'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right;'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div><div style='float:left;'><img src='" +image3+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>Z</p></div><div style='float:right;'><img src='" + image4+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>M</p></div>",
+			stimulus_html: "<div style='float:left;'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right;'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/' + core_folder_name + '/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div><div style='float:left;'><img src='" +image3+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>Z</p></div><div style='float:right;'><img src='" + image4+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>M</p></div>",
 			stimulus: sound,
 			key_answer: key,
 			choices: ["a", "k", "z", "m"],

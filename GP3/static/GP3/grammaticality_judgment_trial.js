@@ -60,7 +60,7 @@ function grammaticality_judgment_trial(correct, sound, plurality, alienidentifie
 		{
 			// Blank screen to implement pause
 			type: 'image-keyboard-response',
-			stimulus: '/static/elise/img/images/blank.png',
+			stimulus: '/static/' + core_folder_name + '/img/images/blank.png',
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 500
 		}

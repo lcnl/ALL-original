@@ -29,7 +29,7 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
 	else{
 		neighborhood = "small";
 	}
-	image = "/static/elise/img/images/g" + ending;
+	image = "/static/" + core_folder_name + "/img/images/g" + ending;
 
 	// Timeline object that will be returned
 	let passive_comprehension_trial = {
@@ -58,7 +58,7 @@ function passive_comprehension_trial(image, sound, prompt, plurality, alienident
 		{
 			// Blank screen in between displays
 			type: 'image-keyboard-response',
-			stimulus: '/static/elise/img/images/blank.png',
+			stimulus: '/static/' + core_folder_name + '/img/images/blank.png',
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 500
 		}, {

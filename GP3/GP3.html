@@ -4,22 +4,22 @@
 <script src="/static/common/jquery/jquery-3.3.1.min.js"></script>
 <title>GP3 experiment v1.2.4</title>
 <script src="/static/common/jspsych-6.3.1/jspsych.js"></script>
-<script src="/static/elise/active_comprehension_trial.js"></script>
-<script src="/static/elise/passive_comprehension_trial.js"></script>
-<script src="/static/elise/active_production_trial.js"></script>
-<script src="/static/elise/audio_check_trial_1.js"></script>
-<script src="/static/elise/audio_check_trial_2.js"></script>
-<script src="/static/elise/audio_check_trial_3.js"></script>
-<script src="/static/elise/grammaticality_judgment_trial_image.js"></script>
-<script src="/static/elise/production_test_trial.js"></script>
-<script src="/static/elise/forced_choice_trial_4.js"></script>
-<script src="/static/elise/forced_choice_trial_2.js"></script>
-<script src="/static/elise/utilities.js"></script>
-<script src="/static/elise/prompts.js"></script>
-<script src="/static/elise/processMessages.js"></script>
+<script src="/static/GP3/active_comprehension_trial.js"></script>
+<script src="/static/GP3/passive_comprehension_trial.js"></script>
+<script src="/static/GP3/active_production_trial.js"></script>
+<script src="/static/GP3/audio_check_trial_1.js"></script>
+<script src="/static/GP3/audio_check_trial_2.js"></script>
+<script src="/static/GP3/audio_check_trial_3.js"></script>
+<script src="/static/GP3/grammaticality_judgment_trial_image.js"></script>
+<script src="/static/GP3/production_test_trial.js"></script>
+<script src="/static/GP3/forced_choice_trial_4.js"></script>
+<script src="/static/GP3/forced_choice_trial_2.js"></script>
+<script src="/static/GP3/utilities.js"></script>
+<script src="/static/GP3/prompts.js"></script>
+<script src="/static/GP3/processMessages.js"></script>
 <script
-	src="/static/elise/image_audio.js"></script>
-<script src="/static/elise/platform/platform.js"></script>
+	src="/static/GP3/image_audio.js"></script>
+<script src="/static/GP3/platform/platform.js"></script>
 <script
 	src="/static/common/jspsych-6.3.1/plugins/jspsych-fullscreen.js"></script>
 <script
@@ -69,7 +69,7 @@
 $(document).ready(function() {
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/traininglist30.txt",
+		url : "/static/GP3/traininglist30.txt",
 		dataType : "text",
 		success : function(data) {
 			processData(data);
@@ -81,7 +81,7 @@ $(document).ready(function() {
 	
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/EMlist.txt",
+		url : "/static/GP3/EMlist.txt",
 		dataType : "text",
 		success : function(data) {
 			processList(data);
@@ -92,7 +92,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/listofsounddurations.txt",
+		url : "/static/GP3/listofsounddurations.txt",
 		dataType : "text",
 		success : function(data) {
 			processTxt(data);
@@ -102,7 +102,7 @@ $(document).ready(function() {
 
 // Calls processMessages to retrieve the message text files and convert them to strings for use in the experiment 
 $(document).ready(function() {
-	processMessages();
+	processMessages("GP3");
 });
 	// URL param that sets whether this is a comprehension or production trial
 	var comp;
@@ -122,6 +122,7 @@ $(document).ready(function() {
 	var skips = [];
 	var browser_id;
 	var prev_time = 0;
+	var core_folder_name = "GP3";
 	
 	document.addEventListener("click", function() {
 		

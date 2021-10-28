@@ -380,16 +380,16 @@ function constructValues() {
 
 
 		// for preloading we need full paths
-		var sound_singular = "/static/elise/sound/combinedsounds/" + singSound;
-		var sound_plural = "/static/elise/sound/combinedsounds/" + plurSound;
+		var sound_singular = "/static/" + core_folder_name + "/sound/combinedsounds/" + singSound;
+		var sound_plural = "/static/" + core_folder_name + "/sound/combinedsounds/" + plurSound;
 		preload_sounds_training.push(sound_singular, sound_plural)
 		
-		var image_singular = "/static/elise/img/images/" + img;
+		var image_singular = "/static/" + core_folder_name + "/img/images/" + img;
 		var image_plural = image_singular.substring(0,image_singular.length-4)+"p.png";
-		var image_sg_gb = "/static/elise/img/images/" + imageFileName(i, plural = false, gb = true, bigger = false);
-		var image_pl_gb = "/static/elise/img/images/" + imageFileName(i, plural = true, gb = true, bigger = false);
-		var image_sg_bg = "/static/elise/img/images/" + imageFileName(i, plural = false, gb = false, bigger = true);
-		var image_pl_bg = "/static/elise/img/images/" + imageFileName(i, plural = true, gb = false, bigger = true);
+		var image_sg_gb = "/static/" + core_folder_name + "/img/images/" + imageFileName(i, plural = false, gb = true, bigger = false);
+		var image_pl_gb = "/static/" + core_folder_name + "/img/images/" + imageFileName(i, plural = true, gb = true, bigger = false);
+		var image_sg_bg = "/static/" + core_folder_name + "/img/images/" + imageFileName(i, plural = false, gb = false, bigger = true);
+		var image_pl_bg = "/static/" + core_folder_name + "/img/images/" + imageFileName(i, plural = true, gb = false, bigger = true);
 		preload_images.push(image_singular, image_plural, image_sg_gb, image_pl_gb, image_sg_bg, image_pl_bg)
 
 
@@ -408,16 +408,16 @@ function constructValues() {
 		big[i - 12] = [img, { "p": plurSound, "s": singSound }, { "p": soundToPrompt[plurSound], "s": soundToPrompt[singSound] }]
 
 		// for preloading we need full paths
-		var sound_singular = "/static/elise/sound/combinedsounds/" + singSound;
-		var sound_plural = "/static/elise/sound/combinedsounds/" + plurSound;
+		var sound_singular = "/static/" + core_folder_name + "/sound/combinedsounds/" + singSound;
+		var sound_plural = "/static/" + core_folder_name + "/sound/combinedsounds/" + plurSound;
 		preload_sounds_training.push(sound_singular, sound_plural);
 		
-		var image_singular = "/static/elise/img/images/" + img;
+		var image_singular = "/static/" + core_folder_name + "/img/images/" + img;
 		var image_plural = image_singular.substring(0,image_singular.length-4)+"p.png";
-		var image_sg_gb = "/static/elise/img/images/" + imageFileName(i, plural = false, gb = true, bigger = false);
-		var image_pl_gb = "/static/elise/img/images/" + imageFileName(i, plural = true, gb = true, bigger = false);
-		var image_sg_bg = "/static/elise/img/images/" + imageFileName(i, plural = false, gb = false, bigger = true);
-		var image_pl_bg = "/static/elise/img/images/" + imageFileName(i, plural = true, gb = false, bigger = true);
+		var image_sg_gb = "/static/" + core_folder_name + "/img/images/" + imageFileName(i, plural = false, gb = true, bigger = false);
+		var image_pl_gb = "/static/" + core_folder_name + "/img/images/" + imageFileName(i, plural = true, gb = true, bigger = false);
+		var image_sg_bg = "/static/" + core_folder_name + "/img/images/" + imageFileName(i, plural = false, gb = false, bigger = true);
+		var image_pl_bg = "/static/" + core_folder_name + "/img/images/" + imageFileName(i, plural = true, gb = false, bigger = true);
 		preload_images.push(image_singular, image_plural, image_sg_gb, image_pl_gb, image_sg_bg, image_pl_bg);
 
 	}
@@ -443,7 +443,7 @@ function playNextInstruction() {
 			instruction = {
 				// Displays message with no user response
 				type: 'image-keyboard-response',
-				stimulus: '/static/elise/img/images/blank.png',
+				stimulus: '/static/' + core_folder_name + '/img/images/blank.png',
 				choices: jsPsych.NO_KEYS,
 				trial_duration: 0
 			}
@@ -464,7 +464,7 @@ function playNextInstruction() {
 		if (prodMessageSequence[currentInstructionCounter] == null) {
 			instruction = {
 				type: 'image-keyboard-response',
-				stimulus: '/static/elise/img/images/blank.png',
+				stimulus: '/static/' + core_folder_name + '/img/images/blank.png',
 				choices: jsPsych.NO_KEYS,
 				trial_duration: 0
 			}
@@ -512,17 +512,17 @@ function preload_soundcheck(){
 	var english_words = ['apple', 'animal', 'chair', 'dust', 'family', 'friend', 'fish', 'glass', 'guest', 'jacket', 'jump', 'pencil', 'pony', 'simple', 'sweet', 'train', 'uncle', 'water', 'yellow'];
 	for (var i = 0; i < english_words.length; i++) {
 		var ew = english_words[i];
-		var ew_path = "/static/elise/sound/" + ew + ".wav";
+		var ew_path = "/static/"+ core_folder_name+"/sound/" + ew + ".wav";
 		preload_sounds_training.push(ew_path);
 	}
-	preload_sounds_training.push("/static/elise/sound/paragraphEdited.wav")
+	preload_sounds_training.push("/static/" + core_folder_name + "/sound/paragraphEdited.wav")
 }
 // function for preloading all random images used in the experiment (so all but the monsters)
 function preload_other_images(){
 	var other_images = ['blank', 'greencheck', 'redx', 'width', 'apple', 'pear', 'overview', 'white_fb']
 	for (var i = 0; i < other_images.length; i++) {
 		var oi = other_images[i];
-		var oi_path = "/static/elise/img/images/" + oi + ".png";
+		var oi_path = "/static/" + core_folder_name + "/img/images/" + oi + ".png";
 		preload_images.push(oi_path);
 	}
 }
@@ -720,12 +720,12 @@ function makeExp() {
 	if (skips.includes("intro") == false) {
 		experiments.push(playNextInstruction())
 		experiments.push(playNextInstruction())
-		experiments.push(audio_check_trial_1("/static/elise/sound/apple.wav"))
+		experiments.push(audio_check_trial_1("/static/" + core_folder_name + "/sound/apple.wav"))
 		experiments.push(playNextInstruction())
 		experiments.push(playNextInstruction())
-		experiments.push(audio_check_trial_2("/static/elise/sound/chair.wav", "chair"))
+		experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/chair.wav", "chair"))
 		experiments.push(playNextInstruction())
-		experiments.push(image_audio('/static/elise/img/images/overview.png', "/static/elise/sound/paragraphEdited.wav", 70000))
+		experiments.push(image_audio('/static/' + core_folder_name + '/img/images/overview.png', "/static/" + core_folder_name + "/sound/paragraphEdited.wav", 70000))
 		experiments.push(playNextInstruction())
 		experiments.push(playNextInstruction())
 	}
@@ -750,8 +750,8 @@ function makeExp() {
 		if (skips.includes("passive_training_intro") == false) {
 			// Calls functions to obtain trial objects and pushes them to the timeline
 			// this part of the experiment contains passive comprehension trials
-			experiments.push(passive_comprehension_trial("/static/elise/img/images/" + allImages[monsterIndex],
-				"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
+			experiments.push(passive_comprehension_trial("/static/" + core_folder_name + "/img/images/" + allImages[monsterIndex],
+				"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
 		}
 	}
 
@@ -761,8 +761,8 @@ function makeExp() {
 
 		if (comp) {
 			experiments.push(playNextInstruction())
-			experiments.push(active_comprehension_trial("/static/elise/img/images/pear.png", "/static/elise/img/images/apple.png", false, "/static/elise/sound/apple.wav", "apple", false, "-"))
-			experiments.push(active_comprehension_trial("/static/elise/img/images/apple.png", "/static/elise/img/images/apple.png", true, "/static/elise/sound/apple.wav", "apple", false, "-"))
+			experiments.push(active_comprehension_trial("/static/" + core_folder_name + "/img/images/pear.png", "/static/" + core_folder_name + "/img/images/apple.png", false, "/static/" + core_folder_name + "/sound/apple.wav", "apple", false, "-"))
+			experiments.push(active_comprehension_trial("/static/" + core_folder_name + "/img/images/apple.png", "/static/" + core_folder_name + "/img/images/apple.png", true, "/static/" + core_folder_name + "/sound/apple.wav", "apple", false, "-"))
 		}
 		experiments.push(playNextInstruction())
 		experiments.push(playNextInstruction())
@@ -852,10 +852,10 @@ function makeExp() {
 			}
 			if (skips.includes("active_training_intro") == false) {
 				experiments.push(active_comprehension_trial(
-					"/static/elise/img/images/" + firstImage,
-					"/static/elise/img/images/" + secondImage,
+					"/static/" + core_folder_name + "/img/images/" + firstImage,
+					"/static/" + core_folder_name + "/img/images/" + secondImage,
 					correct,
-					"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+					"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
 					getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
 			}
 		}
@@ -871,8 +871,8 @@ function makeExp() {
 				isPlural = true;
 			}
 			if (skips.includes("active_training_intro") == false) {
-				experiments.push(active_production_trial("/static/elise/img/images/" + allImages[monsterIndex],
-					"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
+				experiments.push(active_production_trial("/static/" + core_folder_name + "/img/images/" + allImages[monsterIndex],
+					"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
 			}
 		}
 	}
@@ -918,8 +918,8 @@ function makeExp() {
 			if (skips.includes("passive_training") == false) {
 				// Calls functions to obtain trial objects and pushes them to the timeline
 				// this part of the experiment contains passive comprehension trials
-				experiments.push(passive_comprehension_trial("/static/elise/img/images/" + allImages[monsterIndex],
-					"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
+				experiments.push(passive_comprehension_trial("/static/" + core_folder_name + "/img/images/" + allImages[monsterIndex],
+					"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
 			}
 		}
 
@@ -1006,10 +1006,10 @@ function makeExp() {
 				}
 				if (skips.includes("active_training") == false) {
 					experiments.push(active_comprehension_trial(
-						"/static/elise/img/images/" + firstImage,
-						"/static/elise/img/images/" + secondImage,
+						"/static/" + core_folder_name + "/img/images/" + firstImage,
+						"/static/" + core_folder_name + "/img/images/" + secondImage,
 						correct,
-						"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+						"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
 						getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
 				}
 			}
@@ -1027,8 +1027,8 @@ function makeExp() {
 					isPlural = true;
 				}
 				if (skips.includes("active_training") == false) {
-					experiments.push(active_production_trial("/static/elise/img/images/" + allImages[monsterIndex],
-						"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
+					experiments.push(active_production_trial("/static/" + core_folder_name + "/img/images/" + allImages[monsterIndex],
+						"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural,monsterIndex));
 				}
 			}
 		}
@@ -1036,13 +1036,13 @@ function makeExp() {
 			if ((i + 1) % 3 == 0) {
 				experiments.push(playNextInstruction())
 				if (i == 2) {
-					experiments.push(audio_check_trial_2("/static/elise/sound/glass.wav", "glass"))
+					experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/glass.wav", "glass"))
 				} else if (i == 5) {
-					experiments.push(audio_check_trial_2("/static/elise/sound/yellow.wav", "yellow"))
+					experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/yellow.wav", "yellow"))
 				} else if (i == 8) {
-					experiments.push(audio_check_trial_2("/static/elise/sound/water.wav", "water"))
+					experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/water.wav", "water"))
 				} else {
-					experiments.push(audio_check_trial_2("/static/elise/sound/simple.wav", "simple"))
+					experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/simple.wav", "simple"))
 				}
 				
 			}
@@ -1172,8 +1172,8 @@ function makeExp() {
 				}
 				if (skips.includes("PTE") == false) {
 					// play passive trial
-					experiments.push(passive_comprehension_trial("/static/elise/img/images/" + allImages[monsterIndex],
-					"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
+					experiments.push(passive_comprehension_trial("/static/" + core_folder_name + "/img/images/" + allImages[monsterIndex],
+					"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural], getPrompt(allSounds[monsterIndex][singOrPlural]),isPlural, monsterIndex));
 				}
 				
 			}
@@ -1303,10 +1303,10 @@ function makeExp() {
 		}
 		if (skips.includes("2AFC") == false) {
 			experiments.push(forced_choice_trial_2(
-				"/static/elise/img/images/" + firstImage,
-				"/static/elise/img/images/" + secondImage,
+				"/static/" + core_folder_name + "/img/images/" + firstImage,
+				"/static/" + core_folder_name + "/img/images/" + secondImage,
 				correct_side, 
-				"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+				"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
 				isPlural, monsterIndex, "number_round"));
 		}
 	}
@@ -1336,16 +1336,16 @@ function makeExp() {
 		}
 		if (skips.includes("2AFC") == false) {
 			experiments.push(forced_choice_trial_2(
-				"/static/elise/img/images/" + firstImage,
-				"/static/elise/img/images/" + secondImage,
+				"/static/" + core_folder_name + "/img/images/" + firstImage,
+				"/static/" + core_folder_name + "/img/images/" + secondImage,
 				correct_side, 
-				"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+				"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
 				isPlural, monsterIndex, "neighborhood_round"));
 		}
 	}
 	//if (skips.includes("2AFC") == false) {
 		experiments.push(playNextInstruction())
-		experiments.push(audio_check_trial_2("/static/elise/sound/train.wav", "train"))
+		experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/train.wav", "train"))
 		experiments.push(playNextInstruction())
 	//}
 
@@ -1582,33 +1582,33 @@ function makeExp() {
 
 		if (skips.includes("4AFC") == false) {
 			experiments.push(forced_choice_trial_4(
-				"/static/elise/img/images/" + firstImage,
-				"/static/elise/img/images/" + secondImage,
-				"/static/elise/img/images/" + thirdImage,
-				"/static/elise/img/images/" + fourthImage,
+				"/static/" + core_folder_name + "/img/images/" + firstImage,
+				"/static/" + core_folder_name + "/img/images/" + secondImage,
+				"/static/" + core_folder_name + "/img/images/" + thirdImage,
+				"/static/" + core_folder_name + "/img/images/" + fourthImage,
 				correct_place, 
-				"/static/elise/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
+				"/static/" + core_folder_name + "/sound/combinedsounds/" + allSounds[monsterIndex][singOrPlural],
 				isPlural, monsterIndex, trial_type, subneigh));
 		}
 
 			if (i == 14) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/dust.wav", "dust"))
+				experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/dust.wav", "dust"))
 				experiments.push(playNextInstruction())
 			} else if (i == 29) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/jacket.wav", "jacket"))
+				experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/jacket.wav", "jacket"))
 				experiments.push(playNextInstruction())
 			} else if (i == 44) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/pencil.wav", "pencil"))
+				experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/pencil.wav", "pencil"))
 				experiments.push(playNextInstruction())
 			} else if (i == 59) {
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/pony.wav", "pony"))
+				experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/pony.wav", "pony"))
 			}
 		
 	}
@@ -1642,7 +1642,7 @@ function makeExp() {
 			var trialSound = grammaticalSound;
 			var monsterNeighborhood = participant_data_array[monsterIndex][4];
 			var subNeighborhood = participant_data_array[monsterIndex][5];
-			var targetImage = "/static/elise/img/images/" + allImages[monsterIndex]
+			var targetImage = "/static/" + core_folder_name + "/img/images/" + allImages[monsterIndex]
 
 			if (singOrPlural == 'p') {
 				isPlural = true;
@@ -1682,14 +1682,14 @@ function makeExp() {
 			if (isGrammatical != true) {
 				var preloadEM = {
     				type: 'preload',
-    				audio: ["/static/elise/sound/combinedsounds/" + trialSound]
+    				audio: ["/static/" + core_folder_name + "/sound/combinedsounds/" + trialSound]
 				};
 				experiments.push(preloadEM)
 			}
 
 			if (skips.includes("EM") == false) {
 				experiments.push(grammaticality_judgment_trial_image(isGrammatical, 
-					"/static/elise/sound/combinedsounds/" + trialSound, 
+					"/static/" + core_folder_name + "/sound/combinedsounds/" + trialSound, 
 					isPlural, monsterIndex, errortype, subNeighborhood,
 					targetImage))
 			}
@@ -1697,21 +1697,21 @@ function makeExp() {
 				if (i == 0 && j == 27) {
 					experiments.push(playNextInstruction())
 					experiments.push(playNextInstruction())
-					experiments.push(audio_check_trial_2("/static/elise/sound/guest.wav", "guest"))
+					experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/guest.wav", "guest"))
 					experiments.push(playNextInstruction())
 				} else if (i == 1 && j == 27) {
 					experiments.push(playNextInstruction())
 					experiments.push(playNextInstruction())
-					experiments.push(audio_check_trial_2("/static/elise/sound/family.wav", "family"))
+					experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/family.wav", "family"))
 					experiments.push(playNextInstruction())
 				} else if (i == 2 && j == 27) {
 					experiments.push(playNextInstruction())
 					experiments.push(playNextInstruction())
-					experiments.push(audio_check_trial_2("/static/elise/sound/jump.wav", "jump"))
+					experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/jump.wav", "jump"))
 					experiments.push(playNextInstruction())
 				} else if (i == 3 && j == 27){
 					experiments.push(playNextInstruction())
-					experiments.push(audio_check_trial_2("/static/elise/sound/sweet.wav", "sweet"))
+					experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/sweet.wav", "sweet"))
 				}
 			
 			
@@ -1752,29 +1752,29 @@ function makeExp() {
 		trial_info = prod_test_list[j];
 
 		if (skips.includes("PT") == false) {
-			experiments.push(production_test_trial("/static/elise/img/images/" + trial_info[0], 
-				"/static/elise/sound/combinedsounds/" + trial_info[1], 
+			experiments.push(production_test_trial("/static/" + core_folder_name + "/img/images/" + trial_info[0], 
+				"/static/" + core_folder_name + "/sound/combinedsounds/" + trial_info[1], 
 				trial_info[2], trial_info[3], trial_info[4], trial_info[5], trial_info[6]));
 		}
 			
 			if (j == 14) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/friend.wav", "friend"))
+				experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/friend.wav", "friend"))
 				experiments.push(playNextInstruction())
 			} else if (j == 29) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/animal.wav", "animal"))
+				experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/animal.wav", "animal"))
 				experiments.push(playNextInstruction())
 			} else if (j == 44) {
 				experiments.push(playNextInstruction())
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_2("/static/elise/sound/uncle.wav", "uncle"))
+				experiments.push(audio_check_trial_2("/static/" + core_folder_name + "/sound/uncle.wav", "uncle"))
 				experiments.push(playNextInstruction())
 			} else if (j == 59) {
 				experiments.push(playNextInstruction())
-				experiments.push(audio_check_trial_3("/static/elise/sound/fish.wav", "fish"))
+				experiments.push(audio_check_trial_3("/static/" + core_folder_name + "/sound/fish.wav", "fish"))
 			}
 		
 	}

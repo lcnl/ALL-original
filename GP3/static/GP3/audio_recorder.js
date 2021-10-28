@@ -288,7 +288,7 @@ jsPsych.plugins["audio_recorder"] = (function () {
     // create WAV download link using audio data blob
     createDownloadLink();
     recorder.clear();
-    var newhtml = '<div><img width = "200" src = "static/elise/img/images/redx.png" style="position:absolute;top:35%;left:44%"></img></div>';
+    var newhtml = '<div><img width = "200" src = "static/GP3/img/images/redx.png" style="position:absolute;top:35%;left:44%"></img></div>';
     display_element.innerHTML = newhtml;
 
 

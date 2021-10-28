@@ -48,7 +48,7 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 			stimulus: sound,
 			prompt: "<pre>incorrect? push A                                     correct? push K</pre>",
 			stimulus_image: image1,
-			stimulus_feedback: '/static/elise/img/images/white_fb.png',
+			stimulus_feedback: '/static/' + core_folder_name + '/img/images/white_fb.png',
 			stimulus_height: 400,
 			key_answer: key,
 			choices: ["a", "k"],
@@ -58,7 +58,7 @@ function grammaticality_judgment_trial_image(correct, sound, plurality, alienide
 		{
 			// Blank screen to implement pause
 			type: 'image-keyboard-response',
-			stimulus: '/static/elise/img/images/blank.png',
+			stimulus: '/static/' + core_folder_name + '/img/images/blank.png',
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 500
 		}

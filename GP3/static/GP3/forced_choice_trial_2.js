@@ -47,7 +47,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 		{
 			// Displays image and asks user to select y for yes or n for no based on the sound that is played
 			type: 'audio-html-keyboard-response',
-			stimulus_html: "<div style='float:left'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/elise/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div>",
+			stimulus_html: "<div style='float:left'><img src='" +image1+"'style='margin-left: auto;margin-right: auto;height: 200;'><p>A</p></div><div style='float:right'><img src='" + image2+"' style='margin-left: auto;margin-right: auto;height: 200;'><p>K</p></div><div style='clear:both;height:100px;'><img src='/static/' + core_folder_name + '/img/images/width.png' style='margin-left: auto;margin-right: auto;height: 80;' ></div>",
 			stimulus: sound,
 			key_answer: key,
 			choices: ["a", "k"],
@@ -58,7 +58,7 @@ function forced_choice_trial_2(image1, image2, correct, sound, plurality, alieni
 		{
 			// Blank screen to implement pause
 			type: 'image-keyboard-response',
-			stimulus: '/static/elise/img/images/blank.png',
+			stimulus: '/static/' + core_folder_name + '/img/images/blank.png',
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 500
 		}

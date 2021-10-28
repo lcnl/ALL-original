@@ -29,11 +29,11 @@ var PTEmessage;
 
 // Makes ajax calls for each individual text file
 // If message files and names are changed, they will need to have their ajax calls edited/added here 
-function processMessages() {
+function processMessages(folder_name) {
 	 
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/activecompmessage11.txt",
+		url : "/static/" + folder_name + "/Instructions/activecompmessage11.txt",
 		dataType : "text",
 		success : function(data) {
 			activecompmessage11 = data;
@@ -41,7 +41,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/activecompmessage1bcd.txt",
+		url : "/static/" + folder_name + "/Instructions/activecompmessage1bcd.txt",
 		dataType : "text",
 		success : function(data) {
 			activecompmessage1bcd = data;
@@ -50,7 +50,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/activecompmessage2.txt",
+		url : "/static/" + folder_name + "/Instructions/activecompmessage2.txt",
 		dataType : "text",
 		success : function(data) {
 			activecompmessage2 = data;
@@ -59,7 +59,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/activecompmessage.txt",
+		url : "/static/" + folder_name + "/Instructions/activecompmessage.txt",
 		dataType : "text",
 		success : function(data) {
 			activecompmessage = data;
@@ -67,7 +67,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/activeprodmessage.txt",
+		url : "/static/" + folder_name + "/Instructions/activeprodmessage.txt",
 		dataType : "text",
 		success : function(data) {
 			activeprodmessage = data;
@@ -75,7 +75,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/activeprodmessage1.txt",
+		url : "/static/" + folder_name + "/Instructions/activeprodmessage1.txt",
 		dataType : "text",
 		success : function(data) {
 			activeprodmessage1 = data;
@@ -83,7 +83,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/activeprodmessage2.txt",
+		url : "/static/" + folder_name + "/Instructions/activeprodmessage2.txt",
 		dataType : "text",
 		success : function(data) {
 			activeprodmessage2 = data;
@@ -91,7 +91,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/audiocheckmessage1.txt",
+		url : "/static/" + folder_name + "/Instructions/audiocheckmessage1.txt",
 		dataType : "text",
 		success : function(data) {
 			audiocheckmessage1 = data;
@@ -99,7 +99,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/audiocheckmessage2.txt",
+		url : "/static/" + folder_name + "/Instructions/audiocheckmessage2.txt",
 		dataType : "text",
 		success : function(data) {
 			audiocheckmessage2 = data;
@@ -107,7 +107,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/audiocheckmessage3.txt",
+		url : "/static/" + folder_name + "/Instructions/audiocheckmessage3.txt",
 		dataType : "text",
 		success : function(data) {
 			audiocheckmessage3 = data;
@@ -115,7 +115,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/audiocheckmessage.txt",
+		url : "/static/" + folder_name + "/Instructions/audiocheckmessage.txt",
 		dataType : "text",
 		success : function(data) {
 			audiocheckmessage = data;
@@ -123,7 +123,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/endmessage.txt",
+		url : "/static/" + folder_name + "/Instructions/endmessage.txt",
 		dataType : "text",
 		success : function(data) {
 			endmessage = data;
@@ -131,7 +131,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/forcedchoicemessage2pic.txt",
+		url : "/static/" + folder_name + "/Instructions/forcedchoicemessage2pic.txt",
 		dataType : "text",
 		success : function(data) {
 			forcedchoicemessage2pic = data;
@@ -139,7 +139,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/forcedchoicemessage4pic.txt",
+		url : "/static/" + folder_name + "/Instructions/forcedchoicemessage4pic.txt",
 		dataType : "text",
 		success : function(data) {
 			forcedchoicemessage4pic = data;
@@ -147,7 +147,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/FC4message.txt",
+		url : "/static/" + folder_name + "/Instructions/FC4message.txt",
 		dataType : "text",
 		success : function(data) {
 			FC4message = data;
@@ -155,7 +155,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/grammaticalityjudgment.txt",
+		url : "/static/" + folder_name + "/Instructions/grammaticalityjudgment.txt",
 		dataType : "text",
 		success : function(data) {
 			grammaticalityjudgment = data;
@@ -163,7 +163,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/grammaticalityjudgmentmessage.txt",
+		url : "/static/" + folder_name + "/Instructions/grammaticalityjudgmentmessage.txt",
 		dataType : "text",
 		success : function(data) {
 			grammaticalityjudgmentmessage = data;
@@ -171,7 +171,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/openingmessage1.txt",
+		url : "/static/" + folder_name + "/Instructions/openingmessage1.txt",
 		dataType : "text",
 		success : function(data) {
 			openingmessage1 = data;
@@ -179,7 +179,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/passivemessage.txt",
+		url : "/static/" + folder_name + "/Instructions/passivemessage.txt",
 		dataType : "text",
 		success : function(data) {
 			passivemessage = data;
@@ -187,7 +187,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/passivemessage1.txt",
+		url : "/static/" + folder_name + "/Instructions/passivemessage1.txt",
 		dataType : "text",
 		success : function(data) {
 			passivemessage1 = data;
@@ -195,7 +195,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/passivemessage2.txt",
+		url : "/static/" + folder_name + "/Instructions/passivemessage2.txt",
 		dataType : "text",
 		success : function(data) {
 			passivemessage2 = data;
@@ -203,14 +203,14 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/prodtest1.txt",
+		url : "/static/" + folder_name + "/Instructions/prodtest1.txt",
 		dataType : "text",
 		success : function(data) {
 			prodtest1 = data;
 		}
 	});$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/prodtest2.txt",
+		url : "/static/" + folder_name + "/Instructions/prodtest2.txt",
 		dataType : "text",
 		success : function(data) {
 			prodtest2 = data;
@@ -218,7 +218,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/prodtestmessage.txt",
+		url : "/static/" + folder_name + "/Instructions/prodtestmessage.txt",
 		dataType : "text",
 		success : function(data) {
 			prodtestmessage = data;
@@ -226,7 +226,7 @@ function processMessages() {
 	});
 	$.ajax({
 		type : "GET",
-		url : "/static/elise/Instructions/PTEmessage.txt",
+		url : "/static/" + folder_name + "/Instructions/PTEmessage.txt",
 		dataType : "text",
 		success : function(data) {
 			PTEmessage = data;

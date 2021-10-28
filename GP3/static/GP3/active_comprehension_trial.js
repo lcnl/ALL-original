@@ -23,9 +23,9 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 	else{
 		neighborhood = "small";
 	}
-	var image_2 = "/static/elise/img/images/g" + ending2;
+	var image_2 = "/static/" + core_folder_name + "/img/images/g" + ending2;
 	var ending1 = (image1.substring(1+image1.lastIndexOf("/")));
-	var image_1 = "/static/elise/img/images/b" + ending1;
+	var image_1 = "/static/" + core_folder_name + "/img/images/b" + ending1;
 
     // Retrieves audio file name without file path for the purpose of getting the duration from the dictionary
     var audioFileName = "combined_sounds/" + (sound.substring(1+sound.lastIndexOf("/")))
@@ -36,6 +36,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 	var tot_time  = 1000+1000*(parseFloat(soundDurations[audioFileName]["tot_dur"]));
 
 	var were_they_correct;
+	var white_fb = '/static/' + core_folder_name + '/img/images/white_fb.png'
 
 	// variable storing the timeline for the trial that will be output
 	let active_comprehension_trial = {
@@ -52,7 +53,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 			prompt: "<pre>Mismatch? Press A                                     Match? Press K</pre>",
 			stimulus_image: image_1,
 			stimulus_height: 400,
-			stimulus_feedback: '/static/elise/img/images/white_fb.png',
+			stimulus_feedback: white_fb,
 			key_answer: key,
 			choices: ["a", "k"],
 			response_allowed_while_playing: false,
@@ -70,10 +71,10 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 				console.log(key_they_pressed)
 				if (key_they_pressed == cor_key){
 					were_they_correct = true
-					feedback_image = '/static/elise/img/images/greencheck.png'
+					feedback_image = '/static/' + core_folder_name + '/img/images/greencheck.png'
 				} else {
 					were_they_correct = false
-					feedback_image = '/static/elise/img/images/redx.png'
+					feedback_image = '/static/' + core_folder_name + '/img/images/redx.png'
 				}
 				return feedback_image
 			},	
@@ -84,7 +85,7 @@ function active_comprehension_trial(image1, image2, match, sound, prompt,plurali
 		},{
 			// Blank screen to implement pause
 			type: 'image-keyboard-response',
-			stimulus: '/static/elise/img/images/blank.png',
+			stimulus: '/static/' + core_folder_name + '/img/images/blank.png',
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 500
 		}, {

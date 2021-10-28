@@ -35,7 +35,7 @@ function audio_check_trial_1(sound) {
 		{
 			// Blank screen before image is displayed again
 			type: 'image-keyboard-response',
-			stimulus: '/static/elise/img/images/blank.png',
+			stimulus: '/static/' + core_folder_name + '/img/images/blank.png',
 			choices: jsPsych.NO_KEYS,
 			trial_duration: 500
 		}			
