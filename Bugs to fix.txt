@@ -1,46 +1,22 @@
 
-BUGS: EH100
+BUGS: EH104
 
 
-Meeting w MM: 
-
-- ok to run some ppl in person; allows more debriefing but is different population. 1 at a time is ok for piloting but not for real. 
--- what about establishing how often pp allowed to blur when not in breaks? As a prerequisite for not considering data? 
 
 
 Next steps: 
-EH77: polish audio stimuli (about halfway)
-EH98: grab Marcela's audio's & combine them
 
-
-
-
-EH93: look into programming warnings / quit experiment when participants repeatedly blur; look into programming it to go back to fullscreen when participant exits fullscreen
-EH94: can I log console error messages and download them? 
-EH95: something's not going right with setup data being logged later after all??
-
-EH81: upload new version to server & test with bad wifi & test all conditions
-DONE [not tested with bad wifi yet]
-
-
-
-EH80: write script to analyze break time / time experiment takes (and what about blur/focus stuff? By hand or automated?)
-DONE (blur/focus not done yet, only total time )
-
-
-MM/EH: decide on SC cutoff: >1 (2+) real errors, >2?3? (3+?4+?) Typos cutoff
+EH101: rename for GP3 for in person, upload to server & test
+EH102: restructure paths so that those are set in one place in case study needs renamed 
 EH66: preregister study as predicted
+MM/EH: decide on SC cutoff: >1 (2+) real errors, >2?3? (3+?4+?) Typos cutoff, and blur/focus/pauses cutoffs. 
+EH103: document updated stimuli names for audio (also needed for analyzing)
 
 
 Levi:
-
-
-EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side; SOLUTION: code an empty white check/x into every part of the trial.... That way it won't move.... As well as empty prompt.... 
-EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
 MM3: change font in Gramm judgment & active comp.
 ML/EH: need video (10 frames) trials for motivation experiment
-
-Left to do before SONA: 
+EH100: put in green box in non-hardcoded way for AME experiment
 
 
 
@@ -50,6 +26,10 @@ MC: make passive trials either self-guided or slower to give people more time to
 EH54: let experiment time out in all trial types except passive after 30 seconds (?) of inactivity
 IV: too many breaks, tempted to stop, made it hard to concentrate. 
 DM3: Practice rounds may be helpful to avoid any skewed data due to people not understanding
+EH93: look into programming warnings / quit experiment when participants repeatedly blur; look into programming it to go back to fullscreen when participant exits fullscreen
+EH94: can I log console error messages and download them? 
+EH80: write script to analyze break time / time experiment takes (and what about blur/focus stuff? By hand or automated?)
+DONE (blur/focus not done yet, only total time )
 
 
 
@@ -291,8 +271,15 @@ HELP can't figure this out...
 DONE
 EH83: ask Arella for sound sample code & implement quick sound recordings
 DONE (not tested on server)
-
 EH92: ask about adjusting code for trial so that it does not allow button press till specified time
+DONE
+EH77: polish audio stimuli (about halfway)
+DONE
+EH98: grab Marcela's audio's & combine them
+DONE
+EH17: in active comp trial, I want feedback to show below picture, and without the picture moving to the side; SOLUTION: code an empty white check/x into every part of the trial.... That way it won't move.... As well as empty prompt.... 
+DONE
+EH29: re-introduce the green square around passive + feedback phase of active trials? If so, put back in relevant instructions too. 
 DONE
 
 Abandoned:

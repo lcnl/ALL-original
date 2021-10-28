@@ -2,7 +2,7 @@
 <html>
 <head>
 <script src="/static/common/jquery/jquery-3.3.1.min.js"></script>
-<title>GP2 experiment v1.1</title>
+<title>GP2 experiment v1.2.4</title>
 <script src="/static/common/jspsych-6.3.1/jspsych.js"></script>
 <script src="/static/elise/active_comprehension_trial.js"></script>
 <script src="/static/elise/passive_comprehension_trial.js"></script>
@@ -135,19 +135,18 @@ $(document).ready(function() {
 				//console.log(total_data_array)
 				//console.log(participant_data_array)
 				//console.log(subjectnr + "_setup")
-				window.location = "https://uwmadison.co1.qualtrics.com/jfe/form/SV_3OBz38VKFIZqTqK?id=" + subjectnr + "&cond=" + cond
+				window.location = "https://uwmadison.co1.qualtrics.com/jfe/form/SV_9HpjaWs0YudB8RU?id=" + subjectnr + "&cond=" + cond
 			},
 			on_interaction_data_update: function(data) {
 				var time_diff = data["time"] - prev_time;
 				prev_time = data["time"]
-				console.log("look I really am in this new elise.html")
 				participant_browser_interaction.push([browser_id, data["event"], data["trial"], data["time"], time_diff]);
 			},
 			timeline: 
 			makeExp(),
 			show_progress_bar: true,
 			exclusions: {
-			    min_width: 1500,
+			    min_width: 1300,
 			    min_height: 700,
 			    audio: true,
 			    fullscreen: true

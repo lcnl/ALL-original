@@ -1,0 +1,157 @@
+
+<html>
+<head>
+<script src="/static/common/jquery/jquery-3.3.1.min.js"></script>
+<title>GP3 experiment v1.2.4</title>
+<script src="/static/common/jspsych-6.3.1/jspsych.js"></script>
+<script src="/static/elise/active_comprehension_trial.js"></script>
+<script src="/static/elise/passive_comprehension_trial.js"></script>
+<script src="/static/elise/active_production_trial.js"></script>
+<script src="/static/elise/audio_check_trial_1.js"></script>
+<script src="/static/elise/audio_check_trial_2.js"></script>
+<script src="/static/elise/audio_check_trial_3.js"></script>
+<script src="/static/elise/grammaticality_judgment_trial_image.js"></script>
+<script src="/static/elise/production_test_trial.js"></script>
+<script src="/static/elise/forced_choice_trial_4.js"></script>
+<script src="/static/elise/forced_choice_trial_2.js"></script>
+<script src="/static/elise/utilities.js"></script>
+<script src="/static/elise/prompts.js"></script>
+<script src="/static/elise/processMessages.js"></script>
+<script
+	src="/static/elise/image_audio.js"></script>
+<script src="/static/elise/platform/platform.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-fullscreen.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-preload.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-instructions.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-categorize-html.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-html-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-html-button-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-image-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-image-keyboard-response-feedback.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-audio-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-audio-image-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-audio-html-keyboard-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-image-button-response.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-categorize-image.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-call-function.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-survey-html-form.js"></script>
+<script
+	src="/static/common/jspsych-6.3.1/plugins/jspsych-survey-text.js"></script>
+<script src="/static/common/js/lcnl-helpers.js"></script>
+<link href="/static/common/jspsych-6.3.1/css/jspsych.css"
+	rel="stylesheet" type="text/css">
+</link>
+</head>
+<body>
+	<div style='white-space: pre-wrap; padding: 30%;font-size: 20px;font-family: arial'><p>
+		click anywhere to start
+	</p></div>
+</body>
+<script>
+
+
+// Ajax call to get training list for training trials
+$(document).ready(function() {
+	$.ajax({
+		type : "GET",
+		url : "/static/elise/traininglist30.txt",
+		dataType : "text",
+		success : function(data) {
+			processData(data);
+		}
+	});
+});
+// Ajax call to get EM list for grammar judgment trials 
+$(document).ready(function() {
+	
+	$.ajax({
+		type : "GET",
+		url : "/static/elise/EMlist.txt",
+		dataType : "text",
+		success : function(data) {
+			processList(data);
+		}
+	});
+});
+// Ajax call to get list of sound durations
+$(document).ready(function() {
+	$.ajax({
+		type : "GET",
+		url : "/static/elise/listofsounddurations.txt",
+		dataType : "text",
+		success : function(data) {
+			processTxt(data);
+		}
+	});
+});
+
+// Calls processMessages to retrieve the message text files and convert them to strings for use in the experiment 
+$(document).ready(function() {
+	processMessages();
+});
+	// URL param that sets whether this is a comprehension or production trial
+	var comp;
+	var cond;
+	// Subject number
+	var subjectnr;
+	// Stores trial number which will be continuously incremented throughout the experiment
+	var trialnr = 1;
+	// Stores array of each trial data subarray
+	var total_data_array = []
+	// Stores participant data 
+	var participant_data_array = []
+	// Stores info on participant leaving window
+	var participant_browser_interaction = []
+	participant_browser_interaction.push(["browser_id", "event", "trialnr", "time", "time_diff"]);
+	// For testing, parameter to decide if to skip actual trials
+	var skips = [];
+	var browser_id;
+	var prev_time = 0;
+	
+	document.addEventListener("click", function() {
+		
+		document.removeEventListener('click', arguments.callee);
+		jsPsych.init({
+			on_finish : function() {
+				// Commented out server code to send data when ready
+				sendJSONData(JSON.stringify(total_data_array), "s_" + subjectnr + "_log");
+				sendJSONData(JSON.stringify(participant_browser_interaction), "s_" + subjectnr + "_browserinteractions")
+				// console logging
+				//console.log(total_data_array)
+				//console.log(participant_data_array)
+				//console.log(subjectnr + "_setup")
+				window.location = "https://uwmadison.co1.qualtrics.com/jfe/form/SV_6xJLEuRZ9elLPD0?id=" + subjectnr + "&cond=" + cond
+			},
+			on_interaction_data_update: function(data) {
+				var time_diff = data["time"] - prev_time;
+				prev_time = data["time"]
+				participant_browser_interaction.push([browser_id, data["event"], data["trial"], data["time"], time_diff]);
+			},
+			timeline: 
+			makeExp(),
+			show_progress_bar: true,
+			exclusions: {
+			    audio: true,
+			    fullscreen: true
+			  }
+		})
+		//initExp(); 
+
+	});
+</script>
+</html>
