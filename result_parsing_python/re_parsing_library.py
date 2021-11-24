@@ -1,4 +1,9 @@
 import re
+import numpy as np
+
+# Global sets storing determiners and nouns for comparison 
+determiners = []
+nouns = []
 
 def split_by_regex(response):
     split_string = re.split(" ",response)
@@ -44,3 +49,64 @@ def single_string_parse(response):
 # Concatenates second and third string entry and considers first entry to be determiner
 def three_string_parse(response):
     return two_string_parse([response[0], response[1]+response[2]])
+
+def levenshtein(seq1, seq2):
+    size_x = len(seq1) + 1
+    size_y = len(seq2) + 1
+    matrix = np.zeros ((size_x, size_y))
+    for x in xrange(size_x):
+        matrix [x, 0] = x
+    for y in xrange(size_y):
+        matrix [0, y] = y
+
+    for x in xrange(1, size_x):
+        for y in xrange(1, size_y):
+            if seq1[x-1] == seq2[y-1]:
+                matrix [x,y] = min(
+                    matrix[x-1, y] + 1,
+                    matrix[x-1, y-1],
+                    matrix[x, y-1] + 1
+                )
+            else:
+                matrix [x,y] = min(
+                    matrix[x-1,y] + 1,
+                    matrix[x-1,y-1] + 1,
+                    matrix[x,y-1] + 1
+                )
+    print (matrix)
+    return (matrix[size_x - 1, size_y - 1])
+
+def morpheme_levenshtein_comparison(morpheme, threshold, is_determiner):
+    # Stores the current lowest LD between the morpheme and the possible options
+    curr_closest = 1000000
+
+    if(is_determiner):
+        for i in determiners:
+            if (levenshtein(morpheme, i) == curr_closest):
+                # Unmappable, 0 indicates that morpheme is not gibberish, needs human inspect
+                return (0, morpheme)
+            if(levenshtein(morpheme, i) < threshold and levenshtein(morpheme, i) < curr_closest):
+                curr_closest = levenshtein(morpheme, i)
+                curr_best = i
+
+        # Mapped to nothing because every LD higher than threshold, -1 indicates gibberish
+        if (curr_closest == 1000000):
+            return (-1, morpheme)
+        
+        # Mapped successfully, return 1 indicating success and the mapped morpheme
+        return (1, curr_best)
+    else:
+        for i in nouns:
+            if (levenshtein(morpheme, i) == curr_closest):
+                # Unmappable, 0 indicates that morpheme is not gibberish, needs human inspect
+                return (0, morpheme)
+            if(levenshtein(morpheme, i) < threshold and levenshtein(morpheme, i) < curr_closest):
+                curr_closest = levenshtein(morpheme, i)
+                curr_best = i
+
+        # Mapped to nothing because every LD higher than threshold, -1 indicates gibberish
+        if (curr_closest == 1000000):
+            return (-1, morpheme)
+        
+        # Mapped successfully, return 1 indicating success and the mapped morpheme
+        return (1, curr_best)
