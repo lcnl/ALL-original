@@ -1,5 +1,6 @@
 import re
 import numpy as np
+import dictionaries
 
 # Global sets storing determiners and nouns for comparison 
 determiners = []
@@ -110,3 +111,28 @@ def morpheme_levenshtein_comparison(morpheme, threshold, is_determiner):
         
         # Mapped successfully, return 1 indicating success and the mapped morpheme
         return (1, curr_best)
+
+def determiner_assignment(det_names):
+
+    # Maps determiners to their data
+    det_map = {}
+    for det in det_names:
+        reg_data = re.findall("det[0-9]+_(?:(?:big)|(?:small))[0-9]+[ps]",det)
+        if(reg_data):
+            # Big or small
+            big_or_small = re.findall("(?:(?:big)|(?:small))",reg_data[0])[0]
+            
+            # Determines plurality given input string
+            number_and_plurality = re.findall("[0-9]+[ps]+",reg_data[0])[0]
+            p_or_s = re.findall("[ps]+",number_and_plurality)[0]
+            
+            # Determines number for determiner
+            det_number = int(re.findall("[0-9]+",reg_data[0])[0])
+
+            # Maps determiner to its assignment in tuple form i.e. 1: ("big", "p")
+            det_map[det_number] = (big_or_small, p_or_s)
+        else:
+            # Invalid input, bad news 
+            return -1
+    return det_map
+print(determiner_assignment(["det1_big2p.wav","det2_small2p.wav","det3_big2s.wav","det4_small2s.wav"]))
