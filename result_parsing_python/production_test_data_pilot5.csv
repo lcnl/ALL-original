@@ -1,0 +1,541 @@
+subjectnr,condition,trial_type,trialnr,typed_response,target_response,RT,neighborhood,subneighborhood,target_aliennr,target_plural,participant_type
+71993,c,PT,381,something zeebaaf,ked zeevesh,19.7214000000954,small,training,18,FALSE,SONA
+71993,c,PT,382,something skunok,lom skunok,11.1291000000238,big,testing,14,FALSE,SONA
+71993,c,PT,383,someting zipesh,ked zimbesh,15.1091000000238,small,testing,24,FALSE,SONA
+71993,c,PT,384,something manool,jeb monool,10.2361000000238,big,training,2,TRUE,SONA
+71993,c,PT,385,something frusok,lom frusok,8.01970000004768,big,training,9,FALSE,SONA
+71993,c,PT,386,something pumok,lom pumok,9.8585,big,testing,17,FALSE,SONA
+71993,c,PT,387,something pexool,jeb pexool,9.51089999997616,big,training,0,TRUE,SONA
+71993,c,PT,388,something plimool,jeb plimool,9.80920000004768,big,testing,15,TRUE,SONA
+71993,c,PT,389,something ,lom vorok,17.8259000000954,big,training,3,FALSE,SONA
+71993,c,PT,390,something timbok,ked tochesh,25.3999000000954,small,training,22,FALSE,SONA
+71993,c,PT,391,something skunool,jeb skunool,7.11259999990463,big,testing,14,TRUE,SONA
+71993,c,PT,392,something glarmok,lom glarmok,11.8593999999762,big,testing,13,FALSE,SONA
+71993,c,PT,393,something zeebaaf,dap zeevaaf,17.289,small,training,18,TRUE,SONA
+71993,c,PT,394,something pumool,jeb pumool,7.93489999997616,big,testing,17,TRUE,SONA
+71993,c,PT,395,something chetool,dap chetaaf,7.70310000002384,small,testing,29,TRUE,SONA
+71993,c,PT,397,something foudool,jeb foudool,15.6856999999285,big,training,6,TRUE,SONA
+71993,c,PT,398,something heebesh,ked heefesh,7.1065,small,testing,26,FALSE,SONA
+71993,c,PT,399,something foudok,lom foudok,5.01029999995232,big,training,6,FALSE,SONA
+71993,c,PT,400,something hullesh,ked hullesh,6.42360000002384,small,testing,28,FALSE,SONA
+71993,c,PT,401,something sabool,dap sibaaf,12.9452000000477,small,training,20,TRUE,SONA
+71993,c,PT,402,something thebok,lom thebok,8.49260000002384,big,training,4,FALSE,SONA
+71993,c,PT,403,something crenok,ked kredesh,8.921,small,testing,27,FALSE,SONA
+71993,c,PT,404,something thebool,jeb thebool,5.86110000002384,big,training,4,TRUE,SONA
+71993,c,PT,405,something glarbool,jeb glarmool,10.2008999999762,big,testing,13,TRUE,SONA
+71993,c,PT,406,something heebaaf,dap heefaaf,5.87580000007153,small,testing,26,TRUE,SONA
+71993,c,PT,407,something zumool,jeb zoutool,8.42630000007153,big,training,7,TRUE,SONA
+71993,c,PT,408,something pavok,lom pavok,5.94120000004768,big,testing,12,FALSE,SONA
+71993,c,PT,409,something ruzok,lom roozok,6.50670000004768,big,testing,16,FALSE,SONA
+71993,c,PT,410,something stamok,lom stamok,5.52079999995232,big,training,5,FALSE,SONA
+71993,c,PT,411,something pexok,lom pexok,18.3716999999285,big,training,0,FALSE,SONA
+71993,c,PT,413,something burok,ked buresh,9.68210000002384,small,testing,25,FALSE,SONA
+71993,c,PT,414,something bipesh,ked biffesh,11.0798999999762,small,training,21,FALSE,SONA
+71993,c,PT,415,something sarbool,jeb sarbool,10.5712999999523,big,training,10,TRUE,SONA
+71993,c,PT,416,something,jeb vorool,5.78110000002384,big,training,3,TRUE,SONA
+71993,c,PT,417,something stamool,jeb stamool,7.9485,big,training,5,TRUE,SONA
+71993,c,PT,418,something buraaf,dap buraaf,6.09510000002384,small,testing,25,TRUE,SONA
+71993,c,PT,419,something bepaaf,dap tamaaf,10.9274000000954,small,training,23,TRUE,SONA
+71993,c,PT,420,something hullaaf,dap hullaaf,6.31310000002384,small,testing,28,TRUE,SONA
+71993,c,PT,421,something bipesh,ked tamesh,13.4755,small,training,23,FALSE,SONA
+71993,c,PT,422,something zamok,lom zoutok,5.17330000007153,big,training,7,FALSE,SONA
+71993,c,PT,423,something zipaaf,dap zimbaaf,7.18280000007153,small,testing,24,TRUE,SONA
+71993,c,PT,424,something manok,lom monok,6.21210000002384,big,training,2,FALSE,SONA
+71993,c,PT,425,something ,lom naosok,40.9488999999762,big,training,8,FALSE,SONA
+71993,c,PT,426,something frusool,jeb frusool,7.39109999990463,big,training,9,TRUE,SONA
+71993,c,PT,427,something rusool,jeb roozool,8.94789999997616,big,testing,16,TRUE,SONA
+71993,c,PT,429,something bepesh,ked bepesh,6.40439999997616,small,training,19,FALSE,SONA
+71993,c,PT,430,something bafaaf,dap biffaaf,15.2773999999762,small,training,21,TRUE,SONA
+71993,c,PT,431,something chetok,ked chetesh,7.57030000007153,small,testing,29,FALSE,SONA
+71993,c,PT,432,something bepaaf,dap bepaaf,13.4642999999523,small,training,19,TRUE,SONA
+71993,c,PT,433,something timok,lom teepok,4.60090000009537,big,training,1,FALSE,SONA
+71993,c,PT,434,something sarbok,lom sarbok,10.2577000000477,big,training,10,FALSE,SONA
+71993,c,PT,435,something chagool,jeb chagool,8.93260000002384,big,training,11,TRUE,SONA
+71993,c,PT,436,something crenaaf,dap kredaaf,7.12089999997616,small,testing,27,TRUE,SONA
+71993,c,PT,437,something sabok,ked sibesh,4.12919999992847,small,training,20,FALSE,SONA
+71993,c,PT,438,something chagok,lom chagok,5.81769999992847,big,training,11,FALSE,SONA
+71993,c,PT,439,something timool,jeb teepool,4.68730000007153,big,training,1,TRUE,SONA
+71993,c,PT,440,something,jeb naosool,2.28770000004768,big,training,8,TRUE,SONA
+71993,c,PT,441,something timool,dap tochaaf,7.02459999990463,small,training,22,TRUE,SONA
+71993,c,PT,442,something plimok,lom plimok,3.74160000002384,big,testing,15,FALSE,SONA
+71993,c,PT,443,something pavaaf,jeb pavool,8.65879999995232,big,testing,12,TRUE,SONA
+72829,c,PT,381,jeb thebok,jeb vorok,11.7483999999762,big,testing,17,FALSE,SONA
+72829,c,PT,382,ked chetaaf,ked tamaaf,9.4445,small,testing,27,TRUE,SONA
+72829,c,PT,383,dap zeevesh,dap zeevesh,8.82720000004768,small,training,19,FALSE,SONA
+72829,c,PT,384,dap chetesh,dap chetesh,11.3705,small,training,23,FALSE,SONA
+72829,c,PT,385,lom pavool,lom pavool,11.4742999999523,big,training,11,TRUE,SONA
+72829,c,PT,386,lom nasool,lom naosool,12.8096000000238,big,training,9,TRUE,SONA
+72829,c,PT,387,ked bepesh,ked bepaaf,11.3885999999046,small,testing,26,TRUE,SONA
+72829,c,PT,388,jeb sarboof,jeb pumok,14.6042999999523,big,testing,12,FALSE,SONA
+72829,c,PT,389,lom thebol,lom thebool,15.6442999999523,big,training,1,TRUE,SONA
+72829,c,PT,390,jeb plimok,jeb plimok,10.2873999999762,big,training,0,FALSE,SONA
+72829,c,PT,391,ked kredaf,ked kredaaf,9.061,small,training,18,TRUE,SONA
+72829,c,PT,392,jeb zouto,dap zimbesh,11.6333000000715,small,training,21,FALSE,SONA
+72829,c,PT,393,jeb zoutok,jeb zoutok,6.48980000007153,big,training,4,FALSE,SONA
+72829,c,PT,394,jeb chagok,jeb glarmok,11.6257999999523,big,testing,13,FALSE,SONA
+72829,c,PT,395,dap tanaf,dap heefesh,12.995,small,training,22,FALSE,SONA
+72829,c,PT,397,lom guhool,ked heefaaf,11.8251999999285,small,training,22,TRUE,SONA
+72829,c,PT,398,kad chetaf,ked chetaaf,10.2223999999762,small,training,23,TRUE,SONA
+72829,c,PT,399,jeb chagof,jeb chagok,8.18889999997616,big,training,8,FALSE,SONA
+72829,c,PT,400,jeb fugaf,dap buresh,5.73539999997616,small,training,20,FALSE,SONA
+72829,c,PT,401,jeb stambok,jeb frusok,12.0645,big,testing,16,FALSE,SONA
+72829,c,PT,402,lom mogoul,lom stamool,13.7835,big,testing,14,TRUE,SONA
+72829,c,PT,403,lom monool,lom monool,7.041,big,training,10,TRUE,SONA
+72829,c,PT,404,jeb thagof,dap tochesh,27.1226000000238,small,testing,24,FALSE,SONA
+72829,c,PT,405,lom foudol,lom pumool,25.3787999999523,big,testing,12,TRUE,SONA
+72829,c,PT,406,jeb dufof,dap biffesh,10.414,small,testing,28,FALSE,SONA
+72829,c,PT,407,lom fuusol,lom frusool,23.4016000000238,big,testing,16,TRUE,SONA
+72829,c,PT,408,jeb stamob,jeb stamok,12.315,big,testing,14,FALSE,SONA
+72829,c,PT,409,jeb kredaf,dap kredesh,12.1045,small,training,18,FALSE,SONA
+72829,c,PT,410,jeb thamof,jeb skunok,10.7247000000477,big,training,2,FALSE,SONA
+72829,c,PT,411,jeb rozof,jeb thebok,16.0358999999762,big,training,1,FALSE,SONA
+72829,c,PT,413,lom sarbol,lom sarbool,11.146,big,testing,15,TRUE,SONA
+72829,c,PT,414,ked sibaf,ked sibaaf,8.416,small,testing,25,TRUE,SONA
+72829,c,PT,415,ked chetaf,ked hullaaf,16.488,small,testing,29,TRUE,SONA
+72829,c,PT,416,jeb teepok,jeb teepok,12.5488999999762,big,training,7,FALSE,SONA
+72829,c,PT,417,jeb pabok,jeb foudok,11.3346000000238,big,training,3,FALSE,SONA
+72829,c,PT,418,jeb manok,jeb pavok,5.16619999992847,big,training,11,FALSE,SONA
+72829,c,PT,419,jeb sanok,jeb sarbok,3.86229999995232,big,testing,15,FALSE,SONA
+72829,c,PT,420,dap dopak ,dap tamesh,14.5456000000238,small,testing,27,FALSE,SONA
+72829,c,PT,421,lom plimol,lom plimool,31.979,big,training,0,TRUE,SONA
+72829,c,PT,422,lom ghool,ked biffaaf,5.515,small,testing,28,TRUE,SONA
+72829,c,PT,423,lom fusool,lom chagool,6.0445,big,training,8,TRUE,SONA
+72829,c,PT,424,ked guraf,ked buraaf,18.9766999999285,small,training,20,TRUE,SONA
+72829,c,PT,425,jeb manok,jeb pexok,3.2495,big,training,5,FALSE,SONA
+72829,c,PT,426,jeb flanok,jeb monok,4.4965,big,training,10,FALSE,SONA
+72829,c,PT,427,jeb hanof,dap hullesh,6.11539999997616,small,testing,29,FALSE,SONA
+72829,c,PT,429,ked gumaf,ked zimbaaf,15.2187000000477,small,training,21,TRUE,SONA
+72829,c,PT,430,jeb kalof,dap bepesh,10.257,small,testing,26,FALSE,SONA
+72829,c,PT,431,lom manool,lom zoutool,5.9395,big,training,4,TRUE,SONA
+72829,c,PT,432,jeb fanof,dap sibesh,11.5642999999523,small,testing,25,FALSE,SONA
+72829,c,PT,433,lom monool,lom roozool,18.5097000000477,big,training,6,TRUE,SONA
+72829,c,PT,434,lom fasool,lom teepool,5.62610000002384,big,training,7,TRUE,SONA
+72829,c,PT,435,lom manool,lom vorool,3.60559999990463,big,testing,17,TRUE,SONA
+72829,c,PT,436,jeb razool,jeb roozok,15.5135,big,training,6,FALSE,SONA
+72829,c,PT,437,lom manool,lom pexool,4.28640000009537,big,training,5,TRUE,SONA
+72829,c,PT,438,lom fasool,ked zeevaaf,8.96929999995232,small,training,19,TRUE,SONA
+72829,c,PT,439,jeb nasok,jeb naosok,10.6878999999762,big,training,9,FALSE,SONA
+72829,c,PT,440,lom kasool,lom glarmool,4.7375,big,testing,13,TRUE,SONA
+72829,c,PT,441,lom gasool,lom skunool,8.33860000002384,big,training,2,TRUE,SONA
+72829,c,PT,442,lom nawool,ked tochaaf,4.15829999995232,small,testing,24,TRUE,SONA
+72829,c,PT,443,lom manool,lom foudool,4.57139999997616,big,training,3,TRUE,SONA
+73998,c,PT,381,ked zebesh,ked zeevaaf,10.1335,small,training,18,TRUE,SONA
+73998,c,PT,382,lam zautoke,lom zoutok,11.459200000003,big,training,9,FALSE,SONA
+73998,c,PT,383,lam stamule,jeb stamool,9.551,big,testing,15,TRUE,SONA
+73998,c,PT,384,jeb foudule,jeb foudool,8.65570000000298,big,training,2,TRUE,SONA
+73998,c,PT,385,lam teepok,lom teepok,5.88279999999702,big,testing,14,FALSE,SONA
+73998,c,PT,386,no lcue,jeb monool,3.23670000000298,big,training,4,TRUE,SONA
+73998,c,PT,387,dop zimbesh,lom chagok,6.97410000000894,big,training,1,FALSE,SONA
+73998,c,PT,388,jeb pimuke,jeb plimool,5.86089999999106,big,training,11,TRUE,SONA
+73998,c,PT,389,ked hullof,dap hullesh,4.39720000000298,small,testing,29,FALSE,SONA
+73998,c,PT,390,ked zabule,ked biffaaf,8.78330000001192,small,training,20,TRUE,SONA
+73998,c,PT,391,dap bepsh,ked bepaaf,6.988,small,testing,25,TRUE,SONA
+73998,c,PT,392,dont know,jeb vorool,5.35510000000894,big,training,5,TRUE,SONA
+73998,c,PT,393,lam fodule ,lom vorok,8.48670000000298,big,training,5,FALSE,SONA
+73998,c,PT,394,ked zebesh,dap heefesh,4.18729999999702,small,testing,24,FALSE,SONA
+73998,c,PT,395,ked zabule,ked tamaaf,3.07990000000596,small,training,22,TRUE,SONA
+73998,c,PT,397,ked zabule,ked heefaaf,3.48190000000596,small,testing,24,TRUE,SONA
+73998,c,PT,398,dap zimbesh,dap zimbesh,8.50469999998808,small,training,23,FALSE,SONA
+73998,c,PT,399,lam zarboke,jeb sarbool,5.92209999999404,big,training,0,TRUE,SONA
+73998,c,PT,400,ked zebash,dap zeevesh,5.89489999999106,small,training,18,FALSE,SONA
+73998,c,PT,401,lam brozoo;,jeb pexool,10.7096000000089,big,testing,17,TRUE,SONA
+73998,c,PT,402,dam kedesh,dap biffesh,4.70790000000596,small,training,20,FALSE,SONA
+73998,c,PT,403,lam teepok,jeb teepool,8.58190000000596,big,testing,14,TRUE,SONA
+73998,c,PT,404,jeb pimule,lom plimok,6.87929999999702,big,training,11,FALSE,SONA
+73998,c,PT,405,jeb pavool,lom pavok,5.0905,big,training,7,FALSE,SONA
+73998,c,PT,406,ked zibaaf,dap sibesh,6.6295,small,testing,27,FALSE,SONA
+73998,c,PT,407,jeb foudule,lom foudok,8.43059999999404,big,training,2,FALSE,SONA
+73998,c,PT,408,ked biffaff,jeb chagool,6.94189999999106,big,training,1,TRUE,SONA
+73998,c,PT,409,lam frusoke,lom frusok,6.34459999999404,big,training,10,FALSE,SONA
+73998,c,PT,410,ked boraf,ked buraaf,6.13679999999702,small,training,19,TRUE,SONA
+73998,c,PT,411,jeb pavule,jeb pavool,6.70259999999404,big,training,7,TRUE,SONA
+73998,c,PT,413,dap buresh,dap buresh,7.52439999999106,small,training,19,FALSE,SONA
+73998,c,PT,414,dap chetesh,lom pumok,5.02140000000596,big,training,8,FALSE,SONA
+73998,c,PT,415,dont know,lom skunok,3.42029999999702,big,testing,12,FALSE,SONA
+73998,c,PT,416,dap chetesh,dap chetesh,5.26479999999702,small,testing,28,FALSE,SONA
+73998,c,PT,417,job rozool,dap tochesh,5.58019999998808,small,testing,26,FALSE,SONA
+73998,c,PT,418,dont know,lom monok,2.82520000000298,big,training,4,FALSE,SONA
+73998,c,PT,419,penguin,jeb skunool,2.20360000000894,big,testing,12,TRUE,SONA
+73998,c,PT,420,dop zimbesh,ked zimbaaf,7.08179999999702,small,training,23,TRUE,SONA
+73998,c,PT,421,geb garmool,lom glarmok,7.0195,big,training,6,FALSE,SONA
+73998,c,PT,422,dep garmool,jeb naosool,3.94009999999404,big,training,3,TRUE,SONA
+73998,c,PT,423,lam teepok,jeb thebool,5.35539999999106,big,testing,16,TRUE,SONA
+73998,c,PT,424,ked hullof,ked hullaaf,4.60570000000298,small,testing,29,TRUE,SONA
+73998,c,PT,425,dap chetule,ked chetaaf,7.78189999999106,small,testing,28,TRUE,SONA
+73998,c,PT,426,lam frusule,jeb frusool,6.66739999999106,big,training,10,TRUE,SONA
+73998,c,PT,427,poninl,ked tochaaf,2.43989999999106,small,testing,26,TRUE,SONA
+73998,c,PT,429,jeb foudule,ked kredaaf,8.7615,small,training,21,TRUE,SONA
+73998,c,PT,430,jeb rozool,jeb roozool,4.74740000000596,big,testing,13,TRUE,SONA
+73998,c,PT,431,lam homok,jeb pumool,8.37170000000298,big,training,8,TRUE,SONA
+73998,c,PT,432,jeb razool,lom pexok,3.69969999998808,big,testing,17,FALSE,SONA
+73998,c,PT,433,jeb zautool,jeb zoutool,6.40240000000596,big,training,9,TRUE,SONA
+73998,c,PT,434,ked kredeff,dap tamesh,4.28420000000298,small,training,22,FALSE,SONA
+73998,c,PT,435,jeb rozool,lom roozok,3.29519999998808,big,testing,13,FALSE,SONA
+73998,c,PT,436,ked kredef,dap kredesh,2.92520000000298,small,training,21,FALSE,SONA
+73998,c,PT,437,dap bepesh,dap bepesh,8.91970000000298,small,testing,25,FALSE,SONA
+73998,c,PT,438,lam teepok,lom thebok,4.08270000000298,big,testing,16,FALSE,SONA
+73998,c,PT,439,lam zarbook,lom sarbok,5.62420000000298,big,training,0,FALSE,SONA
+73998,c,PT,440,lam stamok,lom stamok,3.67929999999702,big,testing,15,FALSE,SONA
+73998,c,PT,441,geb garmool,jeb glarmool,6.18579999999702,big,training,6,TRUE,SONA
+73998,c,PT,442,ked sibaaf,ked sibaaf,4.20020000000298,small,testing,27,TRUE,SONA
+73998,c,PT,443,red,lom naosok,2.11679999999702,big,training,3,FALSE,SONA
+74775,c,PT,381,something something,jeb hullaaf,8.36010000002384,small,testing,28,TRUE,SONA
+74775,c,PT,382,something something,ked plimool,1.49460000002384,big,training,2,TRUE,SONA
+74775,c,PT,383,something something,jeb buraaf,1.13319999992847,small,testing,27,TRUE,SONA
+74775,c,PT,384,something something,lom glarmok,0.880200000047684,big,training,10,FALSE,SONA
+74775,c,PT,385,something something,ked chagool,1.21090000009537,big,testing,14,TRUE,SONA
+74775,c,PT,386,something something,lom frusok,0.977099999904633,big,training,7,FALSE,SONA
+74775,c,PT,387,something something,jeb sibaaf,0.947599999904633,small,testing,26,TRUE,SONA
+74775,c,PT,388,something something,lom plimok,1.03989999997616,big,training,2,FALSE,SONA
+74775,c,PT,389,something something,dap zimbesh,0.921600000023842,small,training,19,FALSE,SONA
+74775,c,PT,390,something something,ked roozool,1.01139999997616,big,training,5,TRUE,SONA
+74775,c,PT,391,something something,jeb bepaaf,0.951799999952316,small,testing,25,TRUE,SONA
+74775,c,PT,392,something something,ked thebool,0.892,big,training,6,TRUE,SONA
+74775,c,PT,393,something something,dap heefesh,0.884300000071526,small,testing,24,FALSE,SONA
+74775,c,PT,394,something something,lom thebok,0.9745,big,training,6,FALSE,SONA
+74775,c,PT,395,something something,lom pexok,0.904400000095367,big,training,1,FALSE,SONA
+74775,c,PT,397,something something,lom stamok,1.8395,big,training,8,FALSE,SONA
+74775,c,PT,398,something something,jeb kredaaf,0.894700000047684,small,training,21,TRUE,SONA
+74775,c,PT,399,something something,ked stamool,0.857399999976158,big,training,8,TRUE,SONA
+74775,c,PT,400,something something,dap hullesh,0.543899999976158,small,testing,28,FALSE,SONA
+74775,c,PT,401,something something,jeb zeevaaf,0.499100000023842,small,training,18,TRUE,SONA
+74775,c,PT,402,something something,lom pavok,0.663900000095367,big,training,4,FALSE,SONA
+74775,c,PT,403,something something,dap bepesh,0.557,small,testing,25,FALSE,SONA
+74775,c,PT,404,something something,ked frusool,0.501600000023842,big,training,7,TRUE,SONA
+74775,c,PT,405,something something,dap tochesh,0.555,small,training,23,FALSE,SONA
+74775,c,PT,406,something something,dap zeevesh,0.589399999976158,small,training,18,FALSE,SONA
+74775,c,PT,407,something something,ked glarmool,0.526700000047684,big,training,10,TRUE,SONA
+74775,c,PT,408,something something,lom zoutok,0.532100000023842,big,training,3,FALSE,SONA
+74775,c,PT,409,something something,ked zoutool,0.5015,big,training,3,TRUE,SONA
+74775,c,PT,410,something something,lom teepok,0.534899999976158,big,testing,15,FALSE,SONA
+74775,c,PT,411,something something,jeb heefaaf,0.528600000023842,small,testing,24,TRUE,SONA
+74775,c,PT,413,something something,ked pavool,0.924,big,training,4,TRUE,SONA
+74775,c,PT,414,something something,lom naosok,0.61,big,testing,12,FALSE,SONA
+74775,c,PT,415,something something,lom roozok,0.6255,big,training,5,FALSE,SONA
+74775,c,PT,416,something something,lom foudok,0.602399999976158,big,training,9,FALSE,SONA
+74775,c,PT,417,something something,ked teepool,0.645,big,testing,15,TRUE,SONA
+74775,c,PT,418,something something,ked vorool,0.661799999952316,big,training,11,TRUE,SONA
+74775,c,PT,419,something something,jeb biffaaf,0.644,small,training,22,TRUE,SONA
+74775,c,PT,420,something something,dap tamesh,0.490899999976158,small,testing,29,FALSE,SONA
+74775,c,PT,421,something something,ked naosool,0.707800000071526,big,testing,12,TRUE,SONA
+74775,c,PT,422,something something,dap chetesh,0.576600000023842,small,training,20,FALSE,SONA
+74775,c,PT,423,something something,lom monok,0.698,big,testing,16,FALSE,SONA
+74775,c,PT,424,something something,lom pumok,0.603399999976158,big,testing,17,FALSE,SONA
+74775,c,PT,425,something something,ked monool,0.571799999952316,big,testing,16,TRUE,SONA
+74775,c,PT,426,something something,ked skunool,0.5295,big,training,0,TRUE,SONA
+74775,c,PT,427,something something,dap sibesh,0.599600000023842,small,testing,26,FALSE,SONA
+74775,c,PT,429,something something,lom chagok,1.10619999992847,big,testing,14,FALSE,SONA
+74775,c,PT,430,something something,dap buresh,0.524200000047684,small,testing,27,FALSE,SONA
+74775,c,PT,431,something something,jeb chetaaf,0.463799999952316,small,training,20,TRUE,SONA
+74775,c,PT,432,something something,ked pexool,0.642,big,training,1,TRUE,SONA
+74775,c,PT,433,something something,lom skunok,0.606399999976158,big,training,0,FALSE,SONA
+74775,c,PT,434,something something,jeb zimbaaf,0.579399999976158,small,training,19,TRUE,SONA
+74775,c,PT,435,something something,lom vorok,0.541199999928475,big,training,11,FALSE,SONA
+74775,c,PT,436,something something,ked foudool,0.597100000023842,big,training,9,TRUE,SONA
+74775,c,PT,437,something something,lom sarbok,0.539200000047684,big,testing,13,FALSE,SONA
+74775,c,PT,438,something something,ked sarbool,0.5565,big,testing,13,TRUE,SONA
+74775,c,PT,439,something something,ked pumool,0.4835,big,testing,17,TRUE,SONA
+74775,c,PT,440,something something,jeb tamaaf,0.793,small,testing,29,TRUE,SONA
+74775,c,PT,441,something something,jeb tochaaf,0.643100000023842,small,training,23,TRUE,SONA
+74775,c,PT,442,something something,dap kredesh,0.545299999952316,small,training,21,FALSE,SONA
+74775,c,PT,443,something something,dap biffesh,0.504600000023842,small,training,22,FALSE,SONA
+74806,c,PT,381,Jeb Sorok,lom pavok,7.70959999996424,big,testing,12,FALSE,SONA
+74806,c,PT,382,Something Hollesh,dap hullesh,7.50510000002384,small,testing,25,FALSE,SONA
+74806,c,PT,383,Jeb Zoutok,lom pexok,28.4144000000358,big,testing,15,FALSE,SONA
+74806,c,PT,384,Something Monok,lom monok,11.2401000000238,big,training,3,FALSE,SONA
+74806,c,PT,385,Something Chitesh,dap chetesh,24.5283999999762,small,testing,29,FALSE,SONA
+74806,c,PT,386,Something Sarbool,jeb frusool,17.7616000000238,big,training,10,TRUE,SONA
+74806,c,PT,387,Jeb Zorbok,lom vorok,20.3641999999881,big,training,0,FALSE,SONA
+74806,c,PT,388,Something Zarbool,ked sibaaf,60.6521999999881,small,testing,27,TRUE,SONA
+74806,c,PT,389,Lom Gartesh,jeb glarmool,32.1211000000239,big,training,5,TRUE,SONA
+74806,c,PT,390,Dop Zitesh,ked zeevaaf,5.7,small,training,18,TRUE,SONA
+74806,c,PT,391,Doresh Something,dap biffesh,40.5013000000119,small,training,22,FALSE,SONA
+74806,c,PT,392,Something Sarbool,jeb sarbool,16.2895,big,training,7,TRUE,SONA
+74806,c,PT,393,Dop Chargool,jeb chagool,19.5808000000119,big,training,11,TRUE,SONA
+74806,c,PT,394,Jeb Something,jeb skunool,20.0468999999762,big,testing,17,TRUE,SONA
+74806,c,PT,395,Something Hollesh,ked hullaaf,8.75419999998808,small,testing,25,TRUE,SONA
+74806,c,PT,397,Dop Sitesh,ked kredaaf,5.86789999997616,small,training,20,TRUE,SONA
+74806,c,PT,398,Jeb Sitool,lom plimok,8.78439999997616,big,training,9,FALSE,SONA
+74806,c,PT,399,Dop Sibool,lom frusok,11.2691999999881,big,training,10,FALSE,SONA
+74806,c,PT,400,Something Woodesh,jeb stamool,30.739,big,testing,14,TRUE,SONA
+74806,c,PT,401,Jeb Sarbok,jeb pavool,5.353,big,testing,12,TRUE,SONA
+74806,c,PT,402,Something Nousool,jeb naosool,11.2075,big,training,2,TRUE,SONA
+74806,c,PT,403,Something Kasool,jeb foudool,53.9511999999881,big,testing,13,TRUE,SONA
+74806,c,PT,404,Dop Jitesh,dap tochesh,19.7021999999881,small,testing,24,FALSE,SONA
+74806,c,PT,405,Something Garbool,lom glarmok,13.1965999999642,big,training,5,FALSE,SONA
+74806,c,PT,406,Something Monok,jeb monool,6.01719999998808,big,training,3,TRUE,SONA
+74806,c,PT,407,Dop Vitesh,ked buraaf,12.2571999999881,small,training,23,TRUE,SONA
+74806,c,PT,408,Jeb Sartool,jeb zoutool,8.17219999998808,big,training,1,TRUE,SONA
+74806,c,PT,409,Something Teepool,jeb teepool,9.852,big,training,8,TRUE,SONA
+74806,c,PT,410,Something Sarbok,lom sarbok,5.82969999998808,big,training,7,FALSE,SONA
+74806,c,PT,411,Something Gurbok,ked bepaaf,14.8279000000358,small,testing,26,TRUE,SONA
+74806,c,PT,413,Jeb Sitek,lom pumok,27.5605999999642,big,training,6,FALSE,SONA
+74806,c,PT,414,Something Zitool,jeb vorool,43.0801999999881,big,training,0,TRUE,SONA
+74806,c,PT,415,Gar Woodesh,lom stamok,47.5316000000238,big,testing,14,FALSE,SONA
+74806,c,PT,416,Dop Zitesh,dap buresh,7.86910000002384,small,training,23,FALSE,SONA
+74806,c,PT,417,Dop Monool,ked tochaaf,20.6628000000119,small,testing,24,TRUE,SONA
+74806,c,PT,418,Dop Zitool,dap kredesh,16.7161000000238,small,training,20,FALSE,SONA
+74806,c,PT,419,Something Thebool,lom thebok,46.1391999999881,big,training,4,FALSE,SONA
+74806,c,PT,420,Something Zitok,dap zimbesh,38.3544000000358,small,training,19,FALSE,SONA
+74806,c,PT,421,Jeb Thebok,jeb thebool,19.1141999999881,big,training,4,TRUE,SONA
+74806,c,PT,422,Jeb Sorbol,jeb pexool,15.4066999999881,big,testing,15,TRUE,SONA
+74806,c,PT,423,Something Zortook,lom roozok,15.6886000000238,big,testing,16,FALSE,SONA
+74806,c,PT,424,Something Sarbool,ked zimbaaf,42.4493000000119,small,training,19,TRUE,SONA
+74806,c,PT,425,Dop Charbok,lom chagok,8.07110000002384,big,training,11,FALSE,SONA
+74806,c,PT,426,Jeb Zitool,lom zoutok,7.553,big,training,1,FALSE,SONA
+74806,c,PT,427,Gar Sartool,dap bepesh,9.67409999996424,small,testing,26,FALSE,SONA
+74806,c,PT,429,Jeb Sartool,lom foudok,6.19089999997616,big,testing,13,FALSE,SONA
+74806,c,PT,430,Something Zibook,jeb roozool,6.77939999997616,big,testing,16,TRUE,SONA
+74806,c,PT,431,Dop Sitesh,jeb plimool,13.1015,big,training,9,TRUE,SONA
+74806,c,PT,432,Something Nousool,lom naosok,7.37710000002384,big,training,2,FALSE,SONA
+74806,c,PT,433,Something Teepok,lom teepok,24.7893999999762,big,training,8,FALSE,SONA
+74806,c,PT,434,Dop Sitesh,dap sibesh,58.5376999999881,small,testing,27,FALSE,SONA
+74806,c,PT,435,Jeb Sitool,jeb pumool,7.49619999998808,big,training,6,TRUE,SONA
+74806,c,PT,436,Something Chartesh,ked chetaaf,11.6693000000119,small,testing,29,TRUE,SONA
+74806,c,PT,437,Het Sitool,ked heefaaf,12.6663000000119,small,training,21,TRUE,SONA
+74806,c,PT,438,Dop Zitesh,dap zeevesh,3.70809999996424,small,training,18,FALSE,SONA
+74806,c,PT,439,Something Difesh,ked biffaaf,17.4842999999523,small,training,22,TRUE,SONA
+74806,c,PT,440,Jeb Sartool,lom skunok,7.99510000002384,big,testing,17,FALSE,SONA
+74806,c,PT,441,Het Zitool,dap heefesh,13.1246999999881,small,training,21,FALSE,SONA
+74806,c,PT,442,Something Tomool,ked tamaaf,8.09319999998808,small,testing,28,TRUE,SONA
+74806,c,PT,443,Jeb Tomesh,dap tamesh,9.37080000001192,small,testing,28,FALSE,SONA
+74960,c,PT,381,something nasau,ked naosok,5.06070000004768,big,testing,16,FALSE,SONA
+74960,c,PT,382,ked something,ked chagok,12.09,big,training,1,FALSE,SONA
+74960,c,PT,383,something zootool,ked zoutok,14.2285999999046,big,testing,14,FALSE,SONA
+74960,c,PT,384,something vorok,ked vorok,11.514899999857,big,training,3,FALSE,SONA
+74960,c,PT,385,lom something,lom monool,9.0025,big,testing,12,TRUE,SONA
+74960,c,PT,386,lom pavool,ked pavok,13.6310999999046,big,training,10,FALSE,SONA
+74960,c,PT,387,lom pavool,lom pavool,4.59779999995232,big,training,10,TRUE,SONA
+74960,c,PT,388,something something,lom glarmool,37.3335999999046,big,training,8,TRUE,SONA
+74960,c,PT,389,something vorok,lom vorool,10.1651000001431,big,training,3,TRUE,SONA
+74960,c,PT,390,lom something,ked plimok,10.3339000000954,big,training,9,FALSE,SONA
+74960,c,PT,391,something zeevash,dap zeevesh,10.9442000000477,small,testing,24,FALSE,SONA
+74960,c,PT,392,something beepash,jeb bepaaf,3.7915,small,training,23,TRUE,SONA
+74960,c,PT,393,something something,ked glarmok,3.08510000014305,big,training,8,FALSE,SONA
+74960,c,PT,394,something froozool,lom frusool,12.518,big,testing,17,TRUE,SONA
+74960,c,PT,395,jeb tochaf,jeb tochaaf,18.455,small,training,18,TRUE,SONA
+74960,c,PT,397,something sarbok,lom sarbool,9.5515,big,training,7,TRUE,SONA
+74960,c,PT,398,something thebol,ked thebok,9.68880000019074,big,training,5,FALSE,SONA
+74960,c,PT,399,dap sitesh,jeb sibaaf,8.16509999990463,small,training,20,TRUE,SONA
+74960,c,PT,400,something bepash,dap bepesh,5.491,small,training,23,FALSE,SONA
+74960,c,PT,401,something sarbok,ked sarbok,8.41440000009537,big,training,7,FALSE,SONA
+74960,c,PT,402,something sitesh,dap sibesh,11.3969000000954,small,training,20,FALSE,SONA
+74960,c,PT,403,something zootook,lom zoutool,17.6319000000954,big,testing,14,TRUE,SONA
+74960,c,PT,404,ked fodok,ked foudok,17.419899999857,big,training,4,FALSE,SONA
+74960,c,PT,405,something something,jeb heefaaf,7.3005,small,testing,25,TRUE,SONA
+74960,c,PT,406,lom stampool,lom stamool,19.3442000000477,big,training,2,TRUE,SONA
+74960,c,PT,407,something chebok,lom pumool,6.14489999985695,big,training,6,TRUE,SONA
+74960,c,PT,408,jeb zevaf,jeb zeevaaf,11.9945,small,testing,24,TRUE,SONA
+74960,c,PT,409,ked monok,ked monok,8.89890000009537,big,testing,12,FALSE,SONA
+74960,c,PT,410,something thebol,lom thebool,9.848,big,training,5,TRUE,SONA
+74960,c,PT,411,something teepool,ked teepok,7.60880000019074,big,testing,13,FALSE,SONA
+74960,c,PT,413,jeb something,dap heefesh,15.7092000000477,small,testing,25,FALSE,SONA
+74960,c,PT,414,jeb something,dap tochesh,6.86279999995232,small,training,18,FALSE,SONA
+74960,c,PT,415,something kredesh,dap kredesh,13.3610999999046,small,testing,28,FALSE,SONA
+74960,c,PT,416,something hibesh,dap hullesh,5.03809999990463,small,training,21,FALSE,SONA
+74960,c,PT,417,lom plimool,lom plimool,18.9995,big,training,9,TRUE,SONA
+74960,c,PT,418,ked something,lom chagool,10.4352000000477,big,training,1,TRUE,SONA
+74960,c,PT,419,something zeevesh,dap buresh,10.309,small,testing,27,FALSE,SONA
+74960,c,PT,420,something nasau,lom naosool,3.27009999990463,big,testing,16,TRUE,SONA
+74960,c,PT,421,something cheebesh,dap chetesh,4.00460000014305,small,training,19,FALSE,SONA
+74960,c,PT,422,something tamaf,dap tamesh,12.1525,small,testing,26,FALSE,SONA
+74960,c,PT,423,ked foodok,lom foudool,10.0843999998569,big,training,4,TRUE,SONA
+74960,c,PT,424,something hibesh,jeb hullaaf,4.16370000004768,small,training,21,TRUE,SONA
+74960,c,PT,425,something bepash,jeb biffaaf,5.62309999990463,small,training,22,TRUE,SONA
+74960,c,PT,426,jeb something,lom teepool,5.73729999995232,big,testing,13,TRUE,SONA
+74960,c,PT,427,something kredaf,jeb kredaaf,13.855,small,testing,28,TRUE,SONA
+74960,c,PT,429,something cheebesh,jeb chetaaf,3.86170000004768,small,training,19,TRUE,SONA
+74960,c,PT,430,something vooxool,ked pexok,6.01190000009537,big,training,11,FALSE,SONA
+74960,c,PT,431,lom something,ked frusok,11.6305,big,testing,17,FALSE,SONA
+74960,c,PT,432,something buraf,jeb buraaf,9.82820000004768,small,testing,27,TRUE,SONA
+74960,c,PT,433,lom poomool,ked pumok,10.9087999999523,big,training,6,FALSE,SONA
+74960,c,PT,434,something roozool,lom roozool,11.8970999999046,big,training,0,TRUE,SONA
+74960,c,PT,435,something skoonook,ked skunok,11.7902999999523,big,testing,15,FALSE,SONA
+74960,c,PT,436,something zeebash,jeb zimbaaf,4.499,small,testing,29,TRUE,SONA
+74960,c,PT,437,lom rozool,ked roozok,4.35179999995232,big,training,0,FALSE,SONA
+74960,c,PT,438,something zimbaaf,dap zimbesh,11.7727999999523,small,testing,29,FALSE,SONA
+74960,c,PT,439,something vooxool,lom pexool,26.3982000000477,big,training,11,TRUE,SONA
+74960,c,PT,440,something thebok,ked stamok,9.82889999985695,big,training,2,FALSE,SONA
+74960,c,PT,441,dap skoonook,lom skunool,11.5152999999523,big,testing,15,TRUE,SONA
+74960,c,PT,442,something beepash,dap biffesh,7.75979999995232,small,training,22,FALSE,SONA
+74960,c,PT,443,dap something,jeb tamaaf,4.24909999990463,small,testing,26,TRUE,SONA
+74980,c,PT,381,idk,ked roozool,6.01810000038147,big,testing,14,TRUE,SONA
+74980,c,PT,382,zeb,jeb foudok,5.30559999990463,big,training,0,FALSE,SONA
+74980,c,PT,383,zeb,dap hullaaf,2.21119999980927,small,testing,29,TRUE,SONA
+74980,c,PT,384,jeb,ked stamool,2.39140000009537,big,training,4,TRUE,SONA
+74980,c,PT,385,no,lom biffesh,4.07030000019074,small,training,23,FALSE,SONA
+74980,c,PT,386,garlock,jeb glarmok,3.45009999990463,big,testing,16,FALSE,SONA
+74980,c,PT,387,zeb bebop,ked teepool,6.22390000009537,big,training,5,TRUE,SONA
+74980,c,PT,388,no,lom zimbesh,4.96310000038147,small,testing,28,FALSE,SONA
+74980,c,PT,389,no,jeb monok,8.01839999961853,big,testing,13,FALSE,SONA
+74980,c,PT,390,thbolt,jeb thebok,3.53930000019074,big,training,11,FALSE,SONA
+74980,c,PT,391,no,dap tamaaf,3.54840000009537,small,testing,25,TRUE,SONA
+74980,c,PT,392,zeb,ked pexool,4.9965,big,training,8,TRUE,SONA
+74980,c,PT,393,hynolt,ked pumool,5.11030000019074,big,training,7,TRUE,SONA
+74980,c,PT,394,hybolt,jeb pumok,4.2325,big,training,7,FALSE,SONA
+74980,c,PT,395,No,jeb roozok,7.44659999990463,big,testing,14,FALSE,SONA
+74980,c,PT,397,zeb sh,lom bepesh,6.7585,small,training,21,FALSE,SONA
+74980,c,PT,398,no,jeb pexok,1.80709999990463,big,training,8,FALSE,SONA
+74980,c,PT,399,no,jeb stamok,0.5215,big,training,4,FALSE,SONA
+74980,c,PT,400,no,ked pavool,0.920900000095367,big,training,10,TRUE,SONA
+74980,c,PT,401,no,ked monool,0.808799999713898,big,testing,13,TRUE,SONA
+74980,c,PT,402,zarlock,jeb sarbok,3.529,big,training,6,FALSE,SONA
+74980,c,PT,403,no,lom kredesh,4.4725,small,testing,24,FALSE,SONA
+74980,c,PT,404,no,dap sibaaf,1.668,small,testing,26,TRUE,SONA
+74980,c,PT,405,no,dap zimbaaf,1.38380000019074,small,testing,28,TRUE,SONA
+74980,c,PT,406,zeb bulfash,dap buraaf,6.0007999997139,small,training,22,TRUE,SONA
+74980,c,PT,407,galsh,jeb chagok,7.85509999990463,big,testing,17,FALSE,SONA
+74980,c,PT,408,garlock,ked glarmool,2.59319999980927,big,testing,16,TRUE,SONA
+74980,c,PT,409,garlsh,ked chagool,1.91159999990463,big,testing,17,TRUE,SONA
+74980,c,PT,410,varloo,jeb vorok,3.47180000019074,big,training,1,FALSE,SONA
+74980,c,PT,411,glaseh,lom chetesh,3.3517999997139,small,training,19,FALSE,SONA
+74980,c,PT,413,zee sorloo,ked naosool,3.91569999980927,big,training,2,TRUE,SONA
+74980,c,PT,414,no,lom tamesh,1.386,small,testing,25,FALSE,SONA
+74980,c,PT,415,zeb zorloo,jeb naosok,3.50640000009537,big,training,2,FALSE,SONA
+74980,c,PT,416,no,lom hullesh,1.3322999997139,small,testing,29,FALSE,SONA
+74980,c,PT,417,mo,dap heefaaf,0.977699999809265,small,testing,27,TRUE,SONA
+74980,c,PT,418,no,lom tochesh,4.19459999990463,small,training,20,FALSE,SONA
+74980,c,PT,419,vorloo,ked vorool,2.4825,big,training,1,TRUE,SONA
+74980,c,PT,420,no,jeb plimok,1.40380000019074,big,testing,15,FALSE,SONA
+74980,c,PT,421,no,ked frusool,0.966800000190735,big,testing,12,TRUE,SONA
+74980,c,PT,422,no,ked plimool,0.898900000095367,big,testing,15,TRUE,SONA
+74980,c,PT,423,zarlick,jeb zoutok,3.75480000019074,big,training,9,FALSE,SONA
+74980,c,PT,424,bulafsh,lom buresh,2.52439999961853,small,training,22,FALSE,SONA
+74980,c,PT,425,no,dap tochaaf,1.61340000009537,small,training,20,TRUE,SONA
+74980,c,PT,426,no,jeb pavok,2.1242000002861,big,training,10,FALSE,SONA
+74980,c,PT,427,no,lom sibesh,2.49519999980927,small,testing,26,FALSE,SONA
+74980,c,PT,429,thbol,ked thebool,3.34940000009537,big,training,11,TRUE,SONA
+74980,c,PT,430,zarvelish,lom zeevesh,3.15089999961853,small,training,18,FALSE,SONA
+74980,c,PT,431,no,lom heefesh,1.40459999990463,small,testing,27,FALSE,SONA
+74980,c,PT,432,tybolt,jeb teepok,2.7377999997139,big,training,5,FALSE,SONA
+74980,c,PT,433,no,dap kredaaf,1.21609999990463,small,testing,24,TRUE,SONA
+74980,c,PT,434,no,ked foudool,1.1942000002861,big,training,0,TRUE,SONA
+74980,c,PT,435,zenbolt,ked skunool,7.91339999961853,big,training,3,TRUE,SONA
+74980,c,PT,436,garlic,ked sarbool,5.39109999990463,big,training,6,TRUE,SONA
+74980,c,PT,437,gulfesh,dap bepaaf,6.479,small,training,21,TRUE,SONA
+74980,c,PT,438,no,jeb frusok,1.0557000002861,big,testing,12,FALSE,SONA
+74980,c,PT,439,no,ked zoutool,0.90139999961853,big,training,9,TRUE,SONA
+74980,c,PT,440,no,jeb skunok,0.829800000190735,big,training,3,FALSE,SONA
+74980,c,PT,441,zelfish,dap zeevaaf,2.1797000002861,small,training,18,TRUE,SONA
+74980,c,PT,442,no,dap biffaaf,1.162,small,training,23,TRUE,SONA
+74980,c,PT,443,no,dap chetaaf,0.992599999904633,small,training,19,TRUE,SONA
+75281,c,PT,381,dom something,jeb biffaaf,4.97029999999702,small,training,20,TRUE,SONA
+75281,c,PT,382,dop sarbool,dap sarbok,9.12759999999404,big,training,11,FALSE,SONA
+75281,c,PT,383,dom starbool,jeb tochaaf,9.27209999999404,small,testing,27,TRUE,SONA
+75281,c,PT,384,doc something,dap teepok,11.0095,big,testing,14,FALSE,SONA
+75281,c,PT,385,something plimool,dap plimok,8.09520000000298,big,training,6,FALSE,SONA
+75281,c,PT,386,something sordauk,ked naosool,6.92170000000298,big,training,5,TRUE,SONA
+75281,c,PT,387,something carmoon,dap frusok,33.444,big,training,10,FALSE,SONA
+75281,c,PT,388,jeb something,lom zeevesh,8.10020000000298,small,training,21,FALSE,SONA
+75281,c,PT,389,something something,ked pavool,9.48820000000298,big,testing,13,TRUE,SONA
+75281,c,PT,390,something vinesh,dap roozok,4.668,big,testing,16,FALSE,SONA
+75281,c,PT,391,something something,jeb kredaaf,4.01730000001192,small,testing,25,TRUE,SONA
+75281,c,PT,392,something sardoul,dap naosok,4.19479999999702,big,training,5,FALSE,SONA
+75281,c,PT,393,something glimesh,ked glarmool,5.36709999999404,big,training,4,TRUE,SONA
+75281,c,PT,394,something chardoke,ked chagool,3.68860000000894,big,training,0,TRUE,SONA
+75281,c,PT,395,something something,dap pavok,6.33540000000596,big,testing,13,FALSE,SONA
+75281,c,PT,397,something charduak,ked zoutool,7.34810000000894,big,training,2,TRUE,SONA
+75281,c,PT,398,something something,lom tamesh,4.2475,small,testing,29,FALSE,SONA
+75281,c,PT,399,something glimesh,lom hullesh,7.13890000000596,small,training,18,FALSE,SONA
+75281,c,PT,400,something something,ked pumool,4.47789999999106,big,testing,12,TRUE,SONA
+75281,c,PT,401,something stamool,ked stamool,5.45420000000298,big,training,8,TRUE,SONA
+75281,c,PT,402,something something,lom buresh,3.96579999999702,small,testing,24,FALSE,SONA
+75281,c,PT,403,something sveefan,lom heefesh,3.55390000000596,small,training,19,FALSE,SONA
+75281,c,PT,404,something something,ked vorool,5.74410000000894,big,training,3,TRUE,SONA
+75281,c,PT,405,keb stamoke,dap stamok,10.838,big,training,8,FALSE,SONA
+75281,c,PT,406,something something,dap vorok,4.47790000000596,big,training,3,FALSE,SONA
+75281,c,PT,407,something something,ked teepool,4.3295,big,testing,14,TRUE,SONA
+75281,c,PT,408,something sefaath,lom bepesh,10.211200000003,small,training,23,FALSE,SONA
+75281,c,PT,409,something mardouk,dap foudok,4.01540000000596,big,training,1,FALSE,SONA
+75281,c,PT,410,something chardauk,dap zoutok,6.7225,big,training,2,FALSE,SONA
+75281,c,PT,411,something something,dap monok,3.31609999999404,big,testing,15,FALSE,SONA
+75281,c,PT,413,ked tharbook,ked thebool,6.75,big,training,9,TRUE,SONA
+75281,c,PT,414,something something,jeb zimbaaf,4.06809999999404,small,testing,26,TRUE,SONA
+75281,c,PT,415,something staxok,ked pexool,6.35080000001192,big,training,7,TRUE,SONA
+75281,c,PT,416,something sveefan,jeb heefaaf,5.51290000000596,small,training,19,TRUE,SONA
+75281,c,PT,417,something someting,lom chetesh,3.56740000000596,small,testing,28,FALSE,SONA
+75281,c,PT,418,something svinesh,jeb zeevaaf,4.73489999999106,small,training,21,TRUE,SONA
+75281,c,PT,419,something something,dap pexok,2.99809999999404,big,training,7,FALSE,SONA
+75281,c,PT,420,something something,dap skunok,3.84639999999106,big,testing,17,FALSE,SONA
+75281,c,PT,421,something beefath,lom biffesh,5.52759999999404,small,training,20,FALSE,SONA
+75281,c,PT,422,something something,jeb buraaf,5.288,small,testing,24,TRUE,SONA
+75281,c,PT,423,something sarmook,ked frusool,47.5886999999881,big,training,10,TRUE,SONA
+75281,c,PT,424,something glimesh,jeb hullaaf,3.89859999999404,small,training,18,TRUE,SONA
+75281,c,PT,425,something something,lom sibesh,6.24330000001192,small,training,22,FALSE,SONA
+75281,c,PT,426,something something,jeb tamaaf,3.40210000000894,small,testing,29,TRUE,SONA
+75281,c,PT,427,something someting,ked monool,3.601,big,testing,15,TRUE,SONA
+75281,c,PT,429,something plimook,ked plimool,7.53240000000596,big,training,6,TRUE,SONA
+75281,c,PT,430,something something,jeb sibaaf,7.87270000000298,small,training,22,TRUE,SONA
+75281,c,PT,431,somethink garnesh,dap glarmok,5.70659999999404,big,training,4,FALSE,SONA
+75281,c,PT,432,something something,lom tochesh,4.77310000000894,small,testing,27,FALSE,SONA
+75281,c,PT,433,something something,lom zimbesh,3.63290000000596,small,testing,26,FALSE,SONA
+75281,c,PT,434,something glinesh,jeb bepaaf,4.05379999999702,small,training,23,TRUE,SONA
+75281,c,PT,435,something starbool,ked sarbool,23.298900000006,big,training,11,TRUE,SONA
+75281,c,PT,436,something something,ked skunool,6.9385,big,testing,17,TRUE,SONA
+75281,c,PT,437,something something,dap pumok,3.57359999999404,big,testing,12,FALSE,SONA
+75281,c,PT,438,something chardauk,dap chagok,4.95829999999702,big,training,0,FALSE,SONA
+75281,c,PT,439,something something,lom kredesh,4.8785,small,testing,25,FALSE,SONA
+75281,c,PT,440,something mardauk,ked foudool,4.561,big,training,1,TRUE,SONA
+75281,c,PT,441,something something,jeb chetaaf,3.36689999999106,small,testing,28,TRUE,SONA
+75281,c,PT,442,something veroon,ked roozool,4.9955,big,testing,16,TRUE,SONA
+75281,c,PT,443,ted tamoke,dap thebok,6.78059999999404,big,training,9,FALSE,SONA
+75295,c,PT,381,jeb sardok,jeb skunok,5.65429999999702,big,training,4,FALSE,SONA
+75295,c,PT,382,jeb paumok,jeb foudok,8.94570000000298,big,training,11,FALSE,SONA
+75295,c,PT,383,ped skamok,ked sibesh,10.929,small,testing,27,FALSE,SONA
+75295,c,PT,384,jeb ,ked heefesh,6.76689999999851,small,testing,26,FALSE,SONA
+75295,c,PT,385,something glarmool,dap glarmool,21.5833000000045,big,testing,12,TRUE,SONA
+75295,c,PT,386,lamb something,lom chetaaf,5.36739999999851,small,testing,29,TRUE,SONA
+75295,c,PT,387,jeb glarmok,jeb glarmok,4.736,big,testing,12,FALSE,SONA
+75295,c,PT,388,lamb something,lom biffaaf,3.80010000000149,small,training,20,TRUE,SONA
+75295,c,PT,389,lamb something,lom heefaaf,5.8245,small,testing,26,TRUE,SONA
+75295,c,PT,390,dep gilmok,ked zimbesh,19.5881000000015,small,training,22,FALSE,SONA
+75295,c,PT,391,lamb something,dap pavool,6.231,big,training,2,TRUE,SONA
+75295,c,PT,392,jeb something,ked buresh,9.70719999999553,small,training,18,FALSE,SONA
+75295,c,PT,393,dep something,ked chetesh,3.93729999999702,small,testing,29,FALSE,SONA
+75295,c,PT,394,?,lom buraaf,10.769299999997,small,training,18,TRUE,SONA
+75295,c,PT,395,jeb zaudok,jeb zoutok,4.76389999999851,big,training,3,FALSE,SONA
+75295,c,PT,397,lamb sardool,dap pumool,7.2865,big,training,6,TRUE,SONA
+75295,c,PT,398,lamb something,dap skunool,14.8598999999985,big,training,4,TRUE,SONA
+75295,c,PT,399,jeb larmok,jeb chagok,13.912200000003,big,training,8,FALSE,SONA
+75295,c,PT,400,lamb sardool,lom hullaaf,10.833,small,testing,24,TRUE,SONA
+75295,c,PT,401,jeb something,ked bepesh,4.06220000000298,small,testing,25,FALSE,SONA
+75295,c,PT,402,lamb z____,dap vorool,11.7621000000015,big,testing,16,TRUE,SONA
+75295,c,PT,403,dep something,ked tamesh,6.95440000000596,small,training,19,FALSE,SONA
+75295,c,PT,404,lamb garmool,lom kredaaf,5.04060000000149,small,testing,28,TRUE,SONA
+75295,c,PT,405,?,dap zoutool,15.267,big,training,3,TRUE,SONA
+75295,c,PT,406,?,dap thebool,2.56360000000149,big,training,1,TRUE,SONA
+75295,c,PT,407,jeb something,jeb thebok,4.20669999999553,big,training,1,FALSE,SONA
+75295,c,PT,408,lamb sardool,dap stamool,5.08109999999404,big,training,7,TRUE,SONA
+75295,c,PT,409,lamb zardool,dap frusool,11.928,big,training,0,TRUE,SONA
+75295,c,PT,410,?,dap roozool,2.35360000000149,big,testing,17,TRUE,SONA
+75295,c,PT,411,dep harmek,jeb pumok,7.7545,big,training,6,FALSE,SONA
+75295,c,PT,413,jeb,ked kredesh,10.745700000003,small,testing,28,FALSE,SONA
+75295,c,PT,414,jeb tremok,ked tochesh,6.55270000000298,small,training,23,FALSE,SONA
+75295,c,PT,415,dep hardok,ked hullesh,5.57339999999851,small,testing,24,FALSE,SONA
+75295,c,PT,416,dep something,jeb plimok,3.84790000000596,big,testing,14,FALSE,SONA
+75295,c,PT,417,dep something,jeb monok,2.20670000000298,big,testing,15,FALSE,SONA
+75295,c,PT,418,lamb hardoosh,lom zimbaaf,3.28210000000149,small,training,22,TRUE,SONA
+75295,c,PT,419,lamb sardool,dap foudool,3.4215,big,training,11,TRUE,SONA
+75295,c,PT,420,lamb pamool,lom tamaaf,6.64130000000447,small,training,19,TRUE,SONA
+75295,c,PT,421,jeb parmok,jeb sarbok,5.635,big,training,9,FALSE,SONA
+75295,c,PT,422,dep z___,jeb vorok,5.22560000000149,big,testing,16,FALSE,SONA
+75295,c,PT,423,?,jeb naosok,3.102,big,training,5,FALSE,SONA
+75295,c,PT,424,jeb sarmok,jeb pavok,3.54779999999702,big,training,2,FALSE,SONA
+75295,c,PT,425,?,dap monool,2.75529999999702,big,testing,15,TRUE,SONA
+75295,c,PT,426,lamb something,lom tochaaf,2.74039999999851,small,training,23,TRUE,SONA
+75295,c,PT,427,lamb hardool,dap chagool,6.52689999999851,big,training,8,TRUE,SONA
+75295,c,PT,429,lamb tarmool,dap pexool,3.566,big,testing,13,TRUE,SONA
+75295,c,PT,430,lamb something,dap naosool,3.99670000000298,big,training,5,TRUE,SONA
+75295,c,PT,431,lamb sardool,dap sarbool,7.99020000000298,big,training,9,TRUE,SONA
+75295,c,PT,432,dep teapok,jeb teepok,4.81419999999553,big,training,10,FALSE,SONA
+75295,c,PT,433,jeb something,ked biffesh,3.96910000000149,small,training,20,FALSE,SONA
+75295,c,PT,434,dep soemething,jeb pexok,2.26760000000149,big,testing,13,FALSE,SONA
+75295,c,PT,435,dep garmok,jeb stamok,4.50269999999553,big,training,7,FALSE,SONA
+75295,c,PT,436,?,dap plimool,3.36560000000149,big,testing,14,TRUE,SONA
+75295,c,PT,437,jeb zarmok,jeb frusok,3.88460000000149,big,training,0,FALSE,SONA
+75295,c,PT,438,lamb tramesch,lom zeevaaf,5.65310000000149,small,training,21,TRUE,SONA
+75295,c,PT,439,?,lom sibaaf,2.48310000000149,small,testing,27,TRUE,SONA
+75295,c,PT,440,dep ,jeb roozok,2.78370000000298,big,testing,17,FALSE,SONA
+75295,c,PT,441,dep tremesh,ked zeevesh,11.1651000000015,small,training,21,FALSE,SONA
+75295,c,PT,442,lamb teepool,dap teepool,5.376,big,training,10,TRUE,SONA
+75295,c,PT,443,?,lom bepaaf,3.48720000000298,small,testing,25,TRUE,SONA
