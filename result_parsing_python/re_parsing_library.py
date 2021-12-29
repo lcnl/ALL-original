@@ -45,9 +45,16 @@ def two_string_parse(response):
     
     # This regex searches for [consonant cluster][vowel cluster][consonant cluster]. If found, it splits this into the first syllable and returns (determiner, first syllable, second syllable)
 
+    # Case where we start with consonant i.e. heefesh
     if(re.findall("[b-df-hj-np-tv-z]+[aeiou]+[b-df-hj-np-tv-z]+", noun)):
         first_syllable = re.findall("[b-df-hj-np-tv-z]+[aeiou]+[b-df-hj-np-tv-z]+", noun)[0]
         second_syllable = re.split("[b-df-hj-np-tv-z]+[aeiou]+[b-df-hj-np-tv-z]+", noun,1)[1]
+        return (response[0],first_syllable, second_syllable)
+    # Case where we start with vowel i.e. eefesh, uses wildcard in place of + for 0 or more instead of
+    # 1 or more
+    elif(re.findall("[b-df-hj-np-tv-z]*[aeiou]+[b-df-hj-np-tv-z]+", noun)):
+        first_syllable = re.findall("[b-df-hj-np-tv-z]*[aeiou]+[b-df-hj-np-tv-z]+", noun)[0]
+        second_syllable = re.split("[b-df-hj-np-tv-z]*[aeiou]+[b-df-hj-np-tv-z]+", noun,1)[1]
         return (response[0],first_syllable, second_syllable)
     # Case where we couldn't parse syllables
     else:
@@ -264,7 +271,9 @@ def fill_out_table(initial_table):
                 exit(0)
                 pass
             if(det_analysis[0] == -1):
-                row.append("unmappable: "+det_analysis[1])
+                row.append("unmappable no match: "+det_analysis[1])
+            elif(det_analysis[0] == 0):
+                row.append("unmappable multiple matches: "+det_analysis[1])
             elif(det_analysis[1] == correct_det[1]):
                 row.append("correct")
             else:
@@ -280,7 +289,9 @@ def fill_out_table(initial_table):
                 exit(0)
                 pass
             if(stem_analysis[0] == -1):
-                row.append("unmappable: "+stem_analysis[1])
+                row.append("unmappable no match: "+stem_analysis[1])
+            elif(stem_analysis[0] == 0):
+                row.append("unmappable multiple matches: "+stem_analysis[1])
             elif(stem_analysis[1] == correct_stem[1]):
                 row.append("correct")
             else:
@@ -299,7 +310,9 @@ def fill_out_table(initial_table):
                 exit(0)
                 pass
             if(ending_analysis[0] == -1):
-                row.append("unmappable: "+ending_analysis[1])
+                row.append("unmappable no match: "+ending_analysis[1])
+            elif(ending_analysis[0] == 0):
+                row.append("unmappable multiple matches: "+ending_analysis[1])
             elif(ending_analysis[1] == correct_ending[1]):
                 row.append("correct")
             else:

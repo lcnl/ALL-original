@@ -1,184 +1,184 @@
 typed_response,target_response,typed_det,typed_stem,typed_ending
-something zeebaaf,ked zeevesh,unmappable: something,unmappable: zeeb,"('small', 'p')"
-something skunok,lom skunok,unmappable: something,correct,correct
-someting zipesh,ked zimbesh,unmappable: someting,unmappable: zip,correct
-something manool,jeb monool,unmappable: something,unmappable: man,correct
-something frusok,lom frusok,unmappable: something,correct,correct
-something pumok,lom pumok,unmappable: something,correct,correct
-something pexool,jeb pexool,unmappable: something,correct,correct
-something plimool,jeb plimool,unmappable: something,correct,correct
+something zeebaaf,ked zeevesh,unmappable no match: something,unmappable no match: zeeb,"('small', 'p')"
+something skunok,lom skunok,unmappable no match: something,correct,correct
+someting zipesh,ked zimbesh,unmappable no match: someting,unmappable no match: zip,correct
+something manool,jeb monool,unmappable no match: something,unmappable no match: man,correct
+something frusok,lom frusok,unmappable no match: something,correct,correct
+something pumok,lom pumok,unmappable no match: something,correct,correct
+something pexool,jeb pexool,unmappable no match: something,correct,correct
+something plimool,jeb plimool,unmappable no match: something,correct,correct
 something ,lom vorok,couldn't,parse,syllables
-something timbok,ked tochesh,unmappable: something,unmappable: timb,"('big', 's')"
-something skunool,jeb skunool,unmappable: something,correct,correct
-something glarmok,lom glarmok,unmappable: something,correct,correct
-something zeebaaf,dap zeevaaf,unmappable: something,unmappable: zeeb,correct
-something pumool,jeb pumool,unmappable: something,correct,correct
-something chetool,dap chetaaf,unmappable: something,correct,"('big', 'p')"
-something foudool,jeb foudool,unmappable: something,correct,correct
-something heebesh,ked heefesh,unmappable: something,unmappable: heeb,correct
-something foudok,lom foudok,unmappable: something,correct,correct
-something hullesh,ked hullesh,unmappable: something,correct,correct
-something sabool,dap sibaaf,unmappable: something,unmappable: sab,"('big', 'p')"
-something thebok,lom thebok,unmappable: something,correct,correct
-something crenok,ked kredesh,unmappable: something,unmappable: cren,"('big', 's')"
-something thebool,jeb thebool,unmappable: something,correct,correct
-something glarbool,jeb glarmool,unmappable: something,unmappable: glarb,correct
-something heebaaf,dap heefaaf,unmappable: something,unmappable: heeb,correct
-something zumool,jeb zoutool,unmappable: something,unmappable: zum,correct
-something pavok,lom pavok,unmappable: something,correct,correct
-something ruzok,lom roozok,unmappable: something,unmappable: ruz,correct
-something stamok,lom stamok,unmappable: something,correct,correct
-something pexok,lom pexok,unmappable: something,correct,correct
-something burok,ked buresh,unmappable: something,correct,"('big', 's')"
-something bipesh,ked biffesh,unmappable: something,unmappable: bip,correct
-something sarbool,jeb sarbool,unmappable: something,correct,correct
+something timbok,ked tochesh,unmappable no match: something,unmappable no match: timb,"('big', 's')"
+something skunool,jeb skunool,unmappable no match: something,correct,correct
+something glarmok,lom glarmok,unmappable no match: something,correct,correct
+something zeebaaf,dap zeevaaf,unmappable no match: something,unmappable no match: zeeb,correct
+something pumool,jeb pumool,unmappable no match: something,correct,correct
+something chetool,dap chetaaf,unmappable no match: something,correct,"('big', 'p')"
+something foudool,jeb foudool,unmappable no match: something,correct,correct
+something heebesh,ked heefesh,unmappable no match: something,unmappable no match: heeb,correct
+something foudok,lom foudok,unmappable no match: something,correct,correct
+something hullesh,ked hullesh,unmappable no match: something,correct,correct
+something sabool,dap sibaaf,unmappable no match: something,unmappable no match: sab,"('big', 'p')"
+something thebok,lom thebok,unmappable no match: something,correct,correct
+something crenok,ked kredesh,unmappable no match: something,unmappable no match: cren,"('big', 's')"
+something thebool,jeb thebool,unmappable no match: something,correct,correct
+something glarbool,jeb glarmool,unmappable no match: something,unmappable no match: glarb,correct
+something heebaaf,dap heefaaf,unmappable no match: something,unmappable no match: heeb,correct
+something zumool,jeb zoutool,unmappable no match: something,unmappable no match: zum,correct
+something pavok,lom pavok,unmappable no match: something,correct,correct
+something ruzok,lom roozok,unmappable no match: something,unmappable no match: ruz,correct
+something stamok,lom stamok,unmappable no match: something,correct,correct
+something pexok,lom pexok,unmappable no match: something,correct,correct
+something burok,ked buresh,unmappable no match: something,correct,"('big', 's')"
+something bipesh,ked biffesh,unmappable no match: something,unmappable no match: bip,correct
+something sarbool,jeb sarbool,unmappable no match: something,correct,correct
 something,jeb vorool,couldn't,parse,syllables
-something stamool,jeb stamool,unmappable: something,correct,correct
-something buraaf,dap buraaf,unmappable: something,correct,correct
-something bepaaf,dap tamaaf,unmappable: something,small training,correct
-something hullaaf,dap hullaaf,unmappable: something,correct,correct
-something bipesh,ked tamesh,unmappable: something,unmappable: bip,correct
-something zamok,lom zoutok,unmappable: something,unmappable: zam,correct
-something zipaaf,dap zimbaaf,unmappable: something,unmappable: zip,correct
-something manok,lom monok,unmappable: something,unmappable: man,correct
+something stamool,jeb stamool,unmappable no match: something,correct,correct
+something buraaf,dap buraaf,unmappable no match: something,correct,correct
+something bepaaf,dap tamaaf,unmappable no match: something,small training,correct
+something hullaaf,dap hullaaf,unmappable no match: something,correct,correct
+something bipesh,ked tamesh,unmappable no match: something,unmappable no match: bip,correct
+something zamok,lom zoutok,unmappable no match: something,unmappable no match: zam,correct
+something zipaaf,dap zimbaaf,unmappable no match: something,unmappable no match: zip,correct
+something manok,lom monok,unmappable no match: something,unmappable no match: man,correct
 something ,lom naosok,couldn't,parse,syllables
-something frusool,jeb frusool,unmappable: something,correct,correct
-something rusool,jeb roozool,unmappable: something,unmappable: rus,correct
-something bepesh,ked bepesh,unmappable: something,correct,correct
-something bafaaf,dap biffaaf,unmappable: something,unmappable: baf,correct
-something chetok,ked chetesh,unmappable: something,correct,"('big', 's')"
-something bepaaf,dap bepaaf,unmappable: something,correct,correct
-something timok,lom teepok,unmappable: something,unmappable: tim,correct
-something sarbok,lom sarbok,unmappable: something,correct,correct
-something chagool,jeb chagool,unmappable: something,correct,correct
-something crenaaf,dap kredaaf,unmappable: something,unmappable: cren,correct
-something sabok,ked sibesh,unmappable: something,unmappable: sab,"('big', 's')"
-something chagok,lom chagok,unmappable: something,correct,correct
-something timool,jeb teepool,unmappable: something,unmappable: tim,correct
+something frusool,jeb frusool,unmappable no match: something,correct,correct
+something rusool,jeb roozool,unmappable no match: something,unmappable no match: rus,correct
+something bepesh,ked bepesh,unmappable no match: something,correct,correct
+something bafaaf,dap biffaaf,unmappable no match: something,unmappable no match: baf,correct
+something chetok,ked chetesh,unmappable no match: something,correct,"('big', 's')"
+something bepaaf,dap bepaaf,unmappable no match: something,correct,correct
+something timok,lom teepok,unmappable no match: something,unmappable no match: tim,correct
+something sarbok,lom sarbok,unmappable no match: something,correct,correct
+something chagool,jeb chagool,unmappable no match: something,correct,correct
+something crenaaf,dap kredaaf,unmappable no match: something,unmappable no match: cren,correct
+something sabok,ked sibesh,unmappable no match: something,unmappable no match: sab,"('big', 's')"
+something chagok,lom chagok,unmappable no match: something,correct,correct
+something timool,jeb teepool,unmappable no match: something,unmappable no match: tim,correct
 something,jeb naosool,couldn't,parse,syllables
-something timool,dap tochaaf,unmappable: something,unmappable: tim,"('big', 'p')"
-something plimok,lom plimok,unmappable: something,correct,correct
-something pavaaf,jeb pavool,unmappable: something,correct,"('small', 'p')"
+something timool,dap tochaaf,unmappable no match: something,unmappable no match: tim,"('big', 'p')"
+something plimok,lom plimok,unmappable no match: something,correct,correct
+something pavaaf,jeb pavool,unmappable no match: something,correct,"('small', 'p')"
 jeb thebok,jeb vorok,correct,big training,correct
 ked chetaaf,ked tamaaf,correct,small testing,correct
 dap zeevesh,dap zeevesh,correct,correct,correct
 dap chetesh,dap chetesh,correct,correct,correct
 lom pavool,lom pavool,correct,correct,correct
-lom nasool,lom naosool,correct,unmappable: nas,correct
+lom nasool,lom naosool,correct,unmappable no match: nas,correct
 ked bepesh,ked bepaaf,correct,correct,"('small', 's')"
-jeb sarboof,jeb pumok,correct,big training,unmappable: oof
-lom thebol,lom thebool,correct,correct,unmappable: ol
+jeb sarboof,jeb pumok,correct,big training,unmappable no match: oof
+lom thebol,lom thebool,correct,correct,unmappable no match: ol
 jeb plimok,jeb plimok,correct,correct,correct
-ked kredaf,ked kredaaf,correct,correct,unmappable: af
-jeb zouto,dap zimbesh,"('big', 'p')",big training,unmappable: o
+ked kredaf,ked kredaaf,correct,correct,unmappable no match: af
+jeb zouto,dap zimbesh,"('big', 'p')",big training,unmappable no match: o
 jeb zoutok,jeb zoutok,correct,correct,correct
 jeb chagok,jeb glarmok,correct,big training,correct
-dap tanaf,dap heefesh,correct,unmappable: tan,unmappable: af
-lom guhool,ked heefaaf,"('big', 's')",unmappable: guh,"('big', 'p')"
-kad chetaf,ked chetaaf,unmappable: kad,correct,unmappable: af
-jeb chagof,jeb chagok,correct,correct,unmappable: of
-jeb fugaf,dap buresh,"('big', 'p')",unmappable: fug,unmappable: af
-jeb stambok,jeb frusok,correct,unmappable: stamb,correct
-lom mogoul,lom stamool,correct,unmappable: mog,unmappable: oul
+dap tanaf,dap heefesh,correct,unmappable no match: tan,unmappable no match: af
+lom guhool,ked heefaaf,"('big', 's')",unmappable no match: guh,"('big', 'p')"
+kad chetaf,ked chetaaf,unmappable no match: kad,correct,unmappable no match: af
+jeb chagof,jeb chagok,correct,correct,unmappable no match: of
+jeb fugaf,dap buresh,"('big', 'p')",unmappable no match: fug,unmappable no match: af
+jeb stambok,jeb frusok,correct,unmappable no match: stamb,correct
+lom mogoul,lom stamool,correct,unmappable no match: mog,unmappable no match: oul
 lom monool,lom monool,correct,correct,correct
-jeb thagof,dap tochesh,"('big', 'p')",unmappable: thag,unmappable: of
-lom foudol,lom pumool,correct,big training,unmappable: ol
-jeb dufof,dap biffesh,"('big', 'p')",unmappable: duf,unmappable: of
-lom fuusol,lom frusool,correct,unmappable: fuus,unmappable: ol
-jeb stamob,jeb stamok,correct,correct,unmappable: ob
-jeb kredaf,dap kredesh,"('big', 'p')",correct,unmappable: af
-jeb thamof,jeb skunok,correct,unmappable: tham,unmappable: of
-jeb rozof,jeb thebok,correct,unmappable: roz,unmappable: of
-lom sarbol,lom sarbool,correct,correct,unmappable: ol
-ked sibaf,ked sibaaf,correct,correct,unmappable: af
-ked chetaf,ked hullaaf,correct,small testing,unmappable: af
+jeb thagof,dap tochesh,"('big', 'p')",unmappable no match: thag,unmappable no match: of
+lom foudol,lom pumool,correct,big training,unmappable no match: ol
+jeb dufof,dap biffesh,"('big', 'p')",unmappable no match: duf,unmappable no match: of
+lom fuusol,lom frusool,correct,unmappable no match: fuus,unmappable no match: ol
+jeb stamob,jeb stamok,correct,correct,unmappable no match: ob
+jeb kredaf,dap kredesh,"('big', 'p')",correct,unmappable no match: af
+jeb thamof,jeb skunok,correct,unmappable no match: tham,unmappable no match: of
+jeb rozof,jeb thebok,correct,unmappable no match: roz,unmappable no match: of
+lom sarbol,lom sarbool,correct,correct,unmappable no match: ol
+ked sibaf,ked sibaaf,correct,correct,unmappable no match: af
+ked chetaf,ked hullaaf,correct,small testing,unmappable no match: af
 jeb teepok,jeb teepok,correct,correct,correct
-jeb pabok,jeb foudok,correct,unmappable: pab,correct
-jeb manok,jeb pavok,correct,unmappable: man,correct
-jeb sanok,jeb sarbok,correct,unmappable: san,correct
-dap dopak ,dap tamesh,correct,unmappable: dop,unmappable: ak
-lom plimol,lom plimool,correct,correct,unmappable: ol
-lom ghool,ked biffaaf,"('big', 's')",unmappable: ghool,unmappable: 
-lom fusool,lom chagool,correct,unmappable: fus,correct
-ked guraf,ked buraaf,correct,unmappable: gur,unmappable: af
-jeb manok,jeb pexok,correct,unmappable: man,correct
-jeb flanok,jeb monok,correct,unmappable: flan,correct
-jeb hanof,dap hullesh,"('big', 'p')",unmappable: han,unmappable: of
-ked gumaf,ked zimbaaf,correct,unmappable: gum,unmappable: af
-jeb kalof,dap bepesh,"('big', 'p')",unmappable: kal,unmappable: of
-lom manool,lom zoutool,correct,unmappable: man,correct
-jeb fanof,dap sibesh,"('big', 'p')",unmappable: fan,unmappable: of
+jeb pabok,jeb foudok,correct,unmappable no match: pab,correct
+jeb manok,jeb pavok,correct,unmappable no match: man,correct
+jeb sanok,jeb sarbok,correct,unmappable no match: san,correct
+dap dopak ,dap tamesh,correct,unmappable no match: dop,unmappable no match: ak
+lom plimol,lom plimool,correct,correct,unmappable no match: ol
+lom ghool,ked biffaaf,"('big', 's')",unmappable no match: ghool,unmappable no match: 
+lom fusool,lom chagool,correct,unmappable no match: fus,correct
+ked guraf,ked buraaf,correct,unmappable no match: gur,unmappable no match: af
+jeb manok,jeb pexok,correct,unmappable no match: man,correct
+jeb flanok,jeb monok,correct,unmappable no match: flan,correct
+jeb hanof,dap hullesh,"('big', 'p')",unmappable no match: han,unmappable no match: of
+ked gumaf,ked zimbaaf,correct,unmappable no match: gum,unmappable no match: af
+jeb kalof,dap bepesh,"('big', 'p')",unmappable no match: kal,unmappable no match: of
+lom manool,lom zoutool,correct,unmappable no match: man,correct
+jeb fanof,dap sibesh,"('big', 'p')",unmappable no match: fan,unmappable no match: of
 lom monool,lom roozool,correct,big training,correct
-lom fasool,lom teepool,correct,unmappable: fas,correct
-lom manool,lom vorool,correct,unmappable: man,correct
-jeb razool,jeb roozok,correct,unmappable: raz,"('big', 'p')"
-lom manool,lom pexool,correct,unmappable: man,correct
-lom fasool,ked zeevaaf,"('big', 's')",unmappable: fas,"('big', 'p')"
-jeb nasok,jeb naosok,correct,unmappable: nas,correct
-lom kasool,lom glarmool,correct,unmappable: kas,correct
-lom gasool,lom skunool,correct,unmappable: gas,correct
-lom nawool,ked tochaaf,"('big', 's')",unmappable: naw,"('big', 'p')"
-lom manool,lom foudool,correct,unmappable: man,correct
-ked zebesh,ked zeevaaf,correct,unmappable: zeb,"('small', 's')"
-lam zautoke,lom zoutok,unmappable: lam,unmappable: zaut,unmappable: oke
-lam stamule,jeb stamool,unmappable: lam,correct,unmappable: ule
-jeb foudule,jeb foudool,correct,correct,unmappable: ule
-lam teepok,lom teepok,unmappable: lam,correct,correct
+lom fasool,lom teepool,correct,unmappable no match: fas,correct
+lom manool,lom vorool,correct,unmappable no match: man,correct
+jeb razool,jeb roozok,correct,unmappable no match: raz,"('big', 'p')"
+lom manool,lom pexool,correct,unmappable no match: man,correct
+lom fasool,ked zeevaaf,"('big', 's')",unmappable no match: fas,"('big', 'p')"
+jeb nasok,jeb naosok,correct,unmappable no match: nas,correct
+lom kasool,lom glarmool,correct,unmappable no match: kas,correct
+lom gasool,lom skunool,correct,unmappable no match: gas,correct
+lom nawool,ked tochaaf,"('big', 's')",unmappable no match: naw,"('big', 'p')"
+lom manool,lom foudool,correct,unmappable no match: man,correct
+ked zebesh,ked zeevaaf,correct,unmappable no match: zeb,"('small', 's')"
+lam zautoke,lom zoutok,unmappable no match: lam,unmappable no match: zaut,unmappable no match: oke
+lam stamule,jeb stamool,unmappable no match: lam,correct,unmappable no match: ule
+jeb foudule,jeb foudool,correct,correct,unmappable no match: ule
+lam teepok,lom teepok,unmappable no match: lam,correct,correct
 no lcue,jeb monool,couldn't,parse,syllables
-dop zimbesh,lom chagok,unmappable: dop,small testing,"('small', 's')"
-jeb pimuke,jeb plimool,correct,unmappable: pim,unmappable: uke
-ked hullof,dap hullesh,"('small', 's')",correct,unmappable: of
-ked zabule,ked biffaaf,correct,unmappable: zab,unmappable: ule
-dap bepsh,ked bepaaf,"('small', 'p')",unmappable: bepsh,unmappable: 
-dont know,jeb vorool,unmappable: dont,unmappable: know,unmappable: 
-lam fodule ,lom vorok,unmappable: lam,unmappable: fod,unmappable: ule
-ked zebesh,dap heefesh,"('small', 's')",unmappable: zeb,correct
-ked zabule,ked tamaaf,correct,unmappable: zab,unmappable: ule
-ked zabule,ked heefaaf,correct,unmappable: zab,unmappable: ule
+dop zimbesh,lom chagok,unmappable no match: dop,small testing,"('small', 's')"
+jeb pimuke,jeb plimool,correct,unmappable no match: pim,unmappable no match: uke
+ked hullof,dap hullesh,"('small', 's')",correct,unmappable no match: of
+ked zabule,ked biffaaf,correct,unmappable no match: zab,unmappable no match: ule
+dap bepsh,ked bepaaf,"('small', 'p')",unmappable no match: bepsh,unmappable no match: 
+dont know,jeb vorool,unmappable no match: dont,unmappable no match: know,unmappable no match: 
+lam fodule ,lom vorok,unmappable no match: lam,unmappable no match: fod,unmappable no match: ule
+ked zebesh,dap heefesh,"('small', 's')",unmappable no match: zeb,correct
+ked zabule,ked tamaaf,correct,unmappable no match: zab,unmappable no match: ule
+ked zabule,ked heefaaf,correct,unmappable no match: zab,unmappable no match: ule
 dap zimbesh,dap zimbesh,correct,correct,correct
-lam zarboke,jeb sarbool,unmappable: lam,unmappable: zarb,unmappable: oke
-ked zebash,dap zeevesh,"('small', 's')",unmappable: zeb,unmappable: ash
-lam brozoo;,jeb pexool,unmappable: lam,unmappable: broz,unmappable: oo;
-dam kedesh,dap biffesh,unmappable: dam,unmappable: ked,correct
-lam teepok,jeb teepool,unmappable: lam,correct,"('big', 's')"
-jeb pimule,lom plimok,"('big', 'p')",unmappable: pim,unmappable: ule
+lam zarboke,jeb sarbool,unmappable no match: lam,unmappable no match: zarb,unmappable no match: oke
+ked zebash,dap zeevesh,"('small', 's')",unmappable no match: zeb,unmappable no match: ash
+lam brozoo;,jeb pexool,unmappable no match: lam,unmappable no match: broz,unmappable no match: oo;
+dam kedesh,dap biffesh,unmappable no match: dam,unmappable no match: ked,correct
+lam teepok,jeb teepool,unmappable no match: lam,correct,"('big', 's')"
+jeb pimule,lom plimok,"('big', 'p')",unmappable no match: pim,unmappable no match: ule
 jeb pavool,lom pavok,"('big', 'p')",correct,"('big', 'p')"
-ked zibaaf,dap sibesh,"('small', 's')",unmappable: zib,"('small', 'p')"
-jeb foudule,lom foudok,"('big', 'p')",correct,unmappable: ule
-ked biffaff,jeb chagool,"('small', 's')",small training,unmappable: aff
-lam frusoke,lom frusok,unmappable: lam,correct,unmappable: oke
-ked boraf,ked buraaf,correct,unmappable: bor,unmappable: af
-jeb pavule,jeb pavool,correct,correct,unmappable: ule
+ked zibaaf,dap sibesh,"('small', 's')",unmappable no match: zib,"('small', 'p')"
+jeb foudule,lom foudok,"('big', 'p')",correct,unmappable no match: ule
+ked biffaff,jeb chagool,"('small', 's')",small training,unmappable no match: aff
+lam frusoke,lom frusok,unmappable no match: lam,correct,unmappable no match: oke
+ked boraf,ked buraaf,correct,unmappable no match: bor,unmappable no match: af
+jeb pavule,jeb pavool,correct,correct,unmappable no match: ule
 dap buresh,dap buresh,correct,correct,correct
 dap chetesh,lom pumok,"('small', 'p')",small testing,"('small', 's')"
-dont know,lom skunok,unmappable: dont,unmappable: know,unmappable: 
+dont know,lom skunok,unmappable no match: dont,unmappable no match: know,unmappable no match: 
 dap chetesh,dap chetesh,correct,correct,correct
-job rozool,dap tochesh,unmappable: job,unmappable: roz,"('big', 'p')"
-dont know,lom monok,unmappable: dont,unmappable: know,unmappable: 
-penguin,jeb skunool,unmappable: penguin,unmappable: peng,unmappable: uin
-dop zimbesh,ked zimbaaf,unmappable: dop,correct,"('small', 's')"
-geb garmool,lom glarmok,unmappable: geb,unmappable: garm,"('big', 'p')"
-dep garmool,jeb naosool,unmappable: dep,unmappable: garm,correct
-lam teepok,jeb thebool,unmappable: lam,big training,"('big', 's')"
-ked hullof,ked hullaaf,correct,correct,unmappable: of
-dap chetule,ked chetaaf,"('small', 'p')",correct,unmappable: ule
-lam frusule,jeb frusool,unmappable: lam,correct,unmappable: ule
-poninl,ked tochaaf,unmappable: poninl,unmappable: pon,unmappable: inl
-jeb foudule,ked kredaaf,"('big', 'p')",big training,unmappable: ule
-jeb rozool,jeb roozool,correct,unmappable: roz,correct
-lam homok,jeb pumool,unmappable: lam,unmappable: hom,"('big', 's')"
-jeb razool,lom pexok,"('big', 'p')",unmappable: raz,"('big', 'p')"
-jeb zautool,jeb zoutool,correct,unmappable: zaut,correct
-ked kredeff,dap tamesh,"('small', 's')",small testing,unmappable: eff
-jeb rozool,lom roozok,"('big', 'p')",unmappable: roz,"('big', 'p')"
-ked kredef,dap kredesh,"('small', 's')",correct,unmappable: ef
+job rozool,dap tochesh,unmappable no match: job,unmappable no match: roz,"('big', 'p')"
+dont know,lom monok,unmappable no match: dont,unmappable no match: know,unmappable no match: 
+penguin,jeb skunool,unmappable no match: penguin,unmappable no match: peng,unmappable no match: uin
+dop zimbesh,ked zimbaaf,unmappable no match: dop,correct,"('small', 's')"
+geb garmool,lom glarmok,unmappable no match: geb,unmappable no match: garm,"('big', 'p')"
+dep garmool,jeb naosool,unmappable no match: dep,unmappable no match: garm,correct
+lam teepok,jeb thebool,unmappable no match: lam,big training,"('big', 's')"
+ked hullof,ked hullaaf,correct,correct,unmappable no match: of
+dap chetule,ked chetaaf,"('small', 'p')",correct,unmappable no match: ule
+lam frusule,jeb frusool,unmappable no match: lam,correct,unmappable no match: ule
+poninl,ked tochaaf,unmappable no match: poninl,unmappable no match: pon,unmappable no match: inl
+jeb foudule,ked kredaaf,"('big', 'p')",big training,unmappable no match: ule
+jeb rozool,jeb roozool,correct,unmappable no match: roz,correct
+lam homok,jeb pumool,unmappable no match: lam,unmappable no match: hom,"('big', 's')"
+jeb razool,lom pexok,"('big', 'p')",unmappable no match: raz,"('big', 'p')"
+jeb zautool,jeb zoutool,correct,unmappable no match: zaut,correct
+ked kredeff,dap tamesh,"('small', 's')",small testing,unmappable no match: eff
+jeb rozool,lom roozok,"('big', 'p')",unmappable no match: roz,"('big', 'p')"
+ked kredef,dap kredesh,"('small', 's')",correct,unmappable no match: ef
 dap bepesh,dap bepesh,correct,correct,correct
-lam teepok,lom thebok,unmappable: lam,big training,correct
-lam zarbook,lom sarbok,unmappable: lam,unmappable: zarb,unmappable: ook
-lam stamok,lom stamok,unmappable: lam,correct,correct
-geb garmool,jeb glarmool,unmappable: geb,unmappable: garm,correct
+lam teepok,lom thebok,unmappable no match: lam,big training,correct
+lam zarbook,lom sarbok,unmappable no match: lam,unmappable no match: zarb,unmappable no match: ook
+lam stamok,lom stamok,unmappable no match: lam,correct,correct
+geb garmool,jeb glarmool,unmappable no match: geb,unmappable no match: garm,correct
 ked sibaaf,ked sibaaf,correct,correct,correct
-red,lom naosok,unmappable: red,unmappable: red,unmappable: 
+red,lom naosok,unmappable no match: red,unmappable no match: red,unmappable no match: 
 something something,jeb hullaaf,couldn't,parse,syllables
 something something,ked plimool,couldn't,parse,syllables
 something something,jeb buraaf,couldn't,parse,syllables
@@ -239,303 +239,303 @@ something something,jeb tamaaf,couldn't,parse,syllables
 something something,jeb tochaaf,couldn't,parse,syllables
 something something,dap kredesh,couldn't,parse,syllables
 something something,dap biffesh,couldn't,parse,syllables
-Jeb Sorok,lom pavok,unmappable: Jeb,unmappable: rok,unmappable: 
-Something Hollesh,dap hullesh,unmappable: Something,unmappable: llesh,unmappable: 
-Jeb Zoutok,lom pexok,unmappable: Jeb,unmappable: tok,unmappable: 
-Something Monok,lom monok,unmappable: Something,unmappable: nok,unmappable: 
-Something Chitesh,dap chetesh,unmappable: Something,unmappable: hit,correct
-Something Sarbool,jeb frusool,unmappable: Something,unmappable: rbool,unmappable: 
-Jeb Zorbok,lom vorok,unmappable: Jeb,unmappable: rbok,unmappable: 
-Something Zarbool,ked sibaaf,unmappable: Something,unmappable: rbool,unmappable: 
-Lom Gartesh,jeb glarmool,unmappable: Lom,unmappable: rtesh,unmappable: 
-Dop Zitesh,ked zeevaaf,unmappable: Dop,unmappable: tesh,unmappable: 
-Doresh Something,dap biffesh,unmappable: Doresh,unmappable: meth,unmappable: ing
-Something Sarbool,jeb sarbool,unmappable: Something,unmappable: rbool,unmappable: 
-Dop Chargool,jeb chagool,unmappable: Dop,unmappable: harg,correct
-Jeb Something,jeb skunool,unmappable: Jeb,unmappable: meth,unmappable: ing
-Something Hollesh,ked hullaaf,unmappable: Something,unmappable: llesh,unmappable: 
-Dop Sitesh,ked kredaaf,unmappable: Dop,unmappable: tesh,unmappable: 
-Jeb Sitool,lom plimok,unmappable: Jeb,unmappable: tool,unmappable: 
-Dop Sibool,lom frusok,unmappable: Dop,unmappable: bool,unmappable: 
-Something Woodesh,jeb stamool,unmappable: Something,unmappable: desh,unmappable: 
-Jeb Sarbok,jeb pavool,unmappable: Jeb,unmappable: rbok,unmappable: 
-Something Nousool,jeb naosool,unmappable: Something,unmappable: sool,unmappable: 
-Something Kasool,jeb foudool,unmappable: Something,unmappable: sool,unmappable: 
-Dop Jitesh,dap tochesh,unmappable: Dop,unmappable: tesh,unmappable: 
-Something Garbool,lom glarmok,unmappable: Something,unmappable: rbool,unmappable: 
-Something Monok,jeb monool,unmappable: Something,unmappable: nok,unmappable: 
-Dop Vitesh,ked buraaf,unmappable: Dop,unmappable: tesh,unmappable: 
-Jeb Sartool,jeb zoutool,unmappable: Jeb,unmappable: rtool,unmappable: 
-Something Teepool,jeb teepool,unmappable: Something,unmappable: pool,unmappable: 
-Something Sarbok,lom sarbok,unmappable: Something,unmappable: rbok,unmappable: 
-Something Gurbok,ked bepaaf,unmappable: Something,unmappable: rbok,unmappable: 
-Jeb Sitek,lom pumok,unmappable: Jeb,unmappable: tek,unmappable: 
-Something Zitool,jeb vorool,unmappable: Something,unmappable: tool,unmappable: 
-Gar Woodesh,lom stamok,unmappable: Gar,unmappable: desh,unmappable: 
-Dop Zitesh,dap buresh,unmappable: Dop,unmappable: tesh,unmappable: 
-Dop Monool,ked tochaaf,unmappable: Dop,unmappable: nool,unmappable: 
-Dop Zitool,dap kredesh,unmappable: Dop,unmappable: tool,unmappable: 
-Something Thebool,lom thebok,unmappable: Something,unmappable: heb,"('big', 'p')"
-Something Zitok,dap zimbesh,unmappable: Something,unmappable: tok,unmappable: 
-Jeb Thebok,jeb thebool,unmappable: Jeb,unmappable: heb,"('big', 's')"
-Jeb Sorbol,jeb pexool,unmappable: Jeb,unmappable: rbol,unmappable: 
-Something Zortook,lom roozok,unmappable: Something,unmappable: rtook,unmappable: 
-Something Sarbool,ked zimbaaf,unmappable: Something,unmappable: rbool,unmappable: 
-Dop Charbok,lom chagok,unmappable: Dop,unmappable: harb,correct
-Jeb Zitool,lom zoutok,unmappable: Jeb,unmappable: tool,unmappable: 
-Gar Sartool,dap bepesh,unmappable: Gar,unmappable: rtool,unmappable: 
-Jeb Sartool,lom foudok,unmappable: Jeb,unmappable: rtool,unmappable: 
-Something Zibook,jeb roozool,unmappable: Something,unmappable: book,unmappable: 
-Dop Sitesh,jeb plimool,unmappable: Dop,unmappable: tesh,unmappable: 
-Something Nousool,lom naosok,unmappable: Something,unmappable: sool,unmappable: 
-Something Teepok,lom teepok,unmappable: Something,unmappable: pok,unmappable: 
-Dop Sitesh,dap sibesh,unmappable: Dop,unmappable: tesh,unmappable: 
-Jeb Sitool,jeb pumool,unmappable: Jeb,unmappable: tool,unmappable: 
-Something Chartesh,ked chetaaf,unmappable: Something,unmappable: hart,"('small', 's')"
-Het Sitool,ked heefaaf,unmappable: Het,unmappable: tool,unmappable: 
-Dop Zitesh,dap zeevesh,unmappable: Dop,unmappable: tesh,unmappable: 
-Something Difesh,ked biffaaf,unmappable: Something,unmappable: fesh,unmappable: 
-Jeb Sartool,lom skunok,unmappable: Jeb,unmappable: rtool,unmappable: 
-Het Zitool,dap heefesh,unmappable: Het,unmappable: tool,unmappable: 
-Something Tomool,ked tamaaf,unmappable: Something,unmappable: mool,unmappable: 
-Jeb Tomesh,dap tamesh,unmappable: Jeb,unmappable: mesh,unmappable: 
-something nasau,ked naosok,unmappable: something,unmappable: nas,unmappable: au
+Jeb Sorok,lom pavok,unmappable no match: Jeb,unmappable no match: rok,unmappable no match: 
+Something Hollesh,dap hullesh,unmappable no match: Something,unmappable no match: llesh,unmappable no match: 
+Jeb Zoutok,lom pexok,unmappable no match: Jeb,unmappable no match: tok,unmappable no match: 
+Something Monok,lom monok,unmappable no match: Something,unmappable no match: nok,unmappable no match: 
+Something Chitesh,dap chetesh,unmappable no match: Something,unmappable no match: hit,correct
+Something Sarbool,jeb frusool,unmappable no match: Something,unmappable no match: rbool,unmappable no match: 
+Jeb Zorbok,lom vorok,unmappable no match: Jeb,unmappable no match: rbok,unmappable no match: 
+Something Zarbool,ked sibaaf,unmappable no match: Something,unmappable no match: rbool,unmappable no match: 
+Lom Gartesh,jeb glarmool,unmappable no match: Lom,unmappable no match: rtesh,unmappable no match: 
+Dop Zitesh,ked zeevaaf,unmappable no match: Dop,unmappable no match: tesh,unmappable no match: 
+Doresh Something,dap biffesh,unmappable no match: Doresh,unmappable no match: meth,unmappable no match: ing
+Something Sarbool,jeb sarbool,unmappable no match: Something,unmappable no match: rbool,unmappable no match: 
+Dop Chargool,jeb chagool,unmappable no match: Dop,unmappable no match: harg,correct
+Jeb Something,jeb skunool,unmappable no match: Jeb,unmappable no match: meth,unmappable no match: ing
+Something Hollesh,ked hullaaf,unmappable no match: Something,unmappable no match: llesh,unmappable no match: 
+Dop Sitesh,ked kredaaf,unmappable no match: Dop,unmappable no match: tesh,unmappable no match: 
+Jeb Sitool,lom plimok,unmappable no match: Jeb,unmappable no match: tool,unmappable no match: 
+Dop Sibool,lom frusok,unmappable no match: Dop,unmappable no match: bool,unmappable no match: 
+Something Woodesh,jeb stamool,unmappable no match: Something,unmappable no match: desh,unmappable no match: 
+Jeb Sarbok,jeb pavool,unmappable no match: Jeb,unmappable no match: rbok,unmappable no match: 
+Something Nousool,jeb naosool,unmappable no match: Something,unmappable no match: sool,unmappable no match: 
+Something Kasool,jeb foudool,unmappable no match: Something,unmappable no match: sool,unmappable no match: 
+Dop Jitesh,dap tochesh,unmappable no match: Dop,unmappable no match: tesh,unmappable no match: 
+Something Garbool,lom glarmok,unmappable no match: Something,unmappable no match: rbool,unmappable no match: 
+Something Monok,jeb monool,unmappable no match: Something,unmappable no match: nok,unmappable no match: 
+Dop Vitesh,ked buraaf,unmappable no match: Dop,unmappable no match: tesh,unmappable no match: 
+Jeb Sartool,jeb zoutool,unmappable no match: Jeb,unmappable no match: rtool,unmappable no match: 
+Something Teepool,jeb teepool,unmappable no match: Something,unmappable no match: pool,unmappable no match: 
+Something Sarbok,lom sarbok,unmappable no match: Something,unmappable no match: rbok,unmappable no match: 
+Something Gurbok,ked bepaaf,unmappable no match: Something,unmappable no match: rbok,unmappable no match: 
+Jeb Sitek,lom pumok,unmappable no match: Jeb,unmappable no match: tek,unmappable no match: 
+Something Zitool,jeb vorool,unmappable no match: Something,unmappable no match: tool,unmappable no match: 
+Gar Woodesh,lom stamok,unmappable no match: Gar,unmappable no match: desh,unmappable no match: 
+Dop Zitesh,dap buresh,unmappable no match: Dop,unmappable no match: tesh,unmappable no match: 
+Dop Monool,ked tochaaf,unmappable no match: Dop,unmappable no match: nool,unmappable no match: 
+Dop Zitool,dap kredesh,unmappable no match: Dop,unmappable no match: tool,unmappable no match: 
+Something Thebool,lom thebok,unmappable no match: Something,unmappable no match: heb,"('big', 'p')"
+Something Zitok,dap zimbesh,unmappable no match: Something,unmappable no match: tok,unmappable no match: 
+Jeb Thebok,jeb thebool,unmappable no match: Jeb,unmappable no match: heb,"('big', 's')"
+Jeb Sorbol,jeb pexool,unmappable no match: Jeb,unmappable no match: rbol,unmappable no match: 
+Something Zortook,lom roozok,unmappable no match: Something,unmappable no match: rtook,unmappable no match: 
+Something Sarbool,ked zimbaaf,unmappable no match: Something,unmappable no match: rbool,unmappable no match: 
+Dop Charbok,lom chagok,unmappable no match: Dop,unmappable no match: harb,correct
+Jeb Zitool,lom zoutok,unmappable no match: Jeb,unmappable no match: tool,unmappable no match: 
+Gar Sartool,dap bepesh,unmappable no match: Gar,unmappable no match: rtool,unmappable no match: 
+Jeb Sartool,lom foudok,unmappable no match: Jeb,unmappable no match: rtool,unmappable no match: 
+Something Zibook,jeb roozool,unmappable no match: Something,unmappable no match: book,unmappable no match: 
+Dop Sitesh,jeb plimool,unmappable no match: Dop,unmappable no match: tesh,unmappable no match: 
+Something Nousool,lom naosok,unmappable no match: Something,unmappable no match: sool,unmappable no match: 
+Something Teepok,lom teepok,unmappable no match: Something,unmappable no match: pok,unmappable no match: 
+Dop Sitesh,dap sibesh,unmappable no match: Dop,unmappable no match: tesh,unmappable no match: 
+Jeb Sitool,jeb pumool,unmappable no match: Jeb,unmappable no match: tool,unmappable no match: 
+Something Chartesh,ked chetaaf,unmappable no match: Something,unmappable no match: hart,"('small', 's')"
+Het Sitool,ked heefaaf,unmappable no match: Het,unmappable no match: tool,unmappable no match: 
+Dop Zitesh,dap zeevesh,unmappable no match: Dop,unmappable no match: tesh,unmappable no match: 
+Something Difesh,ked biffaaf,unmappable no match: Something,unmappable no match: fesh,unmappable no match: 
+Jeb Sartool,lom skunok,unmappable no match: Jeb,unmappable no match: rtool,unmappable no match: 
+Het Zitool,dap heefesh,unmappable no match: Het,unmappable no match: tool,unmappable no match: 
+Something Tomool,ked tamaaf,unmappable no match: Something,unmappable no match: mool,unmappable no match: 
+Jeb Tomesh,dap tamesh,unmappable no match: Jeb,unmappable no match: mesh,unmappable no match: 
+something nasau,ked naosok,unmappable no match: something,unmappable no match: nas,unmappable no match: au
 ked something,ked chagok,couldn't,parse,syllables
-something zootool,ked zoutok,unmappable: something,unmappable: zoot,"('big', 'p')"
-something vorok,ked vorok,unmappable: something,correct,correct
+something zootool,ked zoutok,unmappable no match: something,unmappable no match: zoot,"('big', 'p')"
+something vorok,ked vorok,unmappable no match: something,correct,correct
 lom something,lom monool,couldn't,parse,syllables
 lom pavool,ked pavok,"('big', 's')",correct,"('big', 'p')"
 lom pavool,lom pavool,correct,correct,correct
 something something,lom glarmool,couldn't,parse,syllables
-something vorok,lom vorool,unmappable: something,correct,"('big', 's')"
+something vorok,lom vorool,unmappable no match: something,correct,"('big', 's')"
 lom something,ked plimok,couldn't,parse,syllables
-something zeevash,dap zeevesh,unmappable: something,correct,unmappable: ash
-something beepash,jeb bepaaf,unmappable: something,unmappable: beep,unmappable: ash
+something zeevash,dap zeevesh,unmappable no match: something,correct,unmappable no match: ash
+something beepash,jeb bepaaf,unmappable no match: something,unmappable no match: beep,unmappable no match: ash
 something something,ked glarmok,couldn't,parse,syllables
-something froozool,lom frusool,unmappable: something,unmappable: frooz,correct
-jeb tochaf,jeb tochaaf,correct,correct,unmappable: af
-something sarbok,lom sarbool,unmappable: something,correct,"('big', 's')"
-something thebol,ked thebok,unmappable: something,correct,unmappable: ol
-dap sitesh,jeb sibaaf,"('small', 'p')",unmappable: sit,"('small', 's')"
-something bepash,dap bepesh,unmappable: something,correct,unmappable: ash
-something sarbok,ked sarbok,unmappable: something,correct,correct
-something sitesh,dap sibesh,unmappable: something,unmappable: sit,correct
-something zootook,lom zoutool,unmappable: something,unmappable: zoot,unmappable: ook
-ked fodok,ked foudok,correct,unmappable: fod,correct
+something froozool,lom frusool,unmappable no match: something,unmappable no match: frooz,correct
+jeb tochaf,jeb tochaaf,correct,correct,unmappable no match: af
+something sarbok,lom sarbool,unmappable no match: something,correct,"('big', 's')"
+something thebol,ked thebok,unmappable no match: something,correct,unmappable no match: ol
+dap sitesh,jeb sibaaf,"('small', 'p')",unmappable no match: sit,"('small', 's')"
+something bepash,dap bepesh,unmappable no match: something,correct,unmappable no match: ash
+something sarbok,ked sarbok,unmappable no match: something,correct,correct
+something sitesh,dap sibesh,unmappable no match: something,unmappable no match: sit,correct
+something zootook,lom zoutool,unmappable no match: something,unmappable no match: zoot,unmappable no match: ook
+ked fodok,ked foudok,correct,unmappable no match: fod,correct
 something something,jeb heefaaf,couldn't,parse,syllables
-lom stampool,lom stamool,correct,unmappable: stamp,correct
-something chebok,lom pumool,unmappable: something,unmappable: cheb,"('big', 's')"
-jeb zevaf,jeb zeevaaf,correct,unmappable: zev,unmappable: af
+lom stampool,lom stamool,correct,unmappable no match: stamp,correct
+something chebok,lom pumool,unmappable no match: something,unmappable no match: cheb,"('big', 's')"
+jeb zevaf,jeb zeevaaf,correct,unmappable no match: zev,unmappable no match: af
 ked monok,ked monok,correct,correct,correct
-something thebol,lom thebool,unmappable: something,correct,unmappable: ol
-something teepool,ked teepok,unmappable: something,correct,"('big', 'p')"
+something thebol,lom thebool,unmappable no match: something,correct,unmappable no match: ol
+something teepool,ked teepok,unmappable no match: something,correct,"('big', 'p')"
 jeb something,dap heefesh,couldn't,parse,syllables
 jeb something,dap tochesh,couldn't,parse,syllables
-something kredesh,dap kredesh,unmappable: something,correct,correct
-something hibesh,dap hullesh,unmappable: something,unmappable: hib,correct
+something kredesh,dap kredesh,unmappable no match: something,correct,correct
+something hibesh,dap hullesh,unmappable no match: something,unmappable no match: hib,correct
 lom plimool,lom plimool,correct,correct,correct
 ked something,lom chagool,couldn't,parse,syllables
-something zeevesh,dap buresh,unmappable: something,small training,correct
-something nasau,lom naosool,unmappable: something,unmappable: nas,unmappable: au
-something cheebesh,dap chetesh,unmappable: something,unmappable: cheeb,correct
-something tamaf,dap tamesh,unmappable: something,correct,unmappable: af
-ked foodok,lom foudool,"('small', 's')",unmappable: food,"('big', 's')"
-something hibesh,jeb hullaaf,unmappable: something,unmappable: hib,"('small', 's')"
-something bepash,jeb biffaaf,unmappable: something,small training,unmappable: ash
+something zeevesh,dap buresh,unmappable no match: something,small training,correct
+something nasau,lom naosool,unmappable no match: something,unmappable no match: nas,unmappable no match: au
+something cheebesh,dap chetesh,unmappable no match: something,unmappable no match: cheeb,correct
+something tamaf,dap tamesh,unmappable no match: something,correct,unmappable no match: af
+ked foodok,lom foudool,"('small', 's')",unmappable no match: food,"('big', 's')"
+something hibesh,jeb hullaaf,unmappable no match: something,unmappable no match: hib,"('small', 's')"
+something bepash,jeb biffaaf,unmappable no match: something,small training,unmappable no match: ash
 jeb something,lom teepool,couldn't,parse,syllables
-something kredaf,jeb kredaaf,unmappable: something,correct,unmappable: af
-something cheebesh,jeb chetaaf,unmappable: something,unmappable: cheeb,"('small', 's')"
-something vooxool,ked pexok,unmappable: something,unmappable: voox,"('big', 'p')"
+something kredaf,jeb kredaaf,unmappable no match: something,correct,unmappable no match: af
+something cheebesh,jeb chetaaf,unmappable no match: something,unmappable no match: cheeb,"('small', 's')"
+something vooxool,ked pexok,unmappable no match: something,unmappable no match: voox,"('big', 'p')"
 lom something,ked frusok,couldn't,parse,syllables
-something buraf,jeb buraaf,unmappable: something,correct,unmappable: af
-lom poomool,ked pumok,"('big', 's')",unmappable: poom,"('big', 'p')"
-something roozool,lom roozool,unmappable: something,correct,correct
-something skoonook,ked skunok,unmappable: something,unmappable: skoon,unmappable: ook
-something zeebash,jeb zimbaaf,unmappable: something,unmappable: zeeb,unmappable: ash
-lom rozool,ked roozok,"('big', 's')",unmappable: roz,"('big', 'p')"
-something zimbaaf,dap zimbesh,unmappable: something,correct,"('small', 'p')"
-something vooxool,lom pexool,unmappable: something,unmappable: voox,correct
-something thebok,ked stamok,unmappable: something,big training,correct
-dap skoonook,lom skunool,"('small', 'p')",unmappable: skoon,unmappable: ook
-something beepash,dap biffesh,unmappable: something,unmappable: beep,unmappable: ash
+something buraf,jeb buraaf,unmappable no match: something,correct,unmappable no match: af
+lom poomool,ked pumok,"('big', 's')",unmappable no match: poom,"('big', 'p')"
+something roozool,lom roozool,unmappable no match: something,correct,correct
+something skoonook,ked skunok,unmappable no match: something,unmappable no match: skoon,unmappable no match: ook
+something zeebash,jeb zimbaaf,unmappable no match: something,unmappable no match: zeeb,unmappable no match: ash
+lom rozool,ked roozok,"('big', 's')",unmappable no match: roz,"('big', 'p')"
+something zimbaaf,dap zimbesh,unmappable no match: something,correct,"('small', 'p')"
+something vooxool,lom pexool,unmappable no match: something,unmappable no match: voox,correct
+something thebok,ked stamok,unmappable no match: something,big training,correct
+dap skoonook,lom skunool,"('small', 'p')",unmappable no match: skoon,unmappable no match: ook
+something beepash,dap biffesh,unmappable no match: something,unmappable no match: beep,unmappable no match: ash
 dap something,jeb tamaaf,couldn't,parse,syllables
-idk,ked roozool,couldn't,parse,syllables
-zeb,jeb foudok,unmappable: zeb,unmappable: zeb,unmappable: 
-zeb,dap hullaaf,unmappable: zeb,unmappable: zeb,unmappable: 
-jeb,ked stamool,"('big', 'p')",unmappable: jeb,unmappable: 
+idk,ked roozool,unmappable no match: idk,unmappable no match: idk,unmappable no match: 
+zeb,jeb foudok,unmappable no match: zeb,unmappable no match: zeb,unmappable no match: 
+zeb,dap hullaaf,unmappable no match: zeb,unmappable no match: zeb,unmappable no match: 
+jeb,ked stamool,"('big', 'p')",unmappable no match: jeb,unmappable no match: 
 no,lom biffesh,couldn't,parse,syllables
-garlock,jeb glarmok,unmappable: garlock,unmappable: garl,unmappable: ock
-zeb bebop,ked teepool,unmappable: zeb,unmappable: beb,unmappable: op
+garlock,jeb glarmok,unmappable no match: garlock,unmappable no match: garl,unmappable no match: ock
+zeb bebop,ked teepool,unmappable no match: zeb,unmappable no match: beb,unmappable no match: op
 no,lom zimbesh,couldn't,parse,syllables
 no,jeb monok,couldn't,parse,syllables
-thbolt,jeb thebok,unmappable: thbolt,unmappable: thbolt,unmappable: 
+thbolt,jeb thebok,unmappable no match: thbolt,unmappable no match: thbolt,unmappable no match: 
 no,dap tamaaf,couldn't,parse,syllables
-zeb,ked pexool,unmappable: zeb,unmappable: zeb,unmappable: 
-hynolt,ked pumool,unmappable: hynolt,unmappable: hynolt,unmappable: 
-hybolt,jeb pumok,unmappable: hybolt,unmappable: hybolt,unmappable: 
+zeb,ked pexool,unmappable no match: zeb,unmappable no match: zeb,unmappable no match: 
+hynolt,ked pumool,unmappable no match: hynolt,unmappable no match: hynolt,unmappable no match: 
+hybolt,jeb pumok,unmappable no match: hybolt,unmappable no match: hybolt,unmappable no match: 
 No,jeb roozok,couldn't,parse,syllables
 zeb sh,lom bepesh,couldn't,parse,syllables
 no,jeb pexok,couldn't,parse,syllables
 no,jeb stamok,couldn't,parse,syllables
 no,ked pavool,couldn't,parse,syllables
 no,ked monool,couldn't,parse,syllables
-zarlock,jeb sarbok,unmappable: zarlock,unmappable: zarl,unmappable: ock
+zarlock,jeb sarbok,unmappable no match: zarlock,unmappable no match: zarl,unmappable no match: ock
 no,lom kredesh,couldn't,parse,syllables
 no,dap sibaaf,couldn't,parse,syllables
 no,dap zimbaaf,couldn't,parse,syllables
-zeb bulfash,dap buraaf,unmappable: zeb,unmappable: bulf,unmappable: ash
-galsh,jeb chagok,unmappable: galsh,unmappable: galsh,unmappable: 
-garlock,ked glarmool,unmappable: garlock,unmappable: garl,unmappable: ock
-garlsh,ked chagool,unmappable: garlsh,unmappable: garlsh,unmappable: 
-varloo,jeb vorok,unmappable: varloo,unmappable: varl,unmappable: oo
-glaseh,lom chetesh,unmappable: glaseh,unmappable: glas,unmappable: eh
-zee sorloo,ked naosool,unmappable: zee,unmappable: sorl,unmappable: oo
+zeb bulfash,dap buraaf,unmappable no match: zeb,unmappable no match: bulf,unmappable no match: ash
+galsh,jeb chagok,unmappable no match: galsh,unmappable no match: galsh,unmappable no match: 
+garlock,ked glarmool,unmappable no match: garlock,unmappable no match: garl,unmappable no match: ock
+garlsh,ked chagool,unmappable no match: garlsh,unmappable no match: garlsh,unmappable no match: 
+varloo,jeb vorok,unmappable no match: varloo,unmappable no match: varl,unmappable no match: oo
+glaseh,lom chetesh,unmappable no match: glaseh,unmappable no match: glas,unmappable no match: eh
+zee sorloo,ked naosool,unmappable no match: zee,unmappable no match: sorl,unmappable no match: oo
 no,lom tamesh,couldn't,parse,syllables
-zeb zorloo,jeb naosok,unmappable: zeb,unmappable: zorl,unmappable: oo
+zeb zorloo,jeb naosok,unmappable no match: zeb,unmappable no match: zorl,unmappable no match: oo
 no,lom hullesh,couldn't,parse,syllables
 mo,dap heefaaf,couldn't,parse,syllables
 no,lom tochesh,couldn't,parse,syllables
-vorloo,ked vorool,unmappable: vorloo,unmappable: vorl,unmappable: oo
+vorloo,ked vorool,unmappable no match: vorloo,unmappable no match: vorl,unmappable no match: oo
 no,jeb plimok,couldn't,parse,syllables
 no,ked frusool,couldn't,parse,syllables
 no,ked plimool,couldn't,parse,syllables
-zarlick,jeb zoutok,unmappable: zarlick,unmappable: zarl,unmappable: ick
-bulafsh,lom buresh,unmappable: bulafsh,unmappable: bul,unmappable: afsh
+zarlick,jeb zoutok,unmappable no match: zarlick,unmappable no match: zarl,unmappable no match: ick
+bulafsh,lom buresh,unmappable no match: bulafsh,unmappable no match: bul,unmappable no match: afsh
 no,dap tochaaf,couldn't,parse,syllables
 no,jeb pavok,couldn't,parse,syllables
 no,lom sibesh,couldn't,parse,syllables
-thbol,ked thebool,unmappable: thbol,unmappable: thbol,unmappable: 
-zarvelish,lom zeevesh,unmappable: zarvelish,unmappable: zarv,unmappable: elish
+thbol,ked thebool,unmappable no match: thbol,unmappable no match: thbol,unmappable no match: 
+zarvelish,lom zeevesh,unmappable no match: zarvelish,unmappable no match: zarv,unmappable no match: elish
 no,lom heefesh,couldn't,parse,syllables
-tybolt,jeb teepok,unmappable: tybolt,unmappable: tybolt,unmappable: 
+tybolt,jeb teepok,unmappable no match: tybolt,unmappable no match: tybolt,unmappable no match: 
 no,dap kredaaf,couldn't,parse,syllables
 no,ked foudool,couldn't,parse,syllables
-zenbolt,ked skunool,unmappable: zenbolt,unmappable: zenb,unmappable: olt
-garlic,ked sarbool,unmappable: garlic,unmappable: garl,unmappable: ic
-gulfesh,dap bepaaf,unmappable: gulfesh,unmappable: gulf,"('small', 's')"
+zenbolt,ked skunool,unmappable no match: zenbolt,unmappable no match: zenb,unmappable no match: olt
+garlic,ked sarbool,unmappable no match: garlic,unmappable no match: garl,unmappable no match: ic
+gulfesh,dap bepaaf,unmappable no match: gulfesh,unmappable no match: gulf,"('small', 's')"
 no,jeb frusok,couldn't,parse,syllables
 no,ked zoutool,couldn't,parse,syllables
 no,jeb skunok,couldn't,parse,syllables
-zelfish,dap zeevaaf,unmappable: zelfish,unmappable: zelf,unmappable: ish
+zelfish,dap zeevaaf,unmappable no match: zelfish,unmappable no match: zelf,unmappable no match: ish
 no,dap biffaaf,couldn't,parse,syllables
 no,dap chetaaf,couldn't,parse,syllables
 dom something,jeb biffaaf,couldn't,parse,syllables
-dop sarbool,dap sarbok,unmappable: dop,correct,"('big', 'p')"
-dom starbool,jeb tochaaf,unmappable: dom,unmappable: starb,"('big', 'p')"
+dop sarbool,dap sarbok,unmappable no match: dop,correct,"('big', 'p')"
+dom starbool,jeb tochaaf,unmappable no match: dom,unmappable no match: starb,"('big', 'p')"
 doc something,dap teepok,couldn't,parse,syllables
-something plimool,dap plimok,unmappable: something,correct,"('big', 'p')"
-something sordauk,ked naosool,unmappable: something,unmappable: sord,unmappable: auk
-something carmoon,dap frusok,unmappable: something,unmappable: carm,unmappable: oon
+something plimool,dap plimok,unmappable no match: something,correct,"('big', 'p')"
+something sordauk,ked naosool,unmappable no match: something,unmappable no match: sord,unmappable no match: auk
+something carmoon,dap frusok,unmappable no match: something,unmappable no match: carm,unmappable no match: oon
 jeb something,lom zeevesh,couldn't,parse,syllables
 something something,ked pavool,couldn't,parse,syllables
-something vinesh,dap roozok,unmappable: something,unmappable: vin,"('small', 's')"
+something vinesh,dap roozok,unmappable no match: something,unmappable no match: vin,"('small', 's')"
 something something,jeb kredaaf,couldn't,parse,syllables
-something sardoul,dap naosok,unmappable: something,unmappable: sard,unmappable: oul
-something glimesh,ked glarmool,unmappable: something,unmappable: glim,"('small', 's')"
-something chardoke,ked chagool,unmappable: something,unmappable: chard,unmappable: oke
+something sardoul,dap naosok,unmappable no match: something,unmappable no match: sard,unmappable no match: oul
+something glimesh,ked glarmool,unmappable no match: something,unmappable no match: glim,"('small', 's')"
+something chardoke,ked chagool,unmappable no match: something,unmappable no match: chard,unmappable no match: oke
 something something,dap pavok,couldn't,parse,syllables
-something charduak,ked zoutool,unmappable: something,unmappable: chard,unmappable: uak
+something charduak,ked zoutool,unmappable no match: something,unmappable no match: chard,unmappable no match: uak
 something something,lom tamesh,couldn't,parse,syllables
-something glimesh,lom hullesh,unmappable: something,unmappable: glim,correct
+something glimesh,lom hullesh,unmappable no match: something,unmappable no match: glim,correct
 something something,ked pumool,couldn't,parse,syllables
-something stamool,ked stamool,unmappable: something,correct,correct
+something stamool,ked stamool,unmappable no match: something,correct,correct
 something something,lom buresh,couldn't,parse,syllables
-something sveefan,lom heefesh,unmappable: something,unmappable: sveef,unmappable: an
+something sveefan,lom heefesh,unmappable no match: something,unmappable no match: sveef,unmappable no match: an
 something something,ked vorool,couldn't,parse,syllables
-keb stamoke,dap stamok,unmappable: keb,correct,unmappable: oke
+keb stamoke,dap stamok,unmappable no match: keb,correct,unmappable no match: oke
 something something,dap vorok,couldn't,parse,syllables
 something something,ked teepool,couldn't,parse,syllables
-something sefaath,lom bepesh,unmappable: something,unmappable: sef,unmappable: aath
-something mardouk,dap foudok,unmappable: something,unmappable: mard,unmappable: ouk
-something chardauk,dap zoutok,unmappable: something,unmappable: chard,unmappable: auk
+something sefaath,lom bepesh,unmappable no match: something,unmappable no match: sef,unmappable no match: aath
+something mardouk,dap foudok,unmappable no match: something,unmappable no match: mard,unmappable no match: ouk
+something chardauk,dap zoutok,unmappable no match: something,unmappable no match: chard,unmappable no match: auk
 something something,dap monok,couldn't,parse,syllables
-ked tharbook,ked thebool,correct,unmappable: tharb,unmappable: ook
+ked tharbook,ked thebool,correct,unmappable no match: tharb,unmappable no match: ook
 something something,jeb zimbaaf,couldn't,parse,syllables
-something staxok,ked pexool,unmappable: something,unmappable: stax,"('big', 's')"
-something sveefan,jeb heefaaf,unmappable: something,unmappable: sveef,unmappable: an
-something someting,lom chetesh,unmappable: something,unmappable: som,unmappable: eting
-something svinesh,jeb zeevaaf,unmappable: something,unmappable: svin,"('small', 's')"
+something staxok,ked pexool,unmappable no match: something,unmappable no match: stax,"('big', 's')"
+something sveefan,jeb heefaaf,unmappable no match: something,unmappable no match: sveef,unmappable no match: an
+something someting,lom chetesh,unmappable no match: something,unmappable no match: som,unmappable no match: eting
+something svinesh,jeb zeevaaf,unmappable no match: something,unmappable no match: svin,"('small', 's')"
 something something,dap pexok,couldn't,parse,syllables
 something something,dap skunok,couldn't,parse,syllables
-something beefath,lom biffesh,unmappable: something,unmappable: beef,unmappable: ath
+something beefath,lom biffesh,unmappable no match: something,unmappable no match: beef,unmappable no match: ath
 something something,jeb buraaf,couldn't,parse,syllables
-something sarmook,ked frusool,unmappable: something,unmappable: sarm,unmappable: ook
-something glimesh,jeb hullaaf,unmappable: something,unmappable: glim,"('small', 's')"
+something sarmook,ked frusool,unmappable no match: something,unmappable no match: sarm,unmappable no match: ook
+something glimesh,jeb hullaaf,unmappable no match: something,unmappable no match: glim,"('small', 's')"
 something something,lom sibesh,couldn't,parse,syllables
 something something,jeb tamaaf,couldn't,parse,syllables
-something someting,ked monool,unmappable: something,unmappable: som,unmappable: eting
-something plimook,ked plimool,unmappable: something,correct,unmappable: ook
+something someting,ked monool,unmappable no match: something,unmappable no match: som,unmappable no match: eting
+something plimook,ked plimool,unmappable no match: something,correct,unmappable no match: ook
 something something,jeb sibaaf,couldn't,parse,syllables
-somethink garnesh,dap glarmok,unmappable: somethink,unmappable: garn,"('small', 's')"
+somethink garnesh,dap glarmok,unmappable no match: somethink,unmappable no match: garn,"('small', 's')"
 something something,lom tochesh,couldn't,parse,syllables
 something something,lom zimbesh,couldn't,parse,syllables
-something glinesh,jeb bepaaf,unmappable: something,unmappable: glin,"('small', 's')"
-something starbool,ked sarbool,unmappable: something,unmappable: starb,correct
+something glinesh,jeb bepaaf,unmappable no match: something,unmappable no match: glin,"('small', 's')"
+something starbool,ked sarbool,unmappable no match: something,unmappable no match: starb,correct
 something something,ked skunool,couldn't,parse,syllables
 something something,dap pumok,couldn't,parse,syllables
-something chardauk,dap chagok,unmappable: something,unmappable: chard,unmappable: auk
+something chardauk,dap chagok,unmappable no match: something,unmappable no match: chard,unmappable no match: auk
 something something,lom kredesh,couldn't,parse,syllables
-something mardauk,ked foudool,unmappable: something,unmappable: mard,unmappable: auk
+something mardauk,ked foudool,unmappable no match: something,unmappable no match: mard,unmappable no match: auk
 something something,jeb chetaaf,couldn't,parse,syllables
-something veroon,ked roozool,unmappable: something,unmappable: ver,unmappable: oon
-ted tamoke,dap thebok,unmappable: ted,small training,unmappable: oke
-jeb sardok,jeb skunok,correct,unmappable: sard,correct
-jeb paumok,jeb foudok,correct,unmappable: paum,correct
-ped skamok,ked sibesh,unmappable: ped,unmappable: skam,"('big', 's')"
+something veroon,ked roozool,unmappable no match: something,unmappable no match: ver,unmappable no match: oon
+ted tamoke,dap thebok,unmappable no match: ted,small training,unmappable no match: oke
+jeb sardok,jeb skunok,correct,unmappable no match: sard,correct
+jeb paumok,jeb foudok,correct,unmappable no match: paum,correct
+ped skamok,ked sibesh,unmappable no match: ped,unmappable no match: skam,"('big', 's')"
 jeb ,ked heefesh,couldn't,parse,syllables
-something glarmool,dap glarmool,unmappable: something,correct,correct
+something glarmool,dap glarmool,unmappable no match: something,correct,correct
 lamb something,lom chetaaf,couldn't,parse,syllables
 jeb glarmok,jeb glarmok,correct,correct,correct
 lamb something,lom biffaaf,couldn't,parse,syllables
 lamb something,lom heefaaf,couldn't,parse,syllables
-dep gilmok,ked zimbesh,unmappable: dep,unmappable: gilm,"('big', 's')"
+dep gilmok,ked zimbesh,unmappable no match: dep,unmappable no match: gilm,"('big', 's')"
 lamb something,dap pavool,couldn't,parse,syllables
 jeb something,ked buresh,couldn't,parse,syllables
 dep something,ked chetesh,couldn't,parse,syllables
 ?,lom buraaf,couldn't,parse,syllables
-jeb zaudok,jeb zoutok,correct,unmappable: zaud,correct
-lamb sardool,dap pumool,unmappable: lamb,unmappable: sard,correct
+jeb zaudok,jeb zoutok,correct,unmappable no match: zaud,correct
+lamb sardool,dap pumool,unmappable no match: lamb,unmappable no match: sard,correct
 lamb something,dap skunool,couldn't,parse,syllables
-jeb larmok,jeb chagok,correct,unmappable: larm,correct
-lamb sardool,lom hullaaf,unmappable: lamb,unmappable: sard,"('big', 'p')"
+jeb larmok,jeb chagok,correct,unmappable no match: larm,correct
+lamb sardool,lom hullaaf,unmappable no match: lamb,unmappable no match: sard,"('big', 'p')"
 jeb something,ked bepesh,couldn't,parse,syllables
 lamb z____,dap vorool,couldn't,parse,syllables
 dep something,ked tamesh,couldn't,parse,syllables
-lamb garmool,lom kredaaf,unmappable: lamb,unmappable: garm,"('big', 'p')"
+lamb garmool,lom kredaaf,unmappable no match: lamb,unmappable no match: garm,"('big', 'p')"
 ?,dap zoutool,couldn't,parse,syllables
 ?,dap thebool,couldn't,parse,syllables
 jeb something,jeb thebok,couldn't,parse,syllables
-lamb sardool,dap stamool,unmappable: lamb,unmappable: sard,correct
-lamb zardool,dap frusool,unmappable: lamb,unmappable: zard,correct
+lamb sardool,dap stamool,unmappable no match: lamb,unmappable no match: sard,correct
+lamb zardool,dap frusool,unmappable no match: lamb,unmappable no match: zard,correct
 ?,dap roozool,couldn't,parse,syllables
-dep harmek,jeb pumok,unmappable: dep,unmappable: harm,unmappable: ek
-jeb,ked kredesh,"('big', 'p')",unmappable: jeb,unmappable: 
-jeb tremok,ked tochesh,"('big', 'p')",unmappable: trem,"('big', 's')"
-dep hardok,ked hullesh,unmappable: dep,unmappable: hard,"('big', 's')"
+dep harmek,jeb pumok,unmappable no match: dep,unmappable no match: harm,unmappable no match: ek
+jeb,ked kredesh,"('big', 'p')",unmappable no match: jeb,unmappable no match: 
+jeb tremok,ked tochesh,"('big', 'p')",unmappable no match: trem,"('big', 's')"
+dep hardok,ked hullesh,unmappable no match: dep,unmappable no match: hard,"('big', 's')"
 dep something,jeb plimok,couldn't,parse,syllables
 dep something,jeb monok,couldn't,parse,syllables
-lamb hardoosh,lom zimbaaf,unmappable: lamb,unmappable: hard,unmappable: oosh
-lamb sardool,dap foudool,unmappable: lamb,unmappable: sard,correct
-lamb pamool,lom tamaaf,unmappable: lamb,unmappable: pam,"('big', 'p')"
-jeb parmok,jeb sarbok,correct,unmappable: parm,correct
+lamb hardoosh,lom zimbaaf,unmappable no match: lamb,unmappable no match: hard,unmappable no match: oosh
+lamb sardool,dap foudool,unmappable no match: lamb,unmappable no match: sard,correct
+lamb pamool,lom tamaaf,unmappable no match: lamb,unmappable no match: pam,"('big', 'p')"
+jeb parmok,jeb sarbok,correct,unmappable no match: parm,correct
 dep z___,jeb vorok,couldn't,parse,syllables
 ?,jeb naosok,couldn't,parse,syllables
-jeb sarmok,jeb pavok,correct,unmappable: sarm,correct
+jeb sarmok,jeb pavok,correct,unmappable no match: sarm,correct
 ?,dap monool,couldn't,parse,syllables
 lamb something,lom tochaaf,couldn't,parse,syllables
-lamb hardool,dap chagool,unmappable: lamb,unmappable: hard,correct
-lamb tarmool,dap pexool,unmappable: lamb,unmappable: tarm,correct
+lamb hardool,dap chagool,unmappable no match: lamb,unmappable no match: hard,correct
+lamb tarmool,dap pexool,unmappable no match: lamb,unmappable no match: tarm,correct
 lamb something,dap naosool,couldn't,parse,syllables
-lamb sardool,dap sarbool,unmappable: lamb,unmappable: sard,correct
-dep teapok,jeb teepok,unmappable: dep,unmappable: teap,correct
+lamb sardool,dap sarbool,unmappable no match: lamb,unmappable no match: sard,correct
+dep teapok,jeb teepok,unmappable no match: dep,unmappable no match: teap,correct
 jeb something,ked biffesh,couldn't,parse,syllables
-dep soemething,jeb pexok,unmappable: dep,unmappable: soem,unmappable: ething
-dep garmok,jeb stamok,unmappable: dep,unmappable: garm,correct
+dep soemething,jeb pexok,unmappable no match: dep,unmappable no match: soem,unmappable no match: ething
+dep garmok,jeb stamok,unmappable no match: dep,unmappable no match: garm,correct
 ?,dap plimool,couldn't,parse,syllables
-jeb zarmok,jeb frusok,correct,unmappable: zarm,correct
-lamb tramesch,lom zeevaaf,unmappable: lamb,unmappable: tram,unmappable: esch
+jeb zarmok,jeb frusok,correct,unmappable no match: zarm,correct
+lamb tramesch,lom zeevaaf,unmappable no match: lamb,unmappable no match: tram,unmappable no match: esch
 ?,lom sibaaf,couldn't,parse,syllables
 dep ,jeb roozok,couldn't,parse,syllables
-dep tremesh,ked zeevesh,unmappable: dep,unmappable: trem,correct
-lamb teepool,dap teepool,unmappable: lamb,correct,correct
+dep tremesh,ked zeevesh,unmappable no match: dep,unmappable no match: trem,correct
+lamb teepool,dap teepool,unmappable no match: lamb,correct,correct
 ?,lom bepaaf,couldn't,parse,syllables
